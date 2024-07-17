@@ -9,15 +9,22 @@ import "./header.css";
 
 const HeaderNav = () => {
   return (
-    <Box border={"1px solid red"} background={"#F56A01"} height={24}>
+    <Box background={"#F56A01"} height={{ base: 20, lg: 24 }}>
       <Flex
         flexDirection={"row"}
-        width={"80%"}
+        width={{ base: "100%", lg: "80%" }}
+        px={{ base: 1, lg: 0 }}
+        py={{ base: 2, lg: 0 }}
         margin={"auto"}
-        alignItems={"center"}
         justifyContent={"space-between"}
+        alignItems={"center"}
       >
-        <Flex flexDirection={"row"} alignItems={"center"} gap={8}>
+        <Flex
+          flexDirection={{ base: "column", lg: "row" }}
+          justifyContent={"start"}
+          alignItems={{ base: "start", lg: "center" }}
+          gap={{ base: 2, lg: 8 }}
+        >
           <Flex
             flexDirection={"row"}
             gap={2}
@@ -26,7 +33,11 @@ const HeaderNav = () => {
           >
             <LuPhoneCall color={"#FFFFFF"} size={16} />
 
-            <Text fontFamily={"EkMukta"} fontWeight={600} fontSize={16}>
+            <Text
+              fontFamily={"EkMukta"}
+              fontWeight={600}
+              fontSize={{ base: 8, lg: 16 }}
+            >
               7903672260 , 8936007120
             </Text>
           </Flex>
@@ -38,7 +49,11 @@ const HeaderNav = () => {
           >
             <TfiWorld color={"#FFFFFF"} size={16} />
 
-            <Text fontFamily={"EkMukta"} fontWeight={600} fontSize={16}>
+            <Text
+              fontFamily={"EkMukta"}
+              fontWeight={600}
+              fontSize={{ base: 8, lg: 16 }}
+            >
               www.lsstrust.org.in
             </Text>
           </Flex>
@@ -50,21 +65,55 @@ const HeaderNav = () => {
           >
             <FiMail color={"#FFFFFF"} size={16} />
 
-            <Text fontFamily={"EkMukta"} fontWeight={600} fontSize={16}>
+            <Text
+              fontFamily={"EkMukta"}
+              fontWeight={600}
+              fontSize={{ base: 8, lg: 16 }}
+            >
               support@lsstrust.org.in
             </Text>
           </Flex>
         </Flex>
 
-        <Flex alignItems={"center"} gap={4}>
-          <Box py={4} px={3} background={"#F78834"}>
-            <FaYoutube color="#FFFFFF" size={20} />
+        <Flex alignItems="center" gap={4}>
+          <Box
+            py={{ base: 2, lg: 4 }}
+            px={{ base: 2, lg: 3 }}
+            background="#F78834"
+          >
+            <a
+              href="https://www.youtube.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaYoutube color="#FFFFFF" size={20} />
+            </a>
           </Box>
-          <Box py={4} px={3} background={"#F78834"}>
-            <FaFacebookF color="#FFFFFF" size={20} />
+          <Box
+            py={{ base: 2, lg: 4 }}
+            px={{ base: 2, lg: 3 }}
+            background="#F78834"
+          >
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaFacebookF color="#FFFFFF" size={20} />
+            </a>
           </Box>
-          <Box py={4} px={3} background={"#F78834"}>
-            <FaInstagram color="#FFFFFF" size={20} />
+          <Box
+            py={{ base: 2, lg: 4 }}
+            px={{ base: 2, lg: 3 }}
+            background="#F78834"
+          >
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram color="#FFFFFF" size={20} />
+            </a>
           </Box>
         </Flex>
       </Flex>
