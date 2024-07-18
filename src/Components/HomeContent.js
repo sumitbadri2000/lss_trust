@@ -1,4 +1,12 @@
-import { Box, Flex, Image, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Divider,
+  Flex,
+  Image,
+  Input,
+  Text,
+} from "@chakra-ui/react";
 import "./epilo.css";
 import "./header.css";
 import line from "../Assests/line.png";
@@ -13,10 +21,10 @@ import marathon from "../Assests/marathon.png";
 import cycles from "../Assests/cycles.png";
 import mach from "../Assests/mach.png";
 import machine from "../Assests/machine.png";
-
 import "./header.css";
+import "./epilo.css";
 
-const HomeFirst = () => {
+const HomeContent = () => {
   return (
     <Flex flexDirection={"column"} gap={10}>
       <Flex width={"100%"} bgGradient="linear(to-r, #ffda91, white)">
@@ -26,8 +34,7 @@ const HomeFirst = () => {
           margin={"auto"}
           alignItems={"center"}
           justifyContent={"space-between"}
-          gap={{ base: 5, lg: 0 }}
-        >
+          gap={{ base: 5, lg: 0 }}>
           <Flex
             background={"#207FB7"}
             width={{ base: "220px", lg: "220px" }}
@@ -36,8 +43,7 @@ const HomeFirst = () => {
             flexDirection={"column"}
             alignItems={"center"}
             justifyContent={"center"}
-            overflow={"hidden"}
-          >
+            overflow={"hidden"}>
             <Box>
               <Image height={32} src={cycles} alt="cycles" />
             </Box>
@@ -50,8 +56,7 @@ const HomeFirst = () => {
                 fontFamily={"EkMukta"}
                 fontWeight={600}
                 color={"#FFFFFF"}
-                fontSize={"1.8rem"}
-              >
+                fontSize={"1.2rem"}>
                 निःशुल्क स्वास्थ्य जांच
               </Text>
             </Box>
@@ -65,8 +70,7 @@ const HomeFirst = () => {
             flexDirection={"column"}
             alignItems={"center"}
             justifyContent={"center"}
-            overflow={"hidden"}
-          >
+            overflow={"hidden"}>
             <Box>
               <Image height={32} src={eye} alt="eye" />
             </Box>
@@ -79,8 +83,7 @@ const HomeFirst = () => {
                 fontFamily={"EkMukta"}
                 fontWeight={600}
                 color={"#FFFFFF"}
-                fontSize={"1.8rem"}
-              >
+                fontSize={"1.2rem"}>
                 निःशुल्क मोतियाबिंद ऑपरेशन
               </Text>
             </Box>
@@ -94,8 +97,7 @@ const HomeFirst = () => {
             flexDirection={"column"}
             alignItems={"center"}
             justifyContent={"center"}
-            overflow={"hidden"}
-          >
+            overflow={"hidden"}>
             <Box>
               <Image height={32} src={cycles} alt="cycles" />
             </Box>
@@ -108,8 +110,7 @@ const HomeFirst = () => {
                 fontFamily={"EkMukta"}
                 fontWeight={600}
                 color={"#FFFFFF"}
-                fontSize={"1.8rem"}
-              >
+                fontSize={"1.2rem"}>
                 तिपहिया साइकिल वितरण
               </Text>
             </Box>
@@ -123,8 +124,7 @@ const HomeFirst = () => {
             flexDirection={"column"}
             alignItems={"center"}
             justifyContent={"center"}
-            overflow={"hidden"}
-          >
+            overflow={"hidden"}>
             <Box>
               <Image height={32} src={mach} alt="mach" />
             </Box>
@@ -137,8 +137,7 @@ const HomeFirst = () => {
                 fontFamily={"EkMukta"}
                 fontWeight={600}
                 color={"#FFFFFF"}
-                fontSize={"1.8rem"}
-              >
+                fontSize={"1.2rem"}>
                 किसान भाइयों को तकनीकी यंत्र वितरण
               </Text>
             </Box>
@@ -152,8 +151,7 @@ const HomeFirst = () => {
             flexDirection={"column"}
             alignItems={"center"}
             justifyContent={"center"}
-            overflow={"hidden"}
-          >
+            overflow={"hidden"}>
             <Box>
               <Image height={32} src={machine} alt="machine" />
             </Box>
@@ -166,8 +164,7 @@ const HomeFirst = () => {
                 fontFamily={"EkMukta"}
                 fontWeight={600}
                 color={"#FFFFFF"}
-                fontSize={"1.8rem"}
-              >
+                fontSize={"1.2rem"}>
                 महिला को सिलाई मशीन वितरण
               </Text>
             </Box>
@@ -181,8 +178,7 @@ const HomeFirst = () => {
             flexDirection={"column"}
             alignItems={"center"}
             justifyContent={"center"}
-            overflow={"hidden"}
-          >
+            overflow={"hidden"}>
             <Box>
               <Image height={32} src={marathon} alt="marathon" />
             </Box>
@@ -195,8 +191,7 @@ const HomeFirst = () => {
                 fontFamily={"EkMukta"}
                 fontWeight={600}
                 color={"#FFFFFF"}
-                fontSize={"1.8rem"}
-              >
+                fontSize={"1.2rem"}>
                 छात्र-छात्राओं  की दौड़ स्पर्धा
               </Text>
             </Box>
@@ -205,20 +200,18 @@ const HomeFirst = () => {
       </Flex>
 
       {/* text */}
-      <Box width={{base:"90%",lg:"80%"}} margin={"auto"}>
+      <Box width={{ base: "90%", lg: "80%" }} margin={"auto"}>
         <Flex
           width={{ base: "100%", lg: "80%" }}
           margin={"auto"}
           flexDirection={"row"}
           alignItems={"center"}
-          mb={6}
-        >
+          mb={6}>
           <Text
             textAlign={"center"}
             className="epilogue-bold"
             color={"#F56A02"}
-            fontSize={{ base: "1rem", lg: "3rem" }}
-          >
+            fontSize={{ base: "1rem", lg: "3rem" }}>
             स्वर्गीय सुरेश सिंह फाउंडेशन ट्रस्ट बिहार राज्य के बिहटा क्षेत्र के
             लई ग्राम में स्थित एक गैर-लाभकारी संगठन है।{" "}
           </Text>
@@ -226,8 +219,7 @@ const HomeFirst = () => {
             width={"15%"}
             mt={10}
             ml={-6}
-            display={{ base: "none", lg: "flex" }}
-          >
+            display={{ base: "none", lg: "flex" }}>
             <Image width={"100%"} height={"100%"} src={line} alt="line" />
           </Box>
         </Flex>
@@ -237,8 +229,7 @@ const HomeFirst = () => {
           width={"100%"}
           margin={"auto"}
           flexDirection={"row"}
-          justifyContent={"center"}
-        >
+          justifyContent={"center"}>
           <Flex flexDirection={"column"} width={"50%"}>
             <Box>
               <Image width={"100%"} height={"100%"} src={cycle} alt="cycle" />
@@ -246,10 +237,9 @@ const HomeFirst = () => {
             <Box background={"#F56A02"} py={12} px={12} borderRadius={"md"}>
               <Text
                 color={"white"}
-                fontSize={"1.8rem"}
+                fontSize={"1.2rem"}
                 fontFamily={"EkMukta"}
-                fontWeight={400}
-              >
+                fontWeight={400}>
                 महिलाओ को आत्मनिर्भर बनाने हेतु सिलाई मशीन का वितरण, ग्रामीण
                 महिलाओं को आत्मनिर्भर बनाने हेतु आर्थिक सहायता राशि एवं ग्रामीण
                 बहन-बेटियों को विवाहोत्सव पर आत्मनिर्भर एवं सशक्त बनने हेतु
@@ -264,14 +254,12 @@ const HomeFirst = () => {
               py={12}
               px={12}
               borderRadius={"md"}
-              mt={5}
-            >
+              mt={5}>
               <Text
                 color={"white"}
-                fontSize={"1.8rem"}
+                fontSize={"1.2rem"}
                 fontFamily={"EkMukta"}
-                fontWeight={400}
-              >
+                fontWeight={400}>
                 प्रदूषण की समस्या को दूर करने हेतु वृक्षारोपण, फोफिंग मशीन
                 वितरण, सुगम आवागमन हेतु चौक-चौराहों पर LED की व्यवस्था, किसान
                 भाइयों को उनके फसलों एवं पौधों को बिमारियों से सुरक्षा हेतु
@@ -288,14 +276,12 @@ const HomeFirst = () => {
               py={8}
               px={10}
               borderRadius={"md"}
-              mt={4}
-            >
+              mt={4}>
               <Text
                 color={"white"}
-                fontSize={"1.8rem"}
+                fontSize={"1.2rem"}
                 fontFamily={"EkMukta"}
-                fontWeight={400}
-              >
+                fontWeight={400}>
                 यह संगठन छात्रों, युवाओं और महिलाओं को सशक्त बनाकर समृद्ध समाज
                 बनाने हेतु कार्य करता है। इसके लिए ट्रस्ट समाज से जुड़े कई कार्य
                 कर रहा है। जैसे – दिव्यांग्जनों को आवागमन हेतु तिपहिया साईकिल का
@@ -311,10 +297,9 @@ const HomeFirst = () => {
             <Box background={"#FFA800"} py={8} px={10} borderRadius={"md"}>
               <Text
                 color={"black"}
-                fontSize={"1.8rem"}
+                fontSize={"1.2rem"}
                 fontFamily={"EkMukta"}
-                fontWeight={400}
-              >
+                fontWeight={400}>
                 जरूरतमन्द विद्यार्थियों (कक्षा 10th व 14th) को पंजीकरण हेतु
                 सहायता राशि, लेखन सामग्री, ग्रामीण विद्यालय में प्यूरीफायर
                 संयंत्र / आर० ओ०, पटना एथलेटिक्स संघ की निगरानी में
@@ -339,8 +324,7 @@ const HomeFirst = () => {
           margin={"auto"}
           flexDirection={"column"}
           justifyContent={"center"}
-          gap={2}
-        >
+          gap={2}>
           <Box>
             <Image width={"100%"} height={"100%"} src={cycle} alt="cycle" />
           </Box>
@@ -349,8 +333,7 @@ const HomeFirst = () => {
               color={"white"}
               fontSize={14}
               fontFamily={"EkMukta"}
-              fontWeight={400}
-            >
+              fontWeight={400}>
               यह संगठन छात्रों, युवाओं और महिलाओं को सशक्त बनाकर समृद्ध समाज
               बनाने हेतु कार्य करता है। इसके लिए ट्रस्ट समाज से जुड़े कई कार्य कर
               रहा है। जैसे – दिव्यांग्जनों को आवागमन हेतु तिपहिया साईकिल का
@@ -368,8 +351,7 @@ const HomeFirst = () => {
               color={"white"}
               fontSize={14}
               fontFamily={"EkMukta"}
-              fontWeight={400}
-            >
+              fontWeight={400}>
               महिलाओ को आत्मनिर्भर बनाने हेतु सिलाई मशीन का वितरण, ग्रामीण
               महिलाओं को आत्मनिर्भर बनाने हेतु आर्थिक सहायता राशि एवं ग्रामीण
               बहन-बेटियों को विवाहोत्सव पर आत्मनिर्भर एवं सशक्त बनने हेतु जरुरत
@@ -384,8 +366,7 @@ const HomeFirst = () => {
               color={"black"}
               fontSize={14}
               fontFamily={"EkMukta"}
-              fontWeight={400}
-            >
+              fontWeight={400}>
               जरूरतमन्द विद्यार्थियों (कक्षा 10th व 14th) को पंजीकरण हेतु सहायता
               राशि, लेखन सामग्री, ग्रामीण विद्यालय में प्यूरीफायर संयंत्र / आर०
               ओ०, पटना एथलेटिक्स संघ की निगरानी में छात्र-छात्राओं की
@@ -403,8 +384,7 @@ const HomeFirst = () => {
               color={"white"}
               fontSize={14}
               fontFamily={"EkMukta"}
-              fontWeight={400}
-            >
+              fontWeight={400}>
               प्रदूषण की समस्या को दूर करने हेतु वृक्षारोपण, फोफिंग मशीन वितरण,
               सुगम आवागमन हेतु चौक-चौराहों पर LED की व्यवस्था, किसान भाइयों को
               उनके फसलों एवं पौधों को बिमारियों से सुरक्षा हेतु स्वचालित कृषि
@@ -416,17 +396,8 @@ const HomeFirst = () => {
           </Box>
         </Flex>
       </Box>
-
-      {/* big screen */}
-
-      {/* above footer */}
-      {/* <Flex width={"50%"} marginRight={0} border={"1px solid red"}>
-        <Box>
-          <Image height={"80%"} width={"50%"} src={contact} alt="contack" />
-        </Box>
-      </Flex> */}
     </Flex>
   );
 };
 
-export default HomeFirst;
+export default HomeContent;

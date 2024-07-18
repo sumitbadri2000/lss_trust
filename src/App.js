@@ -3,18 +3,17 @@ import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
 import HeaderNav from "./Components/Header";
-import HomeFirst from "./Components/homefir";
-import Events from "./Components/Event";
-import Certificate from "./Components/Certificate";
-import Water from "./Components/DrinkingWater";
-import YourSupport from "./Components/YourSupport";
+
+import Footer from "./Components/Footer";
+import Navbar from "./Components/Navbar";
 function App() {
   return (
     <>
-      <HeaderNav />
+      {/* <HeaderNav /> */}
       <Routes>
-        <Route path="/" element={<YourSupport />} />
+        <Route path="/" element={<Navbar />} />
       </Routes>
+      {/* <Footer /> */}
     </>
   );
 }

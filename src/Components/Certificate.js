@@ -39,14 +39,12 @@ export default function Certificate() {
             alignItems={"center"}
             justifyContent={"center"}
             width={{ base: "100%", lg: "90%" }}
-            paddingLeft={{ base: 0, lg: 20 }}
-          >
+            paddingLeft={{ base: 0, lg: 20 }}>
             <Text
               color={"#F56A02"}
               className="epilogue-bold"
               fontSize={{ base: "1.8rem", lg: "3rem" }}
-              fontWeight={800}
-            >
+              fontWeight={800}>
               Our Certificates
             </Text>
             <Box display={{ base: "none", lg: "flex" }} mt={2}>
@@ -57,8 +55,7 @@ export default function Certificate() {
             width={"10%"}
             alignItems={"center"}
             justifyContent={"flex-end"}
-            display={{ base: "none", lg: "flex" }}
-          >
+            display={{ base: "none", lg: "flex" }}>
             <Box className="swiper-pagination" />
           </Flex>
         </Flex>
@@ -76,15 +73,13 @@ export default function Certificate() {
             type: "bullets",
           }}
           modules={[Autoplay, Pagination, Navigation]}
-          className="mySwiper"
-        >
+          className="mySwiper">
           {images.map((slideImages, index) => (
             <SwiperSlide key={index} style={{ background: "transparent" }}>
               <Flex
                 flexDirection={{ base: "column", lg: "row" }}
                 gap={6}
-                width="100%"
-              >
+                width="100%">
                 {slideImages.map((img, imgIndex) => (
                   <Box
                     key={imgIndex}
@@ -95,8 +90,7 @@ export default function Certificate() {
                     py={2}
                     px={2}
                     boxShadow="md"
-                    height={330}
-                  >
+                    height={330}>
                     <Image
                       src={img}
                       alt={`img${imgIndex + 1}`}

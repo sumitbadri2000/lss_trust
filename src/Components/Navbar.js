@@ -16,9 +16,10 @@ import {
   useDisclosure,
   useColorModeValue,
   Stack,
+  Image,
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon, AddIcon } from "@chakra-ui/icons";
-
+import logo from "../Assests/lss_logo.png";
 const Links = ["Dashboard", "Projects", "Team"];
 
 const NavLink = () => {
@@ -32,9 +33,8 @@ const NavLink = () => {
         textDecoration: "none",
         bg: useColorModeValue("gray.200", "gray.700"),
       }}
-      href={"#"}
-    >
-      {children}
+      href={"#"}>
+      jjkj
     </Box>
   );
 };
@@ -44,7 +44,7 @@ export default function Navbar() {
 
   return (
     <>
-      <Box bg={useColorModeValue("gray.100", "gray.900")} px={4}>
+      <Box bg="#FFFFFF" px={1} width={"80%"} margin={"auto"}>
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
           <IconButton
             size={"md"}
@@ -54,12 +54,13 @@ export default function Navbar() {
             onClick={isOpen ? onClose : onOpen}
           />
           <HStack spacing={8} alignItems={"center"}>
-            <Box>Logo</Box>
+            <Box width={"60%"}>
+              <Image height={"100%"} width={"100%"} src={logo} alt="logo" />
+            </Box>{" "}
             <HStack
               as={"nav"}
               spacing={4}
-              display={{ base: "none", md: "flex" }}
-            >
+              display={{ base: "none", md: "flex" }}>
               {Links.map((link) => (
                 <NavLink key={link}>{link}</NavLink>
               ))}
@@ -71,8 +72,7 @@ export default function Navbar() {
               colorScheme={"teal"}
               size={"sm"}
               mr={4}
-              leftIcon={<AddIcon />}
-            >
+              leftIcon={<AddIcon />}>
               Action
             </Button>
             <Menu>
@@ -81,8 +81,7 @@ export default function Navbar() {
                 rounded={"full"}
                 variant={"link"}
                 cursor={"pointer"}
-                minW={0}
-              >
+                minW={0}>
                 <Avatar
                   size={"sm"}
                   src={
@@ -110,8 +109,6 @@ export default function Navbar() {
           </Box>
         ) : null}
       </Box>
-
-      <Box p={4}>Main Content Here</Box>
     </>
   );
 }
