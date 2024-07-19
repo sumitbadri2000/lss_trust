@@ -11,14 +11,13 @@ function Banner() {
         display={{ base: "flex", lg: "flex" }}
         position="relative"
         width="100%"
-        height={{ base: "400px", lg: "700px" }}
+        height={{ base: "400px", lg: "580px" }}
         bgImage={big_banner}
         bgSize="cover"
         bgPosition="center"
         alignItems="center"
         flexDirection={"column"}
-        justifyContent="center"
-      >
+        justifyContent="center">
         <Navbar />
         <Text
           marginTop={{ base: -4, lg: 0 }}
@@ -28,8 +27,7 @@ function Banner() {
           fontSize={"1.5rem"}
           fontFamily="EkMukta"
           textAlign="center"
-          p="4"
-        >
+          p="4">
           स्वर्गीय सुरेश सिंह फाउंडेशन® ट्रस्ट का उद्देश्य व्यक्तियों के बीच
           जागरूकता लाना एवं प्रचलित सामाजिक मुद्दों के समाधान हेतु उन्हें एक
           साथ खड़ा करना है।

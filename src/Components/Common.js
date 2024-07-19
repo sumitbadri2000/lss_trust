@@ -2,7 +2,7 @@ import { Box, Text } from "@chakra-ui/react";
 import "./header.css";
 import Navbar from "./Navbar";
 import SmallNavbar from "./SmallNav";
-function CommonBanner({image}) {
+function CommonBanner({ image }) {
   return (
     <>
       <SmallNavbar />
@@ -10,14 +10,13 @@ function CommonBanner({image}) {
         display={{ base: "flex", lg: "flex" }}
         position="relative"
         width="100%"
-        height={{ base: "400px", lg: "600px" }}
+        height={{ base: "300px", lg: "500px" }}
         bgImage={image}
         bgSize="cover"
         bgPosition="center"
         alignItems="center"
         flexDirection={"column"}
-        justifyContent="center"
-      >
+        justifyContent="center">
         <Navbar />
       </Box>
     </>

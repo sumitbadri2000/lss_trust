@@ -18,7 +18,7 @@ import { FaInstagram } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <Box background={"#EAEAEA"} paddingTop={6} paddingBottom={2} width={"100%"}>
+    <Box background={"#EAEAEA"} paddingTop={7} paddingBottom={1} width={"100%"}>
       <Flex
         width={"80%"}
         marginX={"auto"}
@@ -26,42 +26,38 @@ const Footer = () => {
         borderTop={"1px solid grey"}
         py={14}
         gap={{ base: 10, lg: 0 }}
-        flexDirection={{ base: "column", lg: "row" }}
-      >
+        flexDirection={{ base: "column", lg: "row" }}>
         <Flex
-          width={{ base: "100%",md:"70%", lg: "65%" }}
+          width={{ base: "100%", md: "70%", lg: "65%" }}
           flexDirection={{ base: "column", lg: "row" }}
-          gap={{ base: 10, lg: 1 }}
-        >
+          gap={{ base: 10, lg: 1 }}>
           <Flex
             width={{ base: "100%", lg: "30%" }}
             flexDirection={"column"}
             gap={5}
             alignItems={"start"}
-            justifyContent={"start"}
-          >
+            justifyContent={"start"}>
             <Box>
               <Text
                 className="epilogue-bold"
-                fontSize={"1.2rem"}
+                fontSize={"1rem"}
                 fontWeight={900}
-                color={"#F56A02"}
-              >
+                color={"#F56A02"}>
                 Quick Links
               </Text>
               <Box height="2px" backgroundColor="black" width={"100%"} />
             </Box>
 
-            <Text fontFamily={"EkMukta"} fontWeight={600} fontSize={"1rem"}>
+            <Text fontFamily={"EkMukta"} fontWeight={600} fontSize={"0.8rem"}>
               Home
             </Text>
-            <Text fontFamily={"EkMukta"} fontWeight={600} fontSize={"1rem"}>
+            <Text fontFamily={"EkMukta"} fontWeight={600} fontSize={"0.8rem"}>
               About us
             </Text>
-            <Text fontFamily={"EkMukta"} fontWeight={600} fontSize={"1rem"}>
+            <Text fontFamily={"EkMukta"} fontWeight={600} fontSize={"0.8rem"}>
               Our Certificates
             </Text>
-            <Text fontFamily={"EkMukta"} fontWeight={600} fontSize={"1rem"}>
+            <Text fontFamily={"EkMukta"} fontWeight={600} fontSize={"0.8rem"}>
               Events
             </Text>
           </Flex>
@@ -71,15 +67,13 @@ const Footer = () => {
             flexDirection={"column"}
             gap={5}
             alignItems={"start"}
-            justifyContent={"start"}
-          >
+            justifyContent={"start"}>
             <Box>
               <Text
                 className="epilogue-bold"
-                fontSize={"1.2rem"}
+                fontSize={"1rem"}
                 fontWeight={900}
-                color={"#F56A02"}
-              >
+                color={"#F56A02"}>
                 Contact
               </Text>
               <Box height="2px" backgroundColor="black" width={"100%"} />
@@ -87,27 +81,27 @@ const Footer = () => {
             <Flex flexDirection={"row"} gap={2} alignItems={"center"}>
               <Box borderRadius={"50%"} background={"#F56A02"} p={1}>
                 {" "}
-                <LuPhoneCall color="white" size={10} />
+                <LuPhoneCall color="white" size={12} />
               </Box>
-              <Text fontFamily={"EkMukta"} fontWeight={600} fontSize={"1rem"}>
+              <Text fontFamily={"EkMukta"} fontWeight={600} fontSize={"0.8rem"}>
                 +91-9910174777
               </Text>
             </Flex>
 
             <Flex flexDirection={"row"} gap={2} alignItems={"center"}>
               <Box borderRadius={"50%"} background={"#F56A02"} p={1}>
-                <FiMail color="white" size={10} />
+                <FiMail color="white" size={12} />
               </Box>
-              <Text fontFamily={"EkMukta"} fontWeight={600} fontSize={"1rem"}>
+              <Text fontFamily={"EkMukta"} fontWeight={600} fontSize={"0.8rem"}>
                 support@lsstrust.org.in
               </Text>
             </Flex>
 
             <Flex flexDirection={"row"} gap={2} alignItems={"center"}>
               <Box borderRadius={"50%"} background={"#F56A02"} p={1}>
-                <TfiWorld color="white" size={10} />
+                <TfiWorld color="white" size={12} />
               </Box>
-              <Text fontFamily={"EkMukta"} fontWeight={600} fontSize={"1rem"}>
+              <Text fontFamily={"EkMukta"} fontWeight={600} fontSize={"0.8rem"}>
                 www.lssftrust.com
               </Text>
             </Flex>
@@ -118,21 +112,19 @@ const Footer = () => {
             flexDirection={"column"}
             gap={5}
             alignItems={"start"}
-            justifyContent={"start"}
-          >
+            justifyContent={"start"}>
             <Box>
               <Text
                 className="epilogue-bold"
-                fontSize={"1.2rem"}
+                fontSize={"1rem"}
                 fontWeight={900}
-                color={"#F56A02"}
-              >
+                color={"#F56A02"}>
                 About LSSF Trust
               </Text>
               <Box height="2px" backgroundColor="black" width={"100%"} />
             </Box>
 
-            <Text fontFamily={"EkMukta"} fontWeight={600} fontSize={"1rem"}>
+            <Text fontFamily={"EkMukta"} fontWeight={600} fontSize={"0.8rem"}>
               It is a long established fact that a reader will be distracted by
               the readable content of a page when looking at its layout.
             </Text>
@@ -144,35 +136,31 @@ const Footer = () => {
           flexDirection={"column"}
           gap={5}
           alignItems={"start"}
-          justifyContent={"start"}
-        >
+          justifyContent={"start"}>
           <Text
             className="epilogue-bold"
-            fontSize={"1.2rem"}
+            fontSize={"1rem"}
             fontWeight={900}
-            color={"black"}
-          >
+            color={"black"}>
             Subscribe to our email newsletter
           </Text>
 
           <Flex
             flexDirection={{ base: "column", lg: "row" }}
             width={"100%"}
-            gap={6}
-          >
+            gap={6}>
             <Input
               border={"1px solid #000000"}
               placeholder="Subscribe Now"
               borderRadius={"full"}
               width={{ base: "100%", lg: "70%" }}
-              p={6}
+              p={4}
             />
             <Button
               background={"#F56A02"}
               color={"white"}
               borderRadius={"full"}
-              p={6}
-            >
+              p={4}>
               Subscribe
             </Button>
           </Flex>
@@ -180,17 +168,16 @@ const Footer = () => {
           <Box>
             <Text
               className="epilogue-bold"
-              fontSize={"1rem"}
+              fontSize={"0.8rem"}
               fontWeight={600}
               color={"black"}
-              mb={2}
-            >
+              mb={1}>
               Follow Us
             </Text>
             <Flex gap={4}>
-              <FaYoutube size={28} color="#F56A02" />
-              <FaFacebookF size={28} color="#F56A02" />
-              <FaInstagram size={28} color="#F56A02" />
+              <FaYoutube size={18} color="#F56A02" />
+              <FaFacebookF size={18} color="#F56A02" />
+              <FaInstagram size={18} color="#F56A02" />
             </Flex>
           </Box>
         </Flex>
@@ -200,8 +187,7 @@ const Footer = () => {
         fontFamily={"EkMukta"}
         textAlign={"center"}
         fontWeight={600}
-        fontSize={"1rem"}
-      >
+        fontSize={"0.9rem"}>
         @2024 All rights reserved.
       </Text>
     </Box>

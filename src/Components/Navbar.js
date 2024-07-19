@@ -34,9 +34,8 @@ export default function Navbar() {
       margin={"auto"}
       boxShadow={"md"}
       mt={-6}
-      py={4}
-    >
-      <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
+      py={4}>
+      <Flex h={14} alignItems={"center"} justifyContent={"space-between"}>
         <IconButton
           size={"md"}
           icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
@@ -44,48 +43,42 @@ export default function Navbar() {
           display={{ lg: "none" }}
           onClick={isOpen ? onClose : onOpen}
         />
-        <HStack spacing={10} alignItems={"center"} px={{ lg: 14 }}>
+        <HStack spacing={8} alignItems={"center"} px={{ lg: 10 }}>
           <Box>
-            <Image height={"80%"} width={"80%"} src={logo} alt="logo" />
+            <Image height={"70%"} width={"70%"} src={logo} alt="logo" />
           </Box>{" "}
           <HStack
             as={"nav"}
             spacing={10}
-            display={{ base: "none", lg: "flex" }}
-          >
+            display={{ base: "none", lg: "flex" }}>
             <Text
               fontFamily={"EkMukta"}
               fontWeight={700}
-              fontSize={{ lg: "1.2rem" }}
-            >
+              fontSize={{ lg: "1rem" }}>
               Home
             </Text>
             <Text
               fontFamily={"EkMukta"}
               fontWeight={700}
-              fontSize={{ lg: "1.2rem" }}
-            >
+              fontSize={{ lg: "1rem" }}>
               About us
             </Text>
             <Text
               fontFamily={"EkMukta"}
               fontWeight={700}
-              fontSize={{ lg: "1.2rem" }}
-            >
+              fontSize={{ lg: "1rem" }}>
               Our Certificates
             </Text>
             <Text
               fontFamily={"EkMukta"}
               fontWeight={700}
-              fontSize={{ lg: "1.2rem" }}
-            >
+              fontSize={{ lg: "1rem" }}>
               Events
             </Text>
             <Text
               fontFamily={"EkMukta"}
               fontWeight={700}
-              fontSize={{ lg: "1.2rem" }}
-            >
+              fontSize={{ lg: "1rem" }}>
               Contact
             </Text>
           </HStack>
@@ -100,8 +93,7 @@ export default function Navbar() {
             leftIcon={<Img src={donate} alt="donate" />}
             fontFamily={"EkMukta"}
             fontWeight={700}
-            fontSize={"1.2rem"}
-          >
+            fontSize={"1rem"}>
             Donation
           </Button>
         </Flex>
