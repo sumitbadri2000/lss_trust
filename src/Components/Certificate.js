@@ -1,9 +1,9 @@
 import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import "./swiper.css";
+import "./swiper.css"
+
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import { Box, Flex, Image, Text } from "@chakra-ui/react";
 import img1 from "../Assests/Certificates/c1.jpg";
@@ -32,7 +32,7 @@ const images = [
 ];
 export default function Certificate() {
   return (
-    <Flex background={"#FFFAE1"} flexDirection={"column"} py={6}>
+    <Flex background={"#FFFAE1"} flexDirection={"column"} py={6} mb={20}>
       <Box width={"80%"} margin={"auto"} mb={10}>
         <Flex justifyContent={"space-between"} padding={4}>
           <Flex

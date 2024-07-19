@@ -3,7 +3,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import "./swiper.css";
+import "./swiper.css"
+
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import { Box, Flex, Image, Text } from "@chakra-ui/react";
 import img1 from "../Assests/event/img1.JPG";
@@ -36,6 +37,7 @@ export default function Events() {
       bgGradient="linear(to-r, #b2ebcb, #ebfafa,#edfafc,#edf9fa)"
       flexDirection={"column"}
       py={6}
+      mb={20}
     >
       <Box width={"80%"} margin={"auto"} mb={10}>
         <Flex justifyContent={"space-between"} padding={4}>

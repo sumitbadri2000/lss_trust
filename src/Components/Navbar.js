@@ -1,5 +1,3 @@
-"use client";
-
 import {
   Box,
   Flex,
@@ -17,98 +15,119 @@ import {
   useColorModeValue,
   Stack,
   Image,
+  Img,
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon, AddIcon } from "@chakra-ui/icons";
 import logo from "../Assests/lss_logo.png";
-const Links = ["Dashboard", "Projects", "Team"];
-
-const NavLink = () => {
-  return (
-    <Box
-      as="a"
-      px={2}
-      py={1}
-      rounded={"md"}
-      _hover={{
-        textDecoration: "none",
-        bg: useColorModeValue("gray.200", "gray.700"),
-      }}
-      href={"#"}>
-      jjkj
-    </Box>
-  );
-};
+import "./header.css";
+import donate from "../Assests/donation.png";
 
 export default function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-    <>
-      <Box bg="#FFFFFF" px={1} width={"80%"} margin={"auto"}>
-        <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
-          <IconButton
-            size={"md"}
-            icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
-            aria-label={"Open Menu"}
-            display={{ md: "none" }}
-            onClick={isOpen ? onClose : onOpen}
-          />
-          <HStack spacing={8} alignItems={"center"}>
-            <Box width={"60%"}>
-              <Image height={"100%"} width={"100%"} src={logo} alt="logo" />
-            </Box>{" "}
-            <HStack
-              as={"nav"}
-              spacing={4}
-              display={{ base: "none", md: "flex" }}>
-              {Links.map((link) => (
-                <NavLink key={link}>{link}</NavLink>
-              ))}
-            </HStack>
+    <Box
+      display={{ base: "none", lg: "block" }}
+      bg="#FFFFFF"
+      px={2}
+      width={{ base: "100%", lg: "80%" }}
+      margin={"auto"}
+      boxShadow={"md"}
+      mt={-6}
+      py={4}
+    >
+      <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
+        <IconButton
+          size={"md"}
+          icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
+          aria-label={"Open Menu"}
+          display={{ lg: "none" }}
+          onClick={isOpen ? onClose : onOpen}
+        />
+        <HStack spacing={10} alignItems={"center"} px={{ lg: 14 }}>
+          <Box>
+            <Image height={"80%"} width={"80%"} src={logo} alt="logo" />
+          </Box>{" "}
+          <HStack
+            as={"nav"}
+            spacing={10}
+            display={{ base: "none", lg: "flex" }}
+          >
+            <Text
+              fontFamily={"EkMukta"}
+              fontWeight={700}
+              fontSize={{ lg: "1.2rem" }}
+            >
+              Home
+            </Text>
+            <Text
+              fontFamily={"EkMukta"}
+              fontWeight={700}
+              fontSize={{ lg: "1.2rem" }}
+            >
+              About us
+            </Text>
+            <Text
+              fontFamily={"EkMukta"}
+              fontWeight={700}
+              fontSize={{ lg: "1.2rem" }}
+            >
+              Our Certificates
+            </Text>
+            <Text
+              fontFamily={"EkMukta"}
+              fontWeight={700}
+              fontSize={{ lg: "1.2rem" }}
+            >
+              Events
+            </Text>
+            <Text
+              fontFamily={"EkMukta"}
+              fontWeight={700}
+              fontSize={{ lg: "1.2rem" }}
+            >
+              Contact
+            </Text>
           </HStack>
-          <Flex alignItems={"center"}>
-            <Button
-              variant={"solid"}
-              colorScheme={"teal"}
-              size={"sm"}
-              mr={4}
-              leftIcon={<AddIcon />}>
-              Action
-            </Button>
-            <Menu>
-              <MenuButton
-                as={Button}
-                rounded={"full"}
-                variant={"link"}
-                cursor={"pointer"}
-                minW={0}>
-                <Avatar
-                  size={"sm"}
-                  src={
-                    "https://images.unsplash.com/photo-1493666438817-866a91353ca9?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&s=b616b2c5b373a80ffc9636ba24f7a4a9"
-                  }
-                />
-              </MenuButton>
-              <MenuList>
-                <MenuItem>Link 1</MenuItem>
-                <MenuItem>Link 2</MenuItem>
-                <MenuDivider />
-                <MenuItem>Link 3</MenuItem>
-              </MenuList>
-            </Menu>
-          </Flex>
+        </HStack>
+        <Flex alignItems={"center"}>
+          <Button
+            background={"#F56A02"}
+            color={"#FFFFFF"}
+            borderRadius={"full"}
+            p={6}
+            mr={4}
+            leftIcon={<Img src={donate} alt="donate" />}
+            fontFamily={"EkMukta"}
+            fontWeight={700}
+            fontSize={"1.2rem"}
+          >
+            Donation
+          </Button>
         </Flex>
+      </Flex>
 
-        {isOpen ? (
-          <Box pb={4} display={{ md: "none" }}>
-            <Stack as={"nav"} spacing={4}>
-              {Links.map((link) => (
-                <NavLink key={link}>{link}</NavLink>
-              ))}
-            </Stack>
-          </Box>
-        ) : null}
-      </Box>
-    </>
+      {isOpen ? (
+        <Box pb={4} display={{ lg: "none" }}>
+          <Stack as={"nav"} spacing={4}>
+            <Text fontFamily={"EkMukta"} fontWeight={700} fontSize={"1.2rem"}>
+              Home
+            </Text>
+            <Text fontFamily={"EkMukta"} fontWeight={700} fontSize={"1.2rem"}>
+              About us
+            </Text>
+            <Text fontFamily={"EkMukta"} fontWeight={700} fontSize={"1.2rem"}>
+              Our Certificates
+            </Text>
+            <Text fontFamily={"EkMukta"} fontWeight={700} fontSize={"1.2rem"}>
+              Events
+            </Text>
+            <Text fontFamily={"EkMukta"} fontWeight={700} fontSize={"1.2rem"}>
+              Contact
+            </Text>
+          </Stack>
+        </Box>
+      ) : null}
+    </Box>
   );
 }

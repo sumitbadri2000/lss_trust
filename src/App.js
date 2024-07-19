@@ -3,18 +3,16 @@ import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
 import HeaderNav from "./Components/Header";
-
 import Footer from "./Components/Footer";
-import Navbar from "./Components/Navbar";
+
 function App() {
   return (
     <>
-      {/* <HeaderNav /> */}
+      <HeaderNav />
       <Routes>
-        <Route path="/" element={<Navbar />} />
+        <Route path="/" element={<Home />} />
       </Routes>
-      {/* <Footer /> */}
-    </>
+      <Footer />    </>
   );
 }
 

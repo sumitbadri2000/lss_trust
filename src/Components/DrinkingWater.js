@@ -6,7 +6,7 @@ import "./header.css";
 
 const Water = () => {
   return (
-    <Flex flexDirection={{ base: "column", lg: "row" }}>
+    <Flex  flexDirection={{ base: "column", lg: "row" }}>
       <Box width={"100%"} display={{ base: "block", lg: "none" }}>
         <Image width={"100%"} height={"100%"} src={water} alt="water" />
       </Box>

@@ -18,118 +18,121 @@ import { FaInstagram } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <>
+    <Box background={"#EAEAEA"} paddingTop={6} paddingBottom={2} width={"100%"}>
       <Flex
         width={"80%"}
-        margin={"auto"}
+        marginX={"auto"}
         borderBottom={"1px solid grey"}
         borderTop={"1px solid grey"}
         py={14}
         gap={{ base: 10, lg: 0 }}
-        flexDirection={{ base: "column", lg: "row" }}>
+        flexDirection={{ base: "column", lg: "row" }}
+      >
         <Flex
-          width={{ base: "100%", lg: "65%" }}
+          width={{ base: "100%",md:"70%", lg: "65%" }}
           flexDirection={{ base: "column", lg: "row" }}
-          gap={{ base: 10, lg: 0 }}>
+          gap={{ base: 10, lg: 1 }}
+        >
           <Flex
-            width={{ base: "100%", lg: "32%" }}
+            width={{ base: "100%", lg: "30%" }}
             flexDirection={"column"}
             gap={5}
             alignItems={"start"}
-            justifyContent={"start"}>
+            justifyContent={"start"}
+          >
             <Box>
               <Text
                 className="epilogue-bold"
-                fontSize={"1.4rem"}
+                fontSize={"1.2rem"}
                 fontWeight={900}
-                color={"#F56A02"}>
+                color={"#F56A02"}
+              >
                 Quick Links
               </Text>
-              <Box height="5px" backgroundColor="black" width={"100%"}>
-                {" "}
-              </Box>
+              <Box height="2px" backgroundColor="black" width={"100%"} />
             </Box>
 
-            <Text fontFamily={"EkMukta"} fontWeight={600} fontSize={"1.2rem"}>
+            <Text fontFamily={"EkMukta"} fontWeight={600} fontSize={"1rem"}>
               Home
             </Text>
-            <Text fontFamily={"EkMukta"} fontWeight={600} fontSize={"1.2rem"}>
+            <Text fontFamily={"EkMukta"} fontWeight={600} fontSize={"1rem"}>
               About us
             </Text>
-            <Text fontFamily={"EkMukta"} fontWeight={600} fontSize={"1.2rem"}>
+            <Text fontFamily={"EkMukta"} fontWeight={600} fontSize={"1rem"}>
               Our Certificates
             </Text>
-            <Text fontFamily={"EkMukta"} fontWeight={600} fontSize={"1.2rem"}>
+            <Text fontFamily={"EkMukta"} fontWeight={600} fontSize={"1rem"}>
               Events
             </Text>
           </Flex>
 
           <Flex
-            width={{ base: "100%", lg: "32%" }}
+            width={{ base: "100%", lg: "30%" }}
             flexDirection={"column"}
             gap={5}
             alignItems={"start"}
-            justifyContent={"start"}>
+            justifyContent={"start"}
+          >
             <Box>
               <Text
                 className="epilogue-bold"
-                fontSize={"1.4rem"}
+                fontSize={"1.2rem"}
                 fontWeight={900}
-                color={"#F56A02"}>
+                color={"#F56A02"}
+              >
                 Contact
               </Text>
-              <Box height="5px" backgroundColor="black" width={"100%"}>
-                {" "}
-              </Box>
+              <Box height="2px" backgroundColor="black" width={"100%"} />
             </Box>
             <Flex flexDirection={"row"} gap={2} alignItems={"center"}>
-              <Box borderRadius={"50%"} background={"#F56A02"} p={2}>
-                <LuPhoneCall color="white" size={20} />
+              <Box borderRadius={"50%"} background={"#F56A02"} p={1}>
+                {" "}
+                <LuPhoneCall color="white" size={10} />
               </Box>
-              <Text fontFamily={"EkMukta"} fontWeight={600} fontSize={"1.2rem"}>
+              <Text fontFamily={"EkMukta"} fontWeight={600} fontSize={"1rem"}>
                 +91-9910174777
               </Text>
             </Flex>
 
             <Flex flexDirection={"row"} gap={2} alignItems={"center"}>
-              <Box borderRadius={"50%"} background={"#F56A02"} p={2}>
-                <FiMail color="white" size={20} />
+              <Box borderRadius={"50%"} background={"#F56A02"} p={1}>
+                <FiMail color="white" size={10} />
               </Box>
-              <Text fontFamily={"EkMukta"} fontWeight={600} fontSize={"1.2rem"}>
+              <Text fontFamily={"EkMukta"} fontWeight={600} fontSize={"1rem"}>
                 support@lsstrust.org.in
               </Text>
             </Flex>
 
             <Flex flexDirection={"row"} gap={2} alignItems={"center"}>
-              <Box borderRadius={"50%"} background={"#F56A02"} p={2}>
-                <TfiWorld color="white" size={20} />
+              <Box borderRadius={"50%"} background={"#F56A02"} p={1}>
+                <TfiWorld color="white" size={10} />
               </Box>
-              <Text fontFamily={"EkMukta"} fontWeight={600} fontSize={"1.2rem"}>
+              <Text fontFamily={"EkMukta"} fontWeight={600} fontSize={"1rem"}>
                 www.lssftrust.com
               </Text>
             </Flex>
           </Flex>
 
           <Flex
-            width={{ base: "100%", lg: "32%" }}
+            width={{ base: "100%", lg: "30%" }}
             flexDirection={"column"}
             gap={5}
             alignItems={"start"}
-            justifyContent={"start"}>
+            justifyContent={"start"}
+          >
             <Box>
               <Text
                 className="epilogue-bold"
-                fontSize={"1.4rem"}
+                fontSize={"1.2rem"}
                 fontWeight={900}
-                color={"#F56A02"}>
+                color={"#F56A02"}
+              >
                 About LSSF Trust
               </Text>
-              <Box height="5px" backgroundColor="black" width={"100%"}>
-                {" "}
-              </Box>
+              <Box height="2px" backgroundColor="black" width={"100%"} />
             </Box>
 
-            <Text fontFamily={"EkMukta"} fontWeight={600} fontSize={"1.2rem"}>
+            <Text fontFamily={"EkMukta"} fontWeight={600} fontSize={"1rem"}>
               It is a long established fact that a reader will be distracted by
               the readable content of a page when looking at its layout.
             </Text>
@@ -141,19 +144,22 @@ const Footer = () => {
           flexDirection={"column"}
           gap={5}
           alignItems={"start"}
-          justifyContent={"start"}>
+          justifyContent={"start"}
+        >
           <Text
             className="epilogue-bold"
-            fontSize={"1.4rem"}
+            fontSize={"1.2rem"}
             fontWeight={900}
-            color={"black"}>
+            color={"black"}
+          >
             Subscribe to our email newsletter
           </Text>
 
           <Flex
             flexDirection={{ base: "column", lg: "row" }}
             width={"100%"}
-            gap={6}>
+            gap={6}
+          >
             <Input
               border={"1px solid #000000"}
               placeholder="Subscribe Now"
@@ -165,8 +171,8 @@ const Footer = () => {
               background={"#F56A02"}
               color={"white"}
               borderRadius={"full"}
-              p={6}>
-              {" "}
+              p={6}
+            >
               Subscribe
             </Button>
           </Flex>
@@ -177,7 +183,8 @@ const Footer = () => {
               fontSize={"1rem"}
               fontWeight={600}
               color={"black"}
-              mb={2}>
+              mb={2}
+            >
               Follow Us
             </Text>
             <Flex gap={4}>
@@ -188,12 +195,16 @@ const Footer = () => {
           </Box>
         </Flex>
       </Flex>
-      <Box textAlign={"center"}>
-        <Text fontFamily={"EkMukta"} fontWeight={600} fontSize={"1.2rem"}>
-          @2024 All rights reserved.
-        </Text>
-      </Box>
-    </>
+
+      <Text
+        fontFamily={"EkMukta"}
+        textAlign={"center"}
+        fontWeight={600}
+        fontSize={"1rem"}
+      >
+        @2024 All rights reserved.
+      </Text>
+    </Box>
   );
 };
 
