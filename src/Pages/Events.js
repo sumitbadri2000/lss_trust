@@ -11,12 +11,12 @@ import img3 from "../Assests/Final_Events/3.jpeg";
 import img4 from "../Assests/Final_Events/4.JPG";
 import img41 from "../Assests/Final_Events/4A.JPG";
 import img42 from "../Assests/Final_Events/4B.JPG";
-import img5 from "../Assests/Final_Events/5.jpeg";
+import img5 from "../Assests/Final_Events/5.jpg";
 import img6 from "../Assests/Final_Events/6.JPG";
 import img61 from "../Assests/Final_Events/6A.JPG";
 import img62 from "../Assests/Final_Events/6B.JPG";
 import img63 from "../Assests/Final_Events/6C.jpeg";
-import img7 from "../Assests/Final_Events/7.jpeg";
+import img7 from "../Assests/Final_Events/7.jpg";
 import img8 from "../Assests/Final_Events/8.jpeg";
 import img9 from "../Assests/Final_Events/9.jpeg";
 import img10 from "../Assests/Final_Events/10.JPG";
@@ -30,14 +30,14 @@ import img122 from "../Assests/Final_Events/12B.JPG";
 import img123 from "../Assests/Final_Events/12C.JPG";
 import img13 from "../Assests/Final_Events/13.jpeg";
 import img14 from "../Assests/Final_Events/14.jpeg";
-import img15 from "../Assests/Final_Events/15.jpeg";
+import img15 from "../Assests/Final_Events/15.jpg";
 import img16 from "../Assests/Final_Events/16.jpeg";
 import img17 from "../Assests/Final_Events/17.JPG";
 import img171 from "../Assests/Final_Events/17A.JPG";
 import img172 from "../Assests/Final_Events/17B.JPG";
 import img173 from "../Assests/Final_Events/17C.JPG";
 import img174 from "../Assests/Final_Events/17D.JPG";
-import img18 from "../Assests/Final_Events/18.jpeg";
+import img18 from "../Assests/Final_Events/18.jpg";
 import img19 from "../Assests/Final_Events/19.jpeg";
 import img20 from "../Assests/Final_Events/20.jpeg";
 import img22 from "../Assests/Final_Events/22.jpeg";
@@ -47,7 +47,7 @@ import img24 from "../Assests/Final_Events/24.jpeg";
 import img25 from "../Assests/Final_Events/25.jpeg";
 import img251 from "../Assests/Final_Events/25A.jpeg";
 import img26 from "../Assests/Final_Events/26.jpeg";
-import img27 from "../Assests/Final_Events/27.jpeg";
+import img27 from "../Assests/Final_Events/27.jpg";
 import img28 from "../Assests/Final_Events/28.jpeg";
 
 const Events = () => {
@@ -142,7 +142,7 @@ const Events = () => {
             width={{ base: "90%", lg: "80%" }}
             templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(4, 1fr)" }}
             py={12}
-            gap={{ base: 6, lg: 4 }}>
+            gap={{ base: 6, lg: 6 }}>
             {Events.map((image, index) => (
               <GridItem key={index} bg={"white"} borderRadius="md">
                 <Box
@@ -189,7 +189,7 @@ const Events = () => {
             width={{ base: "90%", lg: "80%" }}
             templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(4, 1fr)" }}
             py={12}
-            gap={{ base: 6, lg: 4 }}>
+            gap={{ base: 6, lg: 6 }}>
             {Events1.map((image, index) => (
               <GridItem key={index} bg={"white"} borderRadius="md">
                 <Box

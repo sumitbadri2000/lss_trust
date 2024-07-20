@@ -9,7 +9,7 @@ import "./header.css";
 
 const HeaderNav = () => {
   return (
-    <Box background={"#F56A01"} height={{ base: 24, lg: 24 }}>
+    <Box background={"#F56A01"} height={{ base: 20, lg: 24 }}>
       <Flex
         flexDirection={"row"}
         width={{ base: "100%", lg: "80%" }}
@@ -25,43 +25,43 @@ const HeaderNav = () => {
           gap={{ base: 2, lg: 8 }}>
           <Flex
             flexDirection={"row"}
-            gap={4}
+            gap={3}
             color={"#FFFFFF"}
             alignItems={"center"}>
-            <LuPhoneCall color={"#FFFFFF"} size={20} />
+            <LuPhoneCall color={"#FFFFFF"} size={15} />
 
             <Text
               fontFamily={"EkMukta"}
               fontWeight={600}
-              fontSize={{ base: "0.8rem", lg: "1.2rem" }}>
+              fontSize={{ base: "0.5rem", lg: "0.9rem" }}>
               7903672260 , 8936007120
             </Text>
           </Flex>
           <Flex
             flexDirection={"row"}
-            gap={4}
+            gap={3}
             color={"#FFFFFF"}
             alignItems={"center"}>
-            <TfiWorld color={"#FFFFFF"} size={20} />
+            <TfiWorld color={"#FFFFFF"} size={15} />
 
             <Text
               fontFamily={"EkMukta"}
               fontWeight={600}
-              fontSize={{ base: "0.8rem", lg: "1.2rem" }}>
+              fontSize={{ base: "0.5rem", lg: "0.9rem" }}>
               www.lsstrust.org.in
             </Text>
           </Flex>
           <Flex
             flexDirection={"row"}
-            gap={4}
+            gap={3}
             color={"#FFFFFF"}
             alignItems={"center"}>
-            <FiMail color={"#FFFFFF"} size={20} />
+            <FiMail color={"#FFFFFF"} size={15} />
 
             <Text
               fontFamily={"EkMukta"}
               fontWeight={600}
-              fontSize={{ base: "0.8rem", lg: "1.2rem" }}>
+              fontSize={{ base: "0.5rem", lg: "0.9rem" }}>
               support@lsstrust.org.in
             </Text>
           </Flex>
@@ -69,36 +69,36 @@ const HeaderNav = () => {
 
         <Flex alignItems="center" gap={4}>
           <Box
-            py={{ base: 2, lg: 4 }}
+            py={{ base: 2, lg: 3 }}
             px={{ base: 2, lg: 3 }}
             background="#F78834">
             <a
               href="https://www.youtube.com/"
               target="_blank"
               rel="noopener noreferrer">
-              <FaYoutube color="#FFFFFF" size={20} />
+              <FaYoutube color="#FFFFFF" size={16} />
             </a>
           </Box>
           <Box
-            py={{ base: 2, lg: 4 }}
+            py={{ base: 2, lg: 3 }}
             px={{ base: 2, lg: 3 }}
             background="#F78834">
             <a
               href="https://www.facebook.com/"
               target="_blank"
               rel="noopener noreferrer">
-              <FaFacebookF color="#FFFFFF" size={20} />
+              <FaFacebookF color="#FFFFFF" size={16} />
             </a>
           </Box>
           <Box
-            py={{ base: 2, lg: 4 }}
+            py={{ base: 2, lg: 3 }}
             px={{ base: 2, lg: 3 }}
             background="#F78834">
             <a
               href="https://www.instagram.com/"
               target="_blank"
               rel="noopener noreferrer">
-              <FaInstagram color="#FFFFFF" size={20} />
+              <FaInstagram color="#FFFFFF" size={16} />
             </a>
           </Box>
         </Flex>

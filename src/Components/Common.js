@@ -10,10 +10,11 @@ function CommonBanner({ image }) {
         display={{ base: "flex", lg: "flex" }}
         position="relative"
         width="100%"
-        height={{ base: "300px", lg: "500px" }}
+        height={{ base: "300px", lg: "550px" }}
         bgImage={image}
         bgSize="cover"
         bgPosition="center"
+        backgroundRepeat={"no-repeat"}
         alignItems="center"
         flexDirection={"column"}
         justifyContent="center">

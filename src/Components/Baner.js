@@ -24,9 +24,10 @@ function Banner() {
           width={{ base: "100%", lg: "40%" }}
           margin={"auto"}
           color="black"
-          fontSize={"1.5rem"}
+          fontSize={{base:"1.1rem",lg:"1.5rem"}}
           fontFamily="EkMukta"
           textAlign="center"
+          fontWeight={{base:600,lg:500}}
           p="4">
           स्वर्गीय सुरेश सिंह फाउंडेशन® ट्रस्ट का उद्देश्य व्यक्तियों के बीच
           जागरूकता लाना एवं प्रचलित सामाजिक मुद्दों के समाधान हेतु उन्हें एक

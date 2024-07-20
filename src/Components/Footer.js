@@ -26,23 +26,27 @@ const Footer = () => {
         borderTop={"1px solid grey"}
         py={14}
         gap={{ base: 10, lg: 0 }}
-        flexDirection={{ base: "column", lg: "row" }}>
+        flexDirection={{ base: "column", lg: "row" }}
+      >
         <Flex
           width={{ base: "100%", md: "70%", lg: "65%" }}
           flexDirection={{ base: "column", lg: "row" }}
-          gap={{ base: 10, lg: 1 }}>
+          gap={{ base: 10, lg: 1 }}
+        >
           <Flex
             width={{ base: "100%", lg: "30%" }}
             flexDirection={"column"}
             gap={5}
             alignItems={"start"}
-            justifyContent={"start"}>
+            justifyContent={"start"}
+          >
             <Box>
               <Text
                 className="epilogue-bold"
                 fontSize={"1rem"}
                 fontWeight={900}
-                color={"#F56A02"}>
+                color={"#F56A02"}
+              >
                 Quick Links
               </Text>
               <Box height="2px" backgroundColor="black" width={"100%"} />
@@ -67,13 +71,15 @@ const Footer = () => {
             flexDirection={"column"}
             gap={5}
             alignItems={"start"}
-            justifyContent={"start"}>
+            justifyContent={"start"}
+          >
             <Box>
               <Text
                 className="epilogue-bold"
                 fontSize={"1rem"}
                 fontWeight={900}
-                color={"#F56A02"}>
+                color={"#F56A02"}
+              >
                 Contact
               </Text>
               <Box height="2px" backgroundColor="black" width={"100%"} />
@@ -112,13 +118,15 @@ const Footer = () => {
             flexDirection={"column"}
             gap={5}
             alignItems={"start"}
-            justifyContent={"start"}>
+            justifyContent={"start"}
+          >
             <Box>
               <Text
                 className="epilogue-bold"
                 fontSize={"1rem"}
                 fontWeight={900}
-                color={"#F56A02"}>
+                color={"#F56A02"}
+              >
                 About LSSF Trust
               </Text>
               <Box height="2px" backgroundColor="black" width={"100%"} />
@@ -136,19 +144,22 @@ const Footer = () => {
           flexDirection={"column"}
           gap={5}
           alignItems={"start"}
-          justifyContent={"start"}>
+          justifyContent={"start"}
+        >
           <Text
             className="epilogue-bold"
             fontSize={"1rem"}
             fontWeight={900}
-            color={"black"}>
+            color={"black"}
+          >
             Subscribe to our email newsletter
           </Text>
 
           <Flex
             flexDirection={{ base: "column", lg: "row" }}
             width={"100%"}
-            gap={6}>
+            gap={6}
+          >
             <Input
               border={"1px solid #000000"}
               placeholder="Subscribe Now"
@@ -160,7 +171,8 @@ const Footer = () => {
               background={"#F56A02"}
               color={"white"}
               borderRadius={"full"}
-              p={4}>
+              p={4}
+            >
               Subscribe
             </Button>
           </Flex>
@@ -171,13 +183,33 @@ const Footer = () => {
               fontSize={"0.8rem"}
               fontWeight={600}
               color={"black"}
-              mb={1}>
+              mb={1}
+            >
               Follow Us
             </Text>
             <Flex gap={4}>
-              <FaYoutube size={18} color="#F56A02" />
-              <FaFacebookF size={18} color="#F56A02" />
-              <FaInstagram size={18} color="#F56A02" />
+              <a
+                href="https://www.youtube.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaYoutube size={18} color="#F56A02" />{" "}
+              </a>
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {" "}
+                <FaFacebookF size={18} color="#F56A02" />{" "}
+              </a>
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaInstagram size={18} color="#F56A02" />
+              </a>
             </Flex>
           </Box>
         </Flex>
@@ -187,7 +219,8 @@ const Footer = () => {
         fontFamily={"EkMukta"}
         textAlign={"center"}
         fontWeight={600}
-        fontSize={"0.9rem"}>
+        fontSize={"0.9rem"}
+      >
         @2024 All rights reserved.
       </Text>
     </Box>

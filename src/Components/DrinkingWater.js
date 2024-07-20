@@ -7,17 +7,17 @@ import "./header.css";
 const Water = () => {
   return (
     <Flex  flexDirection={{ base: "column", lg: "row" }}>
-      <Box width={"100%"} display={{ base: "block", lg: "none" }}>
+      <Box width={"100%"} display={{ base: "block", lg: "none" }} mb={4}>
         <Image width={"100%"} height={"100%"} src={water} alt="water" />
       </Box>
-      <Flex width={{ base: "100%", lg: "60%" }}>
-        <Box display={{ base: "none", lg: "block" }}>
+      <Flex width={{ base: "100%", lg: "60%" }} gap={{base:4,lg:0}}>
+        <Box display={{ base: "none", lg: "block" }} >
           <Image src={water_line} alt="dringk" />
         </Box>
-        <Flex
+        <Flex 
           px={{ base: 4, lg: 0 }}
           marginTop={{ base: 0, lg: 28 }}
-          width={{ base: "90%", lg: "60%" }}
+          width={{ base: "100%", lg: "60%" }}
           flexDirection={"column"}
           gap={5}
         >
@@ -25,13 +25,13 @@ const Water = () => {
             color={"#F56A02"}
             className="epilogue-bold"
             fontWeight={700}
-            fontSize={{ base: "1.6rem", lg: "3.4rem" }}
+            fontSize={{ base: "1.6rem", lg: "2.8rem" }}
           >
             Clean drinking water is the basic necessity
           </Heading>
           <Text
             fontFamily={"EkMukta"}
-            fontSize={{ base: "0.9rem", lg: "1.5rem" }}
+            fontSize={{ base: "0.9rem", lg: "1.2rem" }}
             textAlign={"left"}
             color={"#000000"}
             fontWeight={400}
@@ -49,18 +49,17 @@ const Water = () => {
             borderRadius={"full"}
             color={"white"}
             fontWeight={700}
-            fontSize={{ base: 20, lg: 30 }}
+            fontSize={{ base: "1rem", lg: "1.6rem" }}
             py={{ base: 4, lg: 8 }}
-            px={{ base: 4, lg: 8 }}
+            px={{ base: 4, lg: 4 }}
           >
             Donation Now
           </Button>
         </Flex>
-      </Flex>
-
-      <Box width={"40%"} display={{ base: "none", lg: "block" }}>
+      </Flex >
+      <Flex width={"40%"} display={{ base: "none", lg: "block" }} >
         <Image width={"100%"} height={"100%"} src={water} alt="water" />
-      </Box>
+      </Flex>
     </Flex>
   );
 };

@@ -130,7 +130,7 @@ const Galary = () => {
             width={{ base: "90%", lg: "80%" }}
             templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(4, 1fr)" }}
             py={12}
-            gap={{ base: 6, lg: 4 }}>
+            gap={{ base: 6, lg: 6 }}>
             {gallery.map((image, index) => (
               <GridItem key={index} bg={"white"} borderRadius="md">
                 <Box
@@ -177,7 +177,7 @@ const Galary = () => {
             width={{ base: "90%", lg: "80%" }}
             templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(4, 1fr)" }}
             py={12}
-            gap={{ base: 6, lg: 4 }}>
+            gap={{ base: 6, lg: 6 }}>
             {gallery1.map((image, index) => (
               <GridItem key={index} bg={"white"} borderRadius="md">
                 <Box
