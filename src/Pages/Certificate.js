@@ -1,5 +1,5 @@
 import CommonBanner from "../Components/Common";
-import about from "../Assests/about.png";
+import aboutt from "../Assests/aboutt.png";
 import "../Components/header.css";
 import "../Components/epilo.css";
 import line from "../Assests/line.png";
@@ -54,28 +54,26 @@ const Certificate = () => {
 
   return (
     <>
-      <CommonBanner image={about} />
+      <CommonBanner image={aboutt} />
 
-        <Flex
-          width={{ base: "100%", lg: "80%" }}
-          margin={"auto"}
-          flexDirection={"row"}
-          alignItems={"center"}
-          justifyContent={"center"}
-          mt={{base:0,lg:6}}
-        >
-          <Text
-            textAlign={"center"}
-            className="epilogue-bold"
-            color={"#F56A02"}
-            fontSize={{ base: "1.6rem", lg: "2.8rem" }}
-          >
-            Certificate
-          </Text>
-          <Box display={{ base: "none", lg: "flex" }} width={"6%"}>
-            <Image width={"100%"} height={"100%"} src={line} alt="line" />
-          </Box>
-        </Flex>
+      <Flex
+        width={{ base: "100%", lg: "80%" }}
+        margin={"auto"}
+        flexDirection={"row"}
+        alignItems={"center"}
+        justifyContent={"center"}
+        mt={{ base: 5, lg: 6 }}>
+        <Text
+          textAlign={"center"}
+          className="epilogue-bold"
+          color={"#F56A02"}
+          fontSize={{ base: "1.6rem", lg: "2.8rem" }}>
+          Certificate
+        </Text>
+        <Box display={{ base: "none", lg: "flex" }} width={"6%"}>
+          <Image width={"100%"} height={"100%"} src={line} alt="line" />
+        </Box>
+      </Flex>
 
       <Flex flexDirection={"column"} py={6}>
         <Flex width={"100%"} background={"#F0F0F0"}>
@@ -84,8 +82,7 @@ const Certificate = () => {
             width={{ base: "90%", lg: "80%" }}
             templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(4, 1fr)" }}
             py={12}
-            gap={{ base: 6, lg: 6 }}
-          >
+            gap={{ base: 6, lg: 6 }}>
             {images.map((image, index) => (
               <GridItem key={index} bg={"white"} borderRadius="md">
                 <Box
@@ -101,8 +98,7 @@ const Certificate = () => {
                   p={2}
                   height={"100%"}
                   bg="white"
-                  cursor="pointer"
-                >
+                  cursor="pointer">
                   <LazyLoad height={200} once>
                     <Image
                       src={image}

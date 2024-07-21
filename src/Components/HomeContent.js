@@ -85,22 +85,20 @@ const FlexItem = ({ bg, image, text }) => (
     flexDirection={"column"}
     alignItems={"center"}
     justifyContent={"center"}
-    overflow={"hidden"}
-  >
+    overflow={"hidden"}>
     <Box>
-      <Image height={{base:24,lg:24}} src={image} alt={text} />
+      <Image height={{ base: 24, lg: 24 }} src={image} alt={text} />
     </Box>
     <Box>
       <Text
-        width={{base:"100%",lg:"88%"}}
-        px={{base:2,lg:2}}
+        width={{ base: "100%", lg: "88%" }}
+        px={{ base: 2, lg: 2 }}
         textAlign={"center"}
         margin={"auto"}
         fontFamily={"EkMukta"}
         fontWeight={600}
         color={"#FFFFFF"}
-        fontSize={{base:"1rem",lg:"1.2rem"}}
-      >
+        fontSize={{ base: "1rem", lg: "1.1rem" }}>
         {text}
       </Text>
     </Box>
@@ -118,8 +116,7 @@ const HomeContent = () => {
             width={{ base: "60%", lg: "80%" }}
             margin={"auto"}
             alignItems={"center"}
-            justifyContent={"space-between"}
-          >
+            justifyContent={"space-between"}>
             <FlexItem
               bg={"#207FB7"}
               image={doctor}
@@ -159,8 +156,7 @@ const HomeContent = () => {
           boxShadow="2xl"
           background={"#F0F0F0"}
           alignItems={"center"}
-          py={4}
-        >
+          py={4}>
           <Image width={{ base: "30%", lg: "12%" }} src={Latest} alt="latest" />
         </Flex>
         <Water />
@@ -171,21 +167,18 @@ const HomeContent = () => {
           margin={"auto"}
           flexDirection={"column"}
           gap={12}
-          mt={28}
-        >
+          mt={28}>
           <Flex
             width={{ base: "100%", lg: "80%" }}
             margin={"auto"}
             flexDirection={"row"}
             alignItems={"center"}
-            mb={{base:1,lg:6}}
-          >
+            mb={{ base: 1, lg: 6 }}>
             <Text
               textAlign={"center"}
               className="epilogue-bold"
               color={"#F56A02"}
-              fontSize={{ base: "1rem", lg: "2.3rem" }}
-            >
+              fontSize={{ base: "1rem", lg: "2.3rem" }}>
               स्वर्गीय सुरेश सिंह फाउंडेशन ट्रस्ट बिहार राज्य के बिहटा क्षेत्र
               के लई ग्राम में स्थित एक गैर-लाभकारी संगठन है।{" "}
             </Text>
@@ -193,8 +186,7 @@ const HomeContent = () => {
               width={"14%"}
               mt={24}
               ml={-24}
-              display={{ base: "none", lg: "flex" }}
-            >
+              display={{ base: "none", lg: "flex" }}>
               <Image width={"100%"} height={"100%"} src={line} alt="line" />
             </Box>
           </Flex>
@@ -204,8 +196,7 @@ const HomeContent = () => {
             width={"100%"}
             margin={"auto"}
             flexDirection={"row"}
-            justifyContent={"center"}
-          >
+            justifyContent={"center"}>
             <Flex flexDirection={"column"} width={"50%"}>
               <Box>
                 <Image width={"100%"} height={"100%"} src={cycle} alt="cycle" />
@@ -215,8 +206,7 @@ const HomeContent = () => {
                   color={"white"}
                   fontSize={"1.2rem"}
                   fontFamily={"EkMukta"}
-                  fontWeight={400}
-                >
+                  fontWeight={400}>
                   महिलाओ को आत्मनिर्भर बनाने हेतु सिलाई मशीन का वितरण, ग्रामीण
                   महिलाओं को आत्मनिर्भर बनाने हेतु आर्थिक सहायता राशि एवं
                   ग्रामीण बहन-बेटियों को विवाहोत्सव पर आत्मनिर्भर एवं सशक्त बनने
@@ -231,14 +221,12 @@ const HomeContent = () => {
                 py={12}
                 px={12}
                 borderRadius={"md"}
-                mt={5}
-              >
+                mt={5}>
                 <Text
                   color={"white"}
                   fontSize={"1.2rem"}
                   fontFamily={"EkMukta"}
-                  fontWeight={400}
-                >
+                  fontWeight={400}>
                   प्रदूषण की समस्या को दूर करने हेतु वृक्षारोपण, फोफिंग मशीन
                   वितरण, सुगम आवागमन हेतु चौक-चौराहों पर LED की व्यवस्था, किसान
                   भाइयों को उनके फसलों एवं पौधों को बिमारियों से सुरक्षा हेतु
@@ -255,14 +243,12 @@ const HomeContent = () => {
                 py={8}
                 px={10}
                 borderRadius={"md"}
-                mt={20}
-              >
+                mt={20}>
                 <Text
                   color={"white"}
                   fontSize={"1.2rem"}
                   fontFamily={"EkMukta"}
-                  fontWeight={400}
-                >
+                  fontWeight={400}>
                   यह संगठन छात्रों, युवाओं और महिलाओं को सशक्त बनाकर समृद्ध समाज
                   बनाने हेतु कार्य करता है। इसके लिए ट्रस्ट समाज से जुड़े कई
                   कार्य कर रहा है। जैसे – दिव्यांग्जनों को आवागमन हेतु तिपहिया
@@ -280,8 +266,7 @@ const HomeContent = () => {
                   color={"black"}
                   fontSize={"1.2rem"}
                   fontFamily={"EkMukta"}
-                  fontWeight={400}
-                >
+                  fontWeight={400}>
                   जरूरतमन्द विद्यार्थियों (कक्षा 10th व 14th) को पंजीकरण हेतु
                   सहायता राशि, लेखन सामग्री, ग्रामीण विद्यालय में प्यूरीफायर
                   संयंत्र / आर० ओ०, पटना एथलेटिक्स संघ की निगरानी में
@@ -306,8 +291,7 @@ const HomeContent = () => {
             margin={"auto"}
             flexDirection={"column"}
             justifyContent={"center"}
-            gap={2}
-          >
+            gap={2}>
             <Box>
               <Image width={"100%"} height={"100%"} src={cycle} alt="cycle" />
             </Box>
@@ -316,8 +300,7 @@ const HomeContent = () => {
                 color={"white"}
                 fontSize={14}
                 fontFamily={"EkMukta"}
-                fontWeight={400}
-              >
+                fontWeight={400}>
                 यह संगठन छात्रों, युवाओं और महिलाओं को सशक्त बनाकर समृद्ध समाज
                 बनाने हेतु कार्य करता है। इसके लिए ट्रस्ट समाज से जुड़े कई कार्य
                 कर रहा है। जैसे – दिव्यांग्जनों को आवागमन हेतु तिपहिया साईकिल का
@@ -335,8 +318,7 @@ const HomeContent = () => {
                 color={"white"}
                 fontSize={14}
                 fontFamily={"EkMukta"}
-                fontWeight={400}
-              >
+                fontWeight={400}>
                 महिलाओ को आत्मनिर्भर बनाने हेतु सिलाई मशीन का वितरण, ग्रामीण
                 महिलाओं को आत्मनिर्भर बनाने हेतु आर्थिक सहायता राशि एवं ग्रामीण
                 बहन-बेटियों को विवाहोत्सव पर आत्मनिर्भर एवं सशक्त बनने हेतु
@@ -351,8 +333,7 @@ const HomeContent = () => {
                 color={"black"}
                 fontSize={14}
                 fontFamily={"EkMukta"}
-                fontWeight={400}
-              >
+                fontWeight={400}>
                 जरूरतमन्द विद्यार्थियों (कक्षा 10th व 14th) को पंजीकरण हेतु
                 सहायता राशि, लेखन सामग्री, ग्रामीण विद्यालय में प्यूरीफायर
                 संयंत्र / आर० ओ०, पटना एथलेटिक्स संघ की निगरानी में
@@ -371,8 +352,7 @@ const HomeContent = () => {
                 color={"white"}
                 fontSize={14}
                 fontFamily={"EkMukta"}
-                fontWeight={400}
-              >
+                fontWeight={400}>
                 प्रदूषण की समस्या को दूर करने हेतु वृक्षारोपण, फोफिंग मशीन
                 वितरण, सुगम आवागमन हेतु चौक-चौराहों पर LED की व्यवस्था, किसान
                 भाइयों को उनके फसलों एवं पौधों को बिमारियों से सुरक्षा हेतु

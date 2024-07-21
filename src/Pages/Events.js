@@ -1,5 +1,5 @@
 import CommonBanner from "../Components/Common";
-import about from "../Assests/about.png";
+import aboutt from "../Assests/aboutt.png";
 import "../Components/header.css";
 import "../Components/epilo.css";
 import line from "../Assests/line.png";
@@ -103,7 +103,7 @@ const Events = () => {
 
   return (
     <>
-      <CommonBanner image={about} />
+      <CommonBanner image={aboutt} />
       <Flex
         width={{ base: "90%", lg: "80%" }}
         margin={"auto"}
