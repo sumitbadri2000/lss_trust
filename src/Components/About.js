@@ -2,7 +2,24 @@ import CommonBanner from "./Common";
 import aboutt from "../Assests/aboutt.png";
 import about1 from "../Assests/about1.png";
 import about2 from "../Assests/about2.png";
-import slide1 from "../Assests/slide1.png";
+import slide1 from "../Assests/aboutSlider/slide1.png";
+import slide2 from "../Assests/aboutSlider/slide2.png";
+import slide3 from "../Assests/aboutSlider/slide3.png";
+import slide4 from "../Assests/aboutSlider/slide4.png";
+import slide5 from "../Assests/aboutSlider/slide5.png";
+import slide6 from "../Assests/aboutSlider/slide6.png";
+import slide7 from "../Assests/aboutSlider/slide7.png";
+import slide8 from "../Assests/aboutSlider/slide8.png";
+import slide9 from "../Assests/aboutSlider/slide9.png";
+import slide10 from "../Assests/aboutSlider/slide10.png";
+import slide11 from "../Assests/aboutSlider/slide11.png";
+import slide12 from "../Assests/aboutSlider/slide12.png";
+import slide13 from "../Assests/aboutSlider/slide13.png";
+import slide14 from "../Assests/aboutSlider/slide14.png";
+import slide15 from "../Assests/aboutSlider/slide15.png";
+import slide16 from "../Assests/aboutSlider/slide16.png";
+import slide17 from "../Assests/aboutSlider/slide17.png";
+import slide18 from "../Assests/aboutSlider/slide18.png";
 import about_banner2 from "../Assests/about_banner2.png";
 import about_banner3 from "../Assests/about_banner3.png";
 import { Box, Button, Flex, Image, Text } from "@chakra-ui/react";
@@ -75,7 +92,7 @@ const About = () => {
             width={{ base: "50%", lg: "26%" }}
             margin={{ base: "auto", lg: 0 }}
             fontSize={"1rem"}>
-            Donation Now
+            Donate Now
           </Button>
         </Flex>
         <Box
@@ -184,7 +201,7 @@ const About = () => {
           }}
           modules={[Autoplay, Pagination, Navigation]}
           className="mySwiper">
-          <SwiperSlide>
+          {/* <SwiperSlide>
             <Flex
               width={{ base: "90%", lg: "80%" }}
               margin={"auto"}
@@ -217,12 +234,12 @@ const About = () => {
                   जाती हैं। यह कार्य ट्रस्ट के मिशन का एक महत्वपूर्ण हिस्सा है।
                 </Text>
               </Flex>
-              <Flex width={{ base: "100%", lg: "30%" }} alignItems={"center"}>
+              <Flex width={{ base: "100%", lg: "40%" }} alignItems={"center"}>
                 <Image margin={"auto"} src={slide1} alt="about2" />
               </Flex>
             </Flex>
           </SwiperSlide>
-          <SwiperSlide>
+           <SwiperSlide>
             <Flex
               width={{ base: "90%", lg: "80%" }}
               margin={"auto"}
@@ -259,12 +276,12 @@ const About = () => {
                 </Text>
               </Flex>
               <Flex width={{ base: "100%", lg: "30%" }} alignItems={"center"}>
-                <Image margin={"auto"} src={slide1} alt="about2" />
+                <Image margin={"auto"} src={slide2} alt="about2" />
               </Flex>
             </Flex>
-          </SwiperSlide>
+          </SwiperSlide> */}
 
-          <SwiperSlide>
+         <SwiperSlide>
             <Flex
               width={{ base: "90%", lg: "80%" }}
               margin={"auto"}
@@ -299,7 +316,7 @@ const About = () => {
                 </Text>
               </Flex>
               <Flex width={{ base: "100%", lg: "30%" }} alignItems={"center"}>
-                <Image margin={"auto"} src={slide1} alt="about2" />
+                <Image margin={"auto"} src={slide3} alt="about2" />
               </Flex>
             </Flex>
           </SwiperSlide>
@@ -341,8 +358,8 @@ const About = () => {
                   अनुशासन जैसे मूल्यवान जीवन कौशल भी सिखाता है।
                 </Text>
               </Flex>
-              <Flex width={{ base: "100%", lg: "30%" }} alignItems={"center"}>
-                <Image margin={"auto"} src={slide1} alt="about2" />
+              <Flex width={{ base: "100%", lg: "40%" }} alignItems={"center"}>
+                <Image margin={"auto"} src={slide4} alt="about2" />
               </Flex>
             </Flex>
           </SwiperSlide>
@@ -384,7 +401,7 @@ const About = () => {
                 </Text>
               </Flex>
               <Flex width={{ base: "100%", lg: "30%" }} alignItems={"center"}>
-                <Image margin={"auto"} src={slide1} alt="about2" />
+                <Image margin={"auto"} src={slide5} alt="about2" />
               </Flex>
             </Flex>
           </SwiperSlide>
@@ -424,8 +441,8 @@ const About = () => {
                   मशीनें भेंट कीं जाती है।
                 </Text>
               </Flex>
-              <Flex width={{ base: "100%", lg: "30%" }} alignItems={"center"}>
-                <Image margin={"auto"} src={slide1} alt="about2" />
+              <Flex width={{ base: "100%", lg: "40%" }} alignItems={"center"}>
+                <Image margin={"auto"} src={slide6} alt="about2" />
               </Flex>
             </Flex>
           </SwiperSlide>
@@ -467,12 +484,12 @@ const About = () => {
                 </Text>
               </Flex>
               <Flex width={{ base: "100%", lg: "30%" }} alignItems={"center"}>
-                <Image margin={"auto"} src={slide1} alt="about2" />
+                <Image margin={"auto"} src={slide7} alt="about2" />
               </Flex>
             </Flex>
           </SwiperSlide>
 
-          <SwiperSlide>
+           <SwiperSlide>
             <Flex
               width={{ base: "90%", lg: "80%" }}
               margin={"auto"}
@@ -507,8 +524,8 @@ const About = () => {
                   दर्ज की गई है, जो समृद्ध समाज में अहम भूमिका निभा रही है।
                 </Text>
               </Flex>
-              <Flex width={{ base: "100%", lg: "30%" }} alignItems={"center"}>
-                <Image margin={"auto"} src={slide1} alt="about2" />
+              <Flex width={{ base: "100%", lg: "40%" }} alignItems={"center"}>
+                <Image margin={"auto"} src={slide8} alt="about2" />
               </Flex>
             </Flex>
           </SwiperSlide>
@@ -547,8 +564,8 @@ const About = () => {
                   को अंग वस्त्र वितरित किए।
                 </Text>
               </Flex>
-              <Flex width={{ base: "100%", lg: "30%" }} alignItems={"center"}>
-                <Image margin={"auto"} src={slide1} alt="about2" />
+              <Flex width={{ base: "100%", lg: "40%" }} alignItems={"center"}>
+                <Image margin={"auto"} src={slide9} alt="about2" />
               </Flex>
             </Flex>
           </SwiperSlide>
@@ -586,13 +603,13 @@ const About = () => {
                   विभिन्न दिव्यांगजनों को ध्यान में रखकर बनाई गई हैं।
                 </Text>
               </Flex>
-              <Flex width={{ base: "100%", lg: "30%" }} alignItems={"center"}>
-                <Image margin={"auto"} src={slide1} alt="about2" />
+              <Flex width={{ base: "100%", lg: "40%" }} alignItems={"center"}>
+                <Image margin={"auto"} src={slide10} alt="about2" />
               </Flex>
             </Flex>
           </SwiperSlide>
 
-          <SwiperSlide>
+         <SwiperSlide>
             <Flex
               width={{ base: "90%", lg: "80%" }}
               margin={"auto"}
@@ -626,8 +643,8 @@ const About = () => {
                   कार्यक्रम आयोजित करता है।
                 </Text>
               </Flex>
-              <Flex width={{ base: "100%", lg: "30%" }} alignItems={"center"}>
-                <Image margin={"auto"} src={slide1} alt="about2" />
+              <Flex width={{ base: "100%", lg: "40%" }} alignItems={"center"}>
+                <Image margin={"auto"} src={slide11} alt="about2" />
               </Flex>
             </Flex>
           </SwiperSlide>
@@ -667,7 +684,7 @@ const About = () => {
                 </Text>
               </Flex>
               <Flex width={{ base: "100%", lg: "30%" }} alignItems={"center"}>
-                <Image margin={"auto"} src={slide1} alt="about2" />
+                <Image margin={"auto"} src={slide12} alt="about2" />
               </Flex>
             </Flex>
           </SwiperSlide>
@@ -707,11 +724,11 @@ const About = () => {
                 </Text>
               </Flex>
               <Flex width={{ base: "100%", lg: "30%" }} alignItems={"center"}>
-                <Image margin={"auto"} src={slide1} alt="about2" />
+                <Image margin={"auto"} src={slide13} alt="about2" />
               </Flex>
             </Flex>
           </SwiperSlide>
-          <SwiperSlide>
+            <SwiperSlide>
             <Flex
               width={{ base: "90%", lg: "80%" }}
               margin={"auto"}
@@ -747,7 +764,7 @@ const About = () => {
                 </Text>
               </Flex>
               <Flex width={{ base: "100%", lg: "30%" }} alignItems={"center"}>
-                <Image margin={"auto"} src={slide1} alt="about2" />
+                <Image margin={"auto"} src={slide14} alt="about2" />
               </Flex>
             </Flex>
           </SwiperSlide>
@@ -787,7 +804,7 @@ const About = () => {
                 </Text>
               </Flex>
               <Flex width={{ base: "100%", lg: "30%" }} alignItems={"center"}>
-                <Image margin={"auto"} src={slide1} alt="about2" />
+                <Image margin={"auto"} src={slide15} alt="about2" />
               </Flex>
             </Flex>
           </SwiperSlide>
@@ -826,7 +843,7 @@ const About = () => {
                 </Text>
               </Flex>
               <Flex width={{ base: "100%", lg: "30%" }} alignItems={"center"}>
-                <Image margin={"auto"} src={slide1} alt="about2" />
+                <Image margin={"auto"} src={slide16} alt="about2" />
               </Flex>
             </Flex>
           </SwiperSlide>
@@ -864,8 +881,8 @@ const About = () => {
                   वितरित किए गए थे।
                 </Text>
               </Flex>
-              <Flex width={{ base: "100%", lg: "30%" }} alignItems={"center"}>
-                <Image margin={"auto"} src={slide1} alt="about2" />
+              <Flex width={{ base: "100%", lg: "40%" }} alignItems={"center"}>
+                <Image margin={"auto"} src={slide17} alt="about2" />
               </Flex>
             </Flex>
           </SwiperSlide>
@@ -904,8 +921,8 @@ const About = () => {
                   प्रति वर्ष आयोजित किया जाता रहेगा।
                 </Text>
               </Flex>
-              <Flex width={{ base: "100%", lg: "30%" }} alignItems={"center"}>
-                <Image margin={"auto"} src={slide1} alt="about2" />
+              <Flex width={{ base: "100%", lg: "40%" }} alignItems={"center"}>
+                <Image margin={"auto"} src={slide18} alt="about2" />
               </Flex>
             </Flex>
           </SwiperSlide>

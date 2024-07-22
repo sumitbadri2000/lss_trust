@@ -15,7 +15,7 @@ import "./epilo.css";
 import { FaYoutube } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
-
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <Box background={"#EAEAEA"} paddingTop={7} paddingBottom={1} width={"100%"}>
@@ -51,19 +51,26 @@ const Footer = () => {
               </Text>
               <Box height="2px" backgroundColor="black" width={"100%"} />
             </Box>
-
-            <Text fontFamily={"EkMukta"} fontWeight={600} fontSize={"0.8rem"}>
-              Home
-            </Text>
-            <Text fontFamily={"EkMukta"} fontWeight={600} fontSize={"0.8rem"}>
-              About us
-            </Text>
-            <Text fontFamily={"EkMukta"} fontWeight={600} fontSize={"0.8rem"}>
-              Our Certificates
-            </Text>
-            <Text fontFamily={"EkMukta"} fontWeight={600} fontSize={"0.8rem"}>
-              Events
-            </Text>
+            <Link to={"/"}>
+              <Text fontFamily={"EkMukta"} fontWeight={600} fontSize={"0.8rem"}>
+                Home
+              </Text>
+            </Link>
+            <Link to={"/about"}>
+              <Text fontFamily={"EkMukta"} fontWeight={600} fontSize={"0.8rem"}>
+                About us
+              </Text>
+            </Link>
+            <Link to={"/certificate"}>
+              <Text fontFamily={"EkMukta"} fontWeight={600} fontSize={"0.8rem"}>
+                Our Certificates
+              </Text>
+            </Link>
+            <Link to={"/event"}>
+              <Text fontFamily={"EkMukta"} fontWeight={600} fontSize={"0.8rem"}>
+                Events
+              </Text>
+            </Link>
           </Flex>
 
           <Flex
