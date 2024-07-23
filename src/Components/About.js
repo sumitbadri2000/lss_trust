@@ -201,7 +201,7 @@ const About = () => {
           }}
           modules={[Autoplay, Pagination, Navigation]}
           className="mySwiper">
-          {/* <SwiperSlide>
+          <SwiperSlide>
             <Flex
               width={{ base: "90%", lg: "80%" }}
               margin={"auto"}
@@ -279,7 +279,7 @@ const About = () => {
                 <Image margin={"auto"} src={slide2} alt="about2" />
               </Flex>
             </Flex>
-          </SwiperSlide> */}
+          </SwiperSlide>
 
          <SwiperSlide>
             <Flex
