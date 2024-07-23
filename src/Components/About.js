@@ -1,5 +1,5 @@
 import CommonBanner from "./Common";
-import aboutt from "../Assests/aboutt.png";
+import about from "../Assests/about.png";
 import about1 from "../Assests/about1.png";
 import about2 from "../Assests/about2.png";
 import slide1 from "../Assests/aboutSlider/slide1.png";
@@ -34,7 +34,7 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 const About = () => {
   return (
     <>
-      <CommonBanner image={aboutt} />
+      <CommonBanner image={about} />
       <Flex
         flexDirection={{ base: "column", lg: "row" }}
         width={{ base: "90%", lg: "80%" }}
@@ -47,7 +47,7 @@ const About = () => {
           flexDirection={"column"}
           gap={4}>
           <Text
-            width={{ base: "100%", lg: "60%" }}
+            width={{ base: "100%", lg: "80%" }}
             className="epilogue-bold"
             fontWeight={"bold"}
             color={"#F56A02"}
@@ -136,7 +136,7 @@ const About = () => {
             alignItems={"flex-end"}
             justifyContent={"center"}>
             <Text
-              width={{ base: "100%", lg: "60%" }}
+              width={{ base: "100%", lg: "80%" }}
               className="epilogue-bold"
               fontWeight={"bold"}
               color={"#F56A02"}
@@ -214,7 +214,7 @@ const About = () => {
                 gap={5}
                 justifyContent={"center"}>
                 <Text
-                  width={{ base: "100%", lg: "60%" }}
+                  width={{ base: "100%", lg: "80%" }}
                   className="epilogue-bold"
                   fontWeight={"bold"}
                   color={"#F56A02"}
@@ -239,7 +239,7 @@ const About = () => {
               </Flex>
             </Flex>
           </SwiperSlide>
-           <SwiperSlide>
+          <SwiperSlide>
             <Flex
               width={{ base: "90%", lg: "80%" }}
               margin={"auto"}
@@ -252,7 +252,7 @@ const About = () => {
                 gap={5}
                 justifyContent={"center"}>
                 <Text
-                  width={{ base: "100%", lg: "60%" }}
+                  width={{ base: "100%", lg: "80%" }}
                   className="epilogue-bold"
                   fontWeight={"bold"}
                   color={"#F56A02"}
@@ -281,7 +281,7 @@ const About = () => {
             </Flex>
           </SwiperSlide>
 
-         <SwiperSlide>
+          <SwiperSlide>
             <Flex
               width={{ base: "90%", lg: "80%" }}
               margin={"auto"}
@@ -294,7 +294,7 @@ const About = () => {
                 gap={5}
                 justifyContent={"center"}>
                 <Text
-                  width={{ base: "100%", lg: "60%" }}
+                  width={{ base: "100%", lg: "80%" }}
                   className="epilogue-bold"
                   fontWeight={"bold"}
                   color={"#F56A02"}
@@ -334,7 +334,7 @@ const About = () => {
                 gap={5}
                 justifyContent={"center"}>
                 <Text
-                  width={{ base: "100%", lg: "60%" }}
+                  width={{ base: "100%", lg: "80%" }}
                   className="epilogue-bold"
                   fontWeight={"bold"}
                   color={"#F56A02"}
@@ -377,7 +377,7 @@ const About = () => {
                 gap={5}
                 justifyContent={"center"}>
                 <Text
-                  width={{ base: "100%", lg: "60%" }}
+                  width={{ base: "100%", lg: "80%" }}
                   className="epilogue-bold"
                   fontWeight={"bold"}
                   color={"#F56A02"}
@@ -418,7 +418,7 @@ const About = () => {
                 gap={5}
                 justifyContent={"center"}>
                 <Text
-                  width={{ base: "100%", lg: "60%" }}
+                  width={{ base: "100%", lg: "80%" }}
                   className="epilogue-bold"
                   fontWeight={"bold"}
                   color={"#F56A02"}
@@ -460,7 +460,7 @@ const About = () => {
                 gap={5}
                 justifyContent={"center"}>
                 <Text
-                  width={{ base: "100%", lg: "60%" }}
+                  width={{ base: "100%", lg: "80%" }}
                   className="epilogue-bold"
                   fontWeight={"bold"}
                   color={"#F56A02"}
@@ -489,7 +489,7 @@ const About = () => {
             </Flex>
           </SwiperSlide>
 
-           <SwiperSlide>
+          <SwiperSlide>
             <Flex
               width={{ base: "90%", lg: "80%" }}
               margin={"auto"}
@@ -502,7 +502,7 @@ const About = () => {
                 gap={5}
                 justifyContent={"center"}>
                 <Text
-                  width={{ base: "100%", lg: "60%" }}
+                  width={{ base: "100%", lg: "80%" }}
                   className="epilogue-bold"
                   fontWeight={"bold"}
                   color={"#F56A02"}
@@ -543,7 +543,7 @@ const About = () => {
                 gap={5}
                 justifyContent={"center"}>
                 <Text
-                  width={{ base: "100%", lg: "60%" }}
+                  width={{ base: "100%", lg: "80%" }}
                   className="epilogue-bold"
                   fontWeight={"bold"}
                   color={"#F56A02"}
@@ -582,7 +582,7 @@ const About = () => {
                 gap={5}
                 justifyContent={"center"}>
                 <Text
-                  width={{ base: "100%", lg: "60%" }}
+                  width={{ base: "100%", lg: "80%" }}
                   className="epilogue-bold"
                   fontWeight={"bold"}
                   color={"#F56A02"}
@@ -609,7 +609,7 @@ const About = () => {
             </Flex>
           </SwiperSlide>
 
-         <SwiperSlide>
+          <SwiperSlide>
             <Flex
               width={{ base: "90%", lg: "80%" }}
               margin={"auto"}
@@ -622,7 +622,7 @@ const About = () => {
                 gap={5}
                 justifyContent={"center"}>
                 <Text
-                  width={{ base: "100%", lg: "60%" }}
+                  width={{ base: "100%", lg: "80%" }}
                   className="epilogue-bold"
                   fontWeight={"bold"}
                   color={"#F56A02"}
@@ -662,7 +662,7 @@ const About = () => {
                 gap={5}
                 justifyContent={"center"}>
                 <Text
-                  width={{ base: "100%", lg: "60%" }}
+                  width={{ base: "100%", lg: "80%" }}
                   className="epilogue-bold"
                   fontWeight={"bold"}
                   color={"#F56A02"}
@@ -702,7 +702,7 @@ const About = () => {
                 gap={5}
                 justifyContent={"center"}>
                 <Text
-                  width={{ base: "100%", lg: "60%" }}
+                  width={{ base: "100%", lg: "80%" }}
                   className="epilogue-bold"
                   fontWeight={"bold"}
                   color={"#F56A02"}
@@ -728,7 +728,7 @@ const About = () => {
               </Flex>
             </Flex>
           </SwiperSlide>
-            <SwiperSlide>
+          <SwiperSlide>
             <Flex
               width={{ base: "90%", lg: "80%" }}
               margin={"auto"}
@@ -741,7 +741,7 @@ const About = () => {
                 gap={5}
                 justifyContent={"center"}>
                 <Text
-                  width={{ base: "100%", lg: "60%" }}
+                  width={{ base: "100%", lg: "80%" }}
                   className="epilogue-bold"
                   fontWeight={"bold"}
                   color={"#F56A02"}
@@ -782,7 +782,7 @@ const About = () => {
                 gap={5}
                 justifyContent={"center"}>
                 <Text
-                  width={{ base: "100%", lg: "60%" }}
+                  width={{ base: "100%", lg: "80%" }}
                   className="epilogue-bold"
                   fontWeight={"bold"}
                   color={"#F56A02"}
@@ -822,7 +822,7 @@ const About = () => {
                 gap={5}
                 justifyContent={"center"}>
                 <Text
-                  width={{ base: "100%", lg: "60%" }}
+                  width={{ base: "100%", lg: "80%" }}
                   className="epilogue-bold"
                   fontWeight={"bold"}
                   color={"#F56A02"}
@@ -861,7 +861,7 @@ const About = () => {
                 gap={5}
                 justifyContent={"center"}>
                 <Text
-                  width={{ base: "100%", lg: "60%" }}
+                  width={{ base: "100%", lg: "80%" }}
                   className="epilogue-bold"
                   fontWeight={"bold"}
                   color={"#F56A02"}
@@ -900,7 +900,7 @@ const About = () => {
                 gap={5}
                 justifyContent={"center"}>
                 <Text
-                  width={{ base: "100%", lg: "60%" }}
+                  width={{ base: "100%", lg: "80%" }}
                   className="epilogue-bold"
                   fontWeight={"bold"}
                   color={"#F56A02"}

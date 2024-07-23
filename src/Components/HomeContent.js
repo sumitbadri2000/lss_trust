@@ -1,13 +1,4 @@
-import {
-  Box,
-  Button,
-  Divider,
-  Flex,
-  Grid,
-  Image,
-  Input,
-  Text,
-} from "@chakra-ui/react";
+import { Box, Flex, Grid, Image, Text } from "@chakra-ui/react";
 import "./epilo.css";
 import "./header.css";
 import line from "../Assests/line.png";
@@ -15,7 +6,6 @@ import cycle from "../Assests/cycle.png";
 import run from "../Assests/run.png";
 import cloth from "../Assests/cloth.png";
 import led from "../Assests/led.png";
-import contact from "../Assests/contact_logo.png";
 import doctor from "../Assests/doctor.png";
 import eye from "../Assests/eye.png";
 import marathon from "../Assests/marathon.png";
@@ -26,57 +16,8 @@ import "./header.css";
 import "./epilo.css";
 import Water from "./DrinkingWater";
 import React, { useRef, useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-import "./swiper.css";
-
-import { Autoplay, Pagination, Navigation } from "swiper/modules";
-import img1 from "../Assests/Certificates/c1.jpg";
-import img2 from "../Assests/Certificates/c2.jpeg";
-import img3 from "../Assests/Certificates/c3.jpeg";
-import img4 from "../Assests/Certificates/c4.jpeg";
-import img5 from "../Assests/Certificates/c5.jpeg";
-import img6 from "../Assests/Certificates/c6.jpeg";
-import img7 from "../Assests/Certificates/c7.jpeg";
-import img8 from "../Assests/Certificates/c8.jpeg";
-import img9 from "../Assests/Certificates/c9.jpeg";
-import img10 from "../Assests/Certificates/c10.jpeg";
-import img11 from "../Assests/Certificates/c11.jpeg";
-import img12 from "../Assests/Certificates/c12.jpeg";
-import img13 from "../Assests/Certificates/c13.jpeg";
-import img14 from "../Assests/Certificates/c14.jpeg";
-import img15 from "../Assests/Certificates/c15.jpeg";
-import img16 from "../Assests/Certificates/c16.jpeg";
-import event1 from "../Assests/event/img1.JPG";
-import event2 from "../Assests/event/img2.JPG";
-import event3 from "../Assests/event/img3.JPG";
-import event4 from "../Assests/event/img4.JPG";
-import event5 from "../Assests/event/img5.JPG";
-import event6 from "../Assests/event/img6.JPG";
-import event7 from "../Assests/event/img7.JPG";
-import event8 from "../Assests/event/img8.JPG";
-import event9 from "../Assests/event/img9.JPG";
-import event10 from "../Assests/event/img10.JPG";
-import event11 from "../Assests/event/img11.JPG";
-import event12 from "../Assests/event/img12.JPG";
-import event13 from "../Assests/event/img13.JPG";
-import event14 from "../Assests/event/img14.JPG";
-import event15 from "../Assests/event/img15.JPG";
-import event16 from "../Assests/event/img16.JPG";
 import Latest from "../Assests/latest.png";
-const imagesCertificate = [
-  [img1, img2, img3, img4],
-  [img5, img6, img7, img8],
-  [img9, img10, img11, img12],
-  [img13, img14, img15, img16],
-];
-const imagesEvent = [
-  [event1, event2, event3, event4],
-  [event5, event6, event7, event8],
-  [event9, event10, event11, event12],
-  [event13, event14, event15, event16],
-];
+
 const FlexItem = ({ bg, image, text }) => (
   <Flex
     background={bg}
@@ -161,7 +102,6 @@ const HomeContent = () => {
         </Flex>
         <Water />
 
-        {/* text */}
         <Flex
           width={{ base: "90%", lg: "80%" }}
           margin={"auto"}
@@ -251,7 +191,7 @@ const HomeContent = () => {
                   fontWeight={400}>
                   यह संगठन छात्रों, युवाओं और महिलाओं को सशक्त बनाकर समृद्ध समाज
                   बनाने हेतु कार्य करता है। इसके लिए ट्रस्ट समाज से जुड़े कई
-                  कार्य कर रहा है। जैसे – दिव्यांग्जनों को आवागमन हेतु तिपहिया
+                  कार्य कर रहा है। जैसे – दिव्यांगजन को आवागमन हेतु तिपहिया
                   साईकिल का वितरण, जरुरतमंदों को अंग वस्त्र और कम्बल वितरण,
                   निःशुल्क स्वास्थ्य जांच शिविर का आयोजन जिसमें कई तरह के जांच
                   किये जाते है, दवा वितरण, निःशुल्क नेत्र जांच, चश्मा वितरण,
@@ -303,7 +243,7 @@ const HomeContent = () => {
                 fontWeight={400}>
                 यह संगठन छात्रों, युवाओं और महिलाओं को सशक्त बनाकर समृद्ध समाज
                 बनाने हेतु कार्य करता है। इसके लिए ट्रस्ट समाज से जुड़े कई कार्य
-                कर रहा है। जैसे – दिव्यांग्जनों को आवागमन हेतु तिपहिया साईकिल का
+                कर रहा है। जैसे – दिव्यांगजन को आवागमन हेतु तिपहिया साईकिल का
                 वितरण, जरुरतमंदों को अंग वस्त्र और कम्बल वितरण, निःशुल्क
                 स्वास्थ्य जांच शिविर का आयोजन जिसमें कई तरह के जांच किये जाते
                 है, दवा वितरण, निःशुल्क नेत्र जांच, चश्मा वितरण, अस्पताल में
@@ -365,171 +305,6 @@ const HomeContent = () => {
           </Flex>
         </Flex>
       </Flex>
-
-      {/* <Flex
-        bgGradient="linear(to-r, #b2ebcb, #ebfafa,#edfafc,#edf9fa)"
-        flexDirection={"column"}
-        py={6}
-        mb={20}
-      >
-        <Box width={"80%"} margin={"auto"} mb={10}>
-          <Flex justifyContent={"space-between"} padding={4}>
-            <Flex
-              alignItems={"center"}
-              justifyContent={"center"}
-              width={{ base: "100%", lg: "90%" }}
-              paddingLeft={{ base: 0, lg: 20 }}
-            >
-              <Text
-                color={"#F56A02"}
-                className="epilogue-bold"
-                fontSize={{ base: "1.8rem", lg: "3rem" }}
-                fontWeight={800}
-              >
-                Event Gallery
-              </Text>
-              <Box display={{ base: "none", lg: "flex" }} mt={2}>
-                <Image width={"100%"} height={"100%"} src={line} alt="line" />
-              </Box>
-            </Flex>
-            <Flex
-              width={"10%"}
-              alignItems={"center"}
-              justifyContent={"flex-end"}
-              display={{ base: "none", lg: "flex" }}
-            >
-              <Box className="swiper-pagination" />
-            </Flex>
-          </Flex>
-
-          <Swiper
-            spaceBetween={50}
-            centeredSlides={true}
-            autoplay={{
-              delay: 3500,
-              disableOnInteraction: false,
-            }}
-            pagination={{
-              clickable: true,
-              el: ".swiper-pagination",
-              type: "bullets",
-            }}
-            modules={[Autoplay, Pagination, Navigation]}
-            className="mySwiper"
-          >
-            {imagesEvent.map((slideImages, index) => (
-              <SwiperSlide key={index} style={{ background: "transparent" }}>
-                <Flex
-                  flexDirection={{ base: "column", lg: "row" }}
-                  gap={6}
-                  width="100%"
-                >
-                  {slideImages.map((img, imgIndex) => (
-                    <Box
-                      key={imgIndex}
-                      width={{ base: "100%", lg: "25%" }}
-                      background="#FFFFFF"
-                      border="1px solid #d9dcde"
-                      rounded="md"
-                      py={2}
-                      px={2}
-                      boxShadow="md"
-                      height={330}
-                    >
-                      <Image
-                        src={img}
-                        alt={`img${imgIndex + 1}`}
-                        width="100%"
-                        height="auto"
-                      />
-                    </Box>
-                  ))}
-                </Flex>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </Box>
-      </Flex>
-
-      <Flex background={"#FFFAE1"} flexDirection={"column"} py={6} mb={20}>
-        <Box width={"80%"} margin={"auto"} mb={10}>
-          <Flex justifyContent={"space-between"} padding={4}>
-            <Flex
-              alignItems={"center"}
-              justifyContent={"center"}
-              width={{ base: "100%", lg: "90%" }}
-              paddingLeft={{ base: 0, lg: 20 }}
-            >
-              <Text
-                color={"#F56A02"}
-                className="epilogue-bold"
-                fontSize={{ base: "1.8rem", lg: "3rem" }}
-                fontWeight={800}
-              >
-                Our Certificates
-              </Text>
-              <Box display={{ base: "none", lg: "flex" }} mt={2}>
-                <Image width={"100%"} height={"100%"} src={line} alt="line" />
-              </Box>
-            </Flex>
-            <Flex
-              width={"10%"}
-              alignItems={"center"}
-              justifyContent={"flex-end"}
-              display={{ base: "none", lg: "flex" }}
-            >
-              <Box className="swiper-pagination" />
-            </Flex>
-          </Flex>
-
-          <Swiper
-            spaceBetween={50}
-            centeredSlides={true}
-            autoplay={{
-              delay: 3500,
-              disableOnInteraction: false,
-            }}
-            pagination={{
-              clickable: true,
-              el: ".swiper-pagination",
-              type: "bullets",
-            }}
-            modules={[Autoplay, Pagination, Navigation]}
-            className="mySwiper"
-          >
-            {imagesCertificate.map((slideImages, index) => (
-              <SwiperSlide key={index} style={{ background: "transparent" }}>
-                <Flex
-                  flexDirection={{ base: "column", lg: "row" }}
-                  gap={6}
-                  width="100%"
-                >
-                  {slideImages.map((img, imgIndex) => (
-                    <Box
-                      key={imgIndex}
-                      width={{ base: "100%", lg: "25%" }}
-                      background="#FFFFFF"
-                      border="1px solid #d9dcde"
-                      rounded="md"
-                      py={2}
-                      px={2}
-                      boxShadow="md"
-                      height={330}
-                    >
-                      <Image
-                        src={img}
-                        alt={`img${imgIndex + 1}`}
-                        width="100%"
-                        height="auto"
-                      />
-                    </Box>
-                  ))}
-                </Flex>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </Box>
-      </Flex> */}
     </>
   );
 };
