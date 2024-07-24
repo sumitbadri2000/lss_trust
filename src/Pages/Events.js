@@ -108,18 +108,21 @@ const Events = () => {
         width={{ base: "90%", lg: "80%" }}
         margin={"auto"}
         flexDirection={"column"}
-        py={{ base: 6, lg: 10 }}>
+        py={{ base: 6, lg: 10 }}
+      >
         <Flex
           width={{ base: "100%", lg: "80%" }}
           margin={"auto"}
           flexDirection={"row"}
           alignItems={"center"}
-          justifyContent={"center"}>
+          justifyContent={"center"}
+        >
           <Text
             textAlign={"center"}
             className="epilogue-bold"
             color={"#F56A02"}
-            fontSize={{ base: "1.6rem", lg: "2.8rem" }}>
+            fontSize={{ base: "1.6rem", lg: "2.8rem" }}
+          >
             Events
           </Text>
           <Box display={{ base: "none", lg: "flex" }} width={"6%"}>
@@ -129,12 +132,14 @@ const Events = () => {
       </Flex>
       <Flex flexDirection={"column"} gap={5}>
         <Text
+          margin={"auto"}
           textAlign={"center"}
           fontFamily={"EkMukta"}
           fontSize={{ base: "1rem", lg: "1.8rem" }}
           fontWeight={700}
-          color={"black"}>
-          2022 - 2023
+          color={"black"}
+        >
+          वर्ष 2022 - 2023
         </Text>
         <Flex width={"100%"} background={"#F0F0F0"}>
           <Grid
@@ -142,7 +147,8 @@ const Events = () => {
             width={{ base: "90%", lg: "80%" }}
             templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(4, 1fr)" }}
             py={12}
-            gap={{ base: 6, lg: 6 }}>
+            gap={{ base: 6, lg: 6 }}
+          >
             {Events.map((image, index) => (
               <GridItem key={index} bg={"white"} borderRadius="md">
                 <Box
@@ -158,7 +164,8 @@ const Events = () => {
                   p={2}
                   height={"100%"}
                   bg="white"
-                  cursor="pointer">
+                  cursor="pointer"
+                >
                   <LazyLoad height={200} once>
                     <Image
                       src={image}
@@ -180,8 +187,9 @@ const Events = () => {
           fontFamily={"EkMukta"}
           fontSize={{ base: "1rem", lg: "1.8rem" }}
           fontWeight={700}
-          color={"black"}>
-          2023 - 2024
+          color={"black"}
+        >
+          वर्ष 2023 - 2024
         </Text>
         <Flex width={"100%"} background={"#F0F0F0"}>
           <Grid
@@ -189,7 +197,8 @@ const Events = () => {
             width={{ base: "90%", lg: "80%" }}
             templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(4, 1fr)" }}
             py={12}
-            gap={{ base: 6, lg: 6 }}>
+            gap={{ base: 6, lg: 6 }}
+          >
             {Events1.map((image, index) => (
               <GridItem key={index} bg={"white"} borderRadius="md">
                 <Box
@@ -205,7 +214,8 @@ const Events = () => {
                   p={2}
                   height={"100%"}
                   bg="white"
-                  cursor="pointer">
+                  cursor="pointer"
+                >
                   <LazyLoad height={200} once>
                     <Image
                       src={image}

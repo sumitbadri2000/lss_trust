@@ -26,51 +26,49 @@ const Footer = () => {
         borderTop={"1px solid grey"}
         py={14}
         gap={{ base: 10, lg: 0 }}
-        flexDirection={{ base: "column", lg: "row" }}>
+        flexDirection={{ base: "column", lg: "row" }}
+      >
         <Flex
           width={{ base: "100%", md: "70%", lg: "65%" }}
           flexDirection={{ base: "column", lg: "row" }}
-          gap={{ base: 10, lg: 1 }}>
+          gap={{ base: 10, lg: 1 }}
+        >
           <Flex
             width={{ base: "100%", lg: "30%" }}
             flexDirection={"column"}
             gap={5}
             alignItems={"start"}
-            justifyContent={"start"}>
+            justifyContent={"start"}
+          >
             <Box>
               <Text
                 className="epilogue-bold"
-                fontSize={"1rem"}
+                fontSize={"0.9rem"}
                 fontWeight={900}
-                color={"#F56A02"}>
+                color={"#F56A02"}
+              >
                 Quick Links
               </Text>
               <Box height="2px" backgroundColor="black" width={"100%"} />
             </Box>
             <Link to={"/"}>
-              <Text fontFamily={"EkMukta"} fontWeight={600} fontSize={"0.8rem"}>
+              <Text fontFamily={"EkMukta"} fontWeight={600} fontSize={"0.9rem"}>
                 Home
               </Text>
             </Link>
             <Link to={"/about"}>
-              <Text fontFamily={"EkMukta"} fontWeight={600} fontSize={"0.8rem"}>
+              <Text fontFamily={"EkMukta"} fontWeight={600} fontSize={"0.9rem"}>
                 About us
               </Text>
             </Link>
+            <Link to={"/annual"}>
+              <Text fontFamily={"EkMukta"} fontWeight={600} fontSize={"0.9rem"}>
+                Annual Report
+              </Text>
+            </Link>
             <Link to={"/certificate"}>
-              <Text fontFamily={"EkMukta"} fontWeight={600} fontSize={"0.8rem"}>
-                Our Certificates
-              </Text>
-            </Link>
-
-            <Link to={"/gallery"}>
-              <Text fontFamily={"EkMukta"} fontWeight={600} fontSize={"0.8rem"}>
-                Gallery
-              </Text>
-            </Link>
-            <Link to={"/event"}>
-              <Text fontFamily={"EkMukta"} fontWeight={600} fontSize={"0.8rem"}>
-                Events
+              <Text fontFamily={"EkMukta"} fontWeight={600} fontSize={"0.9rem"}>
+                Certification
               </Text>
             </Link>
           </Flex>
@@ -80,13 +78,46 @@ const Footer = () => {
             flexDirection={"column"}
             gap={5}
             alignItems={"start"}
-            justifyContent={"start"}>
+            justifyContent={"start"}
+            pt={8}
+          >
+
+            <Link to={"/gallery"}>
+              <Text fontFamily={"EkMukta"} fontWeight={600} fontSize={"0.9rem"}>
+                Gallery
+              </Text>
+            </Link>
+            <Link to={"/event"}>
+              <Text fontFamily={"EkMukta"} fontWeight={600} fontSize={"0.9rem"}>
+                Events
+              </Text>
+            </Link>
+            <Link to={"/media"}>
+              <Text fontFamily={"EkMukta"} fontWeight={600} fontSize={"0.9rem"}>
+                Media
+              </Text>
+            </Link>
+            <Link to={"/contact"}>
+              <Text fontFamily={"EkMukta"} fontWeight={600} fontSize={"0.9rem"}>
+                Contact Us
+              </Text>
+            </Link>
+          </Flex>
+
+          <Flex
+            width={{ base: "100%", lg: "30%" }}
+            flexDirection={"column"}
+            gap={5}
+            alignItems={"start"}
+            justifyContent={"start"}
+          >
             <Box>
               <Text
                 className="epilogue-bold"
-                fontSize={"1rem"}
+                fontSize={"0.9rem"}
                 fontWeight={900}
-                color={"#F56A02"}>
+                color={"#F56A02"}
+              >
                 Contact
               </Text>
               <Box height="2px" backgroundColor="black" width={"100%"} />
@@ -96,7 +127,7 @@ const Footer = () => {
                 {" "}
                 <LuPhoneCall color="white" size={12} />
               </Box>
-              <Text fontFamily={"EkMukta"} fontWeight={600} fontSize={"0.8rem"}>
+              <Text fontFamily={"EkMukta"} fontWeight={600} fontSize={"0.9rem"}>
                 +91-9910174777
               </Text>
             </Flex>
@@ -105,7 +136,7 @@ const Footer = () => {
               <Box borderRadius={"50%"} background={"#F56A02"} p={1}>
                 <FiMail color="white" size={12} />
               </Box>
-              <Text fontFamily={"EkMukta"} fontWeight={600} fontSize={"0.8rem"}>
+              <Text fontFamily={"EkMukta"} fontWeight={600} fontSize={"0.9rem"}>
                 support@lsstrust.org.in
               </Text>
             </Flex>
@@ -114,13 +145,13 @@ const Footer = () => {
               <Box borderRadius={"50%"} background={"#F56A02"} p={1}>
                 <TfiWorld color="white" size={12} />
               </Box>
-              <Text fontFamily={"EkMukta"} fontWeight={600} fontSize={"0.8rem"}>
+              <Text fontFamily={"EkMukta"} fontWeight={600} fontSize={"0.9rem"}>
                 www.lssftrust.com
               </Text>
             </Flex>
           </Flex>
 
-          <Flex
+          {/* <Flex
             width={{ base: "100%", lg: "30%" }}
             flexDirection={"column"}
             gap={5}
@@ -129,7 +160,7 @@ const Footer = () => {
             <Box>
               <Text
                 className="epilogue-bold"
-                fontSize={"1rem"}
+                fontSize={"0.9rem"}
                 fontWeight={900}
                 color={"#F56A02"}>
                 About LSSF Trust
@@ -137,11 +168,11 @@ const Footer = () => {
               <Box height="2px" backgroundColor="black" width={"100%"} />
             </Box>
 
-            <Text fontFamily={"EkMukta"} fontWeight={600} fontSize={"0.8rem"}>
+            <Text fontFamily={"EkMukta"} fontWeight={600} fontSize={"0.9rem"}>
               It is a long established fact that a reader will be distracted by
               the readable content of a page when looking at its layout.
             </Text>
-          </Flex>
+          </Flex> */}
         </Flex>
 
         <Flex
@@ -149,19 +180,22 @@ const Footer = () => {
           flexDirection={"column"}
           gap={5}
           alignItems={"start"}
-          justifyContent={"start"}>
+          justifyContent={"start"}
+        >
           <Text
             className="epilogue-bold"
-            fontSize={"1rem"}
+            fontSize={"0.9rem"}
             fontWeight={900}
-            color={"black"}>
+            color={"black"}
+          >
             Subscribe to our email newsletter
           </Text>
 
           <Flex
             flexDirection={{ base: "column", lg: "row" }}
             width={"100%"}
-            gap={6}>
+            gap={6}
+          >
             <Input
               border={"1px solid #000000"}
               placeholder="Subscribe Now"
@@ -173,7 +207,8 @@ const Footer = () => {
               background={"#F56A02"}
               color={"white"}
               borderRadius={"full"}
-              p={4}>
+              p={4}
+            >
               Subscribe
             </Button>
           </Flex>
@@ -181,30 +216,34 @@ const Footer = () => {
           <Box>
             <Text
               className="epilogue-bold"
-              fontSize={"0.8rem"}
+              fontSize={"0.9rem"}
               fontWeight={600}
               color={"black"}
-              mb={1}>
+              mb={1}
+            >
               Follow Us
             </Text>
             <Flex gap={4}>
               <a
                 href="https://www.youtube.com/"
                 target="_blank"
-                rel="noopener noreferrer">
+                rel="noopener noreferrer"
+              >
                 <FaYoutube size={18} color="#F56A02" />{" "}
               </a>
               <a
                 href="https://www.facebook.com/"
                 target="_blank"
-                rel="noopener noreferrer">
+                rel="noopener noreferrer"
+              >
                 {" "}
                 <FaFacebookF size={18} color="#F56A02" />{" "}
               </a>
               <a
                 href="https://www.instagram.com/"
                 target="_blank"
-                rel="noopener noreferrer">
+                rel="noopener noreferrer"
+              >
                 <FaInstagram size={18} color="#F56A02" />
               </a>
             </Flex>
@@ -216,7 +255,8 @@ const Footer = () => {
         fontFamily={"EkMukta"}
         textAlign={"center"}
         fontWeight={600}
-        fontSize={"0.9rem"}>
+        fontSize={"0.9rem"}
+      >
         @2024 All rights reserved.
       </Text>
     </Box>

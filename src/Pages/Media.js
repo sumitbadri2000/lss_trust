@@ -5,53 +5,19 @@ import "../Components/epilo.css";
 import line from "../Assests/line.png";
 import { Box, Flex, Grid, GridItem, Image, Text } from "@chakra-ui/react";
 import LazyLoad from "react-lazyload";
-import img1 from "../Assests/Certificates/c1.jpg";
-import img2 from "../Assests/Certificates/c2.jpeg";
-import img3 from "../Assests/Certificates/c3.jpeg";
-import img4 from "../Assests/Certificates/c4.jpeg";
-import img5 from "../Assests/Certificates/c5.jpeg";
-import img6 from "../Assests/Certificates/c6.jpeg";
-import img7 from "../Assests/Certificates/c7.jpeg";
-import img8 from "../Assests/Certificates/c8.jpeg";
-import img9 from "../Assests/Certificates/c9.jpeg";
-import img10 from "../Assests/Certificates/c10.jpeg";
-import img11 from "../Assests/Certificates/c11.jpeg";
-import img12 from "../Assests/Certificates/c12.jpeg";
-import img13 from "../Assests/Certificates/c13.jpeg";
-import img14 from "../Assests/Certificates/c14.jpeg";
-import img15 from "../Assests/Certificates/c15.jpeg";
-import img16 from "../Assests/Certificates/c16.jpeg";
-import img17 from "../Assests/Certificates/c17.jpeg";
-import img18 from "../Assests/Certificates/c18.jpeg";
-import img19 from "../Assests/Certificates/c19.jpeg";
-import img20 from "../Assests/Certificates/c20.jpeg";
-import img21 from "../Assests/Certificates/c21.jpg";
+import img1 from "../Assests/Media/img1.webp";
+import img2 from "../Assests/Media/img2.webp";
+import img3 from "../Assests/Media/img3.webp";
+import img4 from "../Assests/Media/img4.webp";
+import img5 from "../Assests/Media/img5.jpeg";
+import img6 from "../Assests/Media/img6.jpeg";
+import img7 from "../Assests/Media/img7.jpeg";
+import img8 from "../Assests/Media/img8.jpeg";
+const Media  = () => {
 
-const Certification  = () => {
   const images = [
-    img1,
-    img2,
-    img21,
-    img3,
-    img4,
-    img5,
-    img6,
-    img7,
-    img8,
-    img9,
-    img10,
-    img11,
-    img12,
-    img13,
-    img14,
-    img15,
-    img16,
-    img17,
-    img18,
-    img19,
-    img20,
-  ];
-
+    img1,img2,img3,img4,img5,img6,img7,img8
+  ]
   return (
     <>
       <CommonBanner image={gallery_banner} />
@@ -68,7 +34,7 @@ const Certification  = () => {
           className="epilogue-bold"
           color={"#F56A02"}
           fontSize={{ base: "1.6rem", lg: "2.8rem" }}>
-          Certification 
+          Media 
         </Text>
         <Box display={{ base: "none", lg: "flex" }} width={"6%"}>
           <Image width={"100%"} height={"100%"} src={line} alt="line" />
@@ -117,4 +83,4 @@ const Certification  = () => {
   );
 };
 
-export default Certification ;
+export default Media ;

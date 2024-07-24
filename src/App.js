@@ -7,8 +7,10 @@ import Footer from "./Components/Footer";
 import Galary from "./Pages/Galary";
 import Events from "./Pages/Events";
 import About from "./Components/About";
-import Certificate from "./Pages/Certificate";
 import Contact from "./Pages/Contact";
+import Certification from "./Pages/Certificate";
+import Media from "./Pages/Media";
+import AnnualReport from "./Pages/Annual";
 
 function App() {
   return (
@@ -17,10 +19,12 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/certificate" element={<Certificate />} />
+        <Route path="/certificate" element={<Certification  />} />
         <Route path="/gallery" element={<Galary />} />
         <Route path="/event" element={<Events />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/media" element={<Media />} />
+        <Route path="/annual" element={<AnnualReport />} />
       </Routes>
       <Footer />{" "}
     </>

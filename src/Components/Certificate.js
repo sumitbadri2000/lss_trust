@@ -30,7 +30,7 @@ const images = [
   [img9, img10, img11, img12],
   [img13, img14, img15, img16],
 ];
-export default function Certificate() {
+export default function Certification () {
   return (
     <Flex background={"#FFFAE1"} flexDirection={"column"} py={6} mb={20}>
       <Box width={"80%"} margin={"auto"} mb={10}>

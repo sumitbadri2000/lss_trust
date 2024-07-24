@@ -39,7 +39,7 @@ export default function Navbar() {
               <Text
                 fontFamily={"EkMukta"}
                 fontWeight={700}
-                fontSize={{ lg: "1rem" }}
+                fontSize={{ lg: "1.1rem" }}
                 className={isActive("/")}
               >
                 Home
@@ -50,20 +50,30 @@ export default function Navbar() {
               <Text
                 fontFamily={"EkMukta"}
                 fontWeight={700}
-                fontSize={{ lg: "1rem" }}
+                fontSize={{ lg: "1.1rem" }}
                 className={isActive("/about")}
               >
                 About us
+              </Text>
+            </Link>
+            <Link to={"/annual"}>
+              <Text
+                fontFamily={"EkMukta"}
+                fontWeight={700}
+                fontSize={{ lg: "1.1rem" }}
+                className={isActive("/annual")}
+              >
+                Annual Report
               </Text>
             </Link>
             <Link to={"/certificate"}>
               <Text
                 fontFamily={"EkMukta"}
                 fontWeight={700}
-                fontSize={{ lg: "1rem" }}
+                fontSize={{ lg: "1.1rem" }}
                 className={isActive("/certificate")}
               >
-                Our Certificates
+                Certification
               </Text>
             </Link>
 
@@ -71,7 +81,7 @@ export default function Navbar() {
               <Text
                 fontFamily={"EkMukta"}
                 fontWeight={700}
-                fontSize={{ lg: "1rem" }}
+                fontSize={{ lg: "1.1rem" }}
                 className={isActive("/gallery")}
               >
                 Gallary
@@ -81,21 +91,31 @@ export default function Navbar() {
               <Text
                 fontFamily={"EkMukta"}
                 fontWeight={700}
-                fontSize={{ lg: "1rem" }}
+                fontSize={{ lg: "1.1rem" }}
                 className={isActive("/event")}
               >
                 Events
               </Text>
             </Link>
 
+            <Link to={"/media"}>
+              <Text
+                fontFamily={"EkMukta"}
+                fontWeight={700}
+                fontSize={{ lg: "1.1rem" }}
+                className={isActive("/media")}
+              >
+                Media
+              </Text>
+            </Link>
             <Link to={"/contact"}>
               <Text
                 fontFamily={"EkMukta"}
                 fontWeight={700}
-                fontSize={{ lg: "1rem" }}
+                fontSize={{ lg: "1.1rem" }}
                 className={isActive("/contact")}
               >
-                Contact
+                Contact Us
               </Text>
             </Link>
           </HStack>

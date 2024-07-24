@@ -1,7 +1,6 @@
 import { Box, Text } from "@chakra-ui/react";
 import HomeContent from "../Components/HomeContent";
 import Events from "../Components/Event";
-import Certificate from "../Components/Certificate";
 import Banner from "../Components/Baner";
 import YourSupport from "../Components/YourSupport";
 const Home = () => {
@@ -10,7 +9,7 @@ const Home = () => {
       <Banner />
       <HomeContent />
       <Events />
-      {/* <Certificate /> */}
+      {/* <Certification  /> */}
       <YourSupport />
     </>
   );

@@ -88,6 +88,16 @@ export default function SmallNavbar() {
                 About us
               </Text>
             </Link>
+            <Link to={"/annual"}>
+              <Text
+                fontFamily={"EkMukta"}
+                fontWeight={600}
+                fontSize={"1rem"}
+                className={isActive("/annual")}
+              >
+                Annual Report 
+              </Text>
+            </Link>
             <Link to={"/certificate"}>
               <Text
                 fontFamily={"EkMukta"}
@@ -120,6 +130,16 @@ export default function SmallNavbar() {
               </Text>
             </Link>
 
+            <Link to={"/media"}>
+              <Text
+                fontFamily={"EkMukta"}
+                fontWeight={600}
+                fontSize={"1rem"}
+                className={isActive("/media")}
+              >
+                Media
+              </Text>
+            </Link>
             <Link to={"/contact"}>
               <Text
                 fontFamily={"EkMukta"}

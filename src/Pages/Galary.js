@@ -108,7 +108,7 @@ const Galary = () => {
             className="epilogue-bold"
             color={"#F56A02"}
             fontSize={{ base: "1.6rem", lg: "2.8rem" }}>
-            Gallery and Media
+            Gallery
           </Text>
           <Box display={{ base: "none", lg: "flex" }} width={"6%"}>
             <Image width={"100%"} height={"100%"} src={line} alt="line" />
@@ -122,7 +122,7 @@ const Galary = () => {
           fontSize={{ base: "1rem", lg: "1.8rem" }}
           fontWeight={700}
           color={"black"}>
-          2022 - 2023
+          वर्ष 2022 - 2023
         </Text>
         <Flex width={"100%"} background={"#F0F0F0"}>
           <Grid
@@ -169,7 +169,7 @@ const Galary = () => {
           fontSize={{ base: "1rem", lg: "1.8rem" }}
           fontWeight={700}
           color={"black"}>
-          2023 - 2024
+          वर्ष 2023 - 2024
         </Text>
         <Flex width={"100%"} background={"#F0F0F0"}>
           <Grid
