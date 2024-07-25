@@ -39,7 +39,7 @@ export default function Navbar() {
               <Text
                 fontFamily={"EkMukta"}
                 fontWeight={700}
-                fontSize={{ lg: "1.1rem" }}
+                fontSize={{ lg: "1rem" }}
                 className={isActive("/")}
               >
                 Home
@@ -50,7 +50,7 @@ export default function Navbar() {
               <Text
                 fontFamily={"EkMukta"}
                 fontWeight={700}
-                fontSize={{ lg: "1.1rem" }}
+                fontSize={{ lg: "1rem" }}
                 className={isActive("/about")}
               >
                 About us
@@ -60,7 +60,7 @@ export default function Navbar() {
               <Text
                 fontFamily={"EkMukta"}
                 fontWeight={700}
-                fontSize={{ lg: "1.1rem" }}
+                fontSize={{ lg: "1rem" }}
                 className={isActive("/annual")}
               >
                 Annual Report
@@ -70,7 +70,7 @@ export default function Navbar() {
               <Text
                 fontFamily={"EkMukta"}
                 fontWeight={700}
-                fontSize={{ lg: "1.1rem" }}
+                fontSize={{ lg: "1rem" }}
                 className={isActive("/certificate")}
               >
                 Certification
@@ -81,7 +81,7 @@ export default function Navbar() {
               <Text
                 fontFamily={"EkMukta"}
                 fontWeight={700}
-                fontSize={{ lg: "1.1rem" }}
+                fontSize={{ lg: "1rem" }}
                 className={isActive("/gallery")}
               >
                 Gallary
@@ -91,7 +91,7 @@ export default function Navbar() {
               <Text
                 fontFamily={"EkMukta"}
                 fontWeight={700}
-                fontSize={{ lg: "1.1rem" }}
+                fontSize={{ lg: "1rem" }}
                 className={isActive("/event")}
               >
                 Events
@@ -102,7 +102,7 @@ export default function Navbar() {
               <Text
                 fontFamily={"EkMukta"}
                 fontWeight={700}
-                fontSize={{ lg: "1.1rem" }}
+                fontSize={{ lg: "1rem" }}
                 className={isActive("/media")}
               >
                 Media
@@ -112,7 +112,7 @@ export default function Navbar() {
               <Text
                 fontFamily={"EkMukta"}
                 fontWeight={700}
-                fontSize={{ lg: "1.1rem" }}
+                fontSize={{ lg: "1rem" }}
                 className={isActive("/contact")}
               >
                 Contact Us
@@ -131,6 +131,10 @@ export default function Navbar() {
             fontFamily={"EkMukta"}
             fontWeight={700}
             fontSize={"1rem"}
+            _hover={{
+              bg:"black"
+  
+              }}
           >
             Donation
           </Button>

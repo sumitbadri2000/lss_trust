@@ -9,15 +9,15 @@ import "./header.css";
 
 const HeaderNav = () => {
   return (
-    <Box background={"#F56A01"} height={{ base: 20, lg: 24 }}>
+    <Box background={"#F56A01"} height={{ base: 20, lg: 20 }}>
       <Flex
         flexDirection={"row"}
         width={{ base: "100%", lg: "80%" }}
         px={{ base: 2, lg: 0 }}
-        py={{ base: 2, lg: 0 }}
+        py={{ base: 2, lg: 1 }}
         margin={"auto"}
         justifyContent={"space-between"}
-        alignItems={"center"}>
+        alignItems={"center"} >
         <Flex
           flexDirection={{ base: "column", lg: "row" }}
           justifyContent={"start"}

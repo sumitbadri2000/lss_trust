@@ -27,7 +27,7 @@ const Water = () => {
             fontWeight={700}
             fontSize={{ base: "1.6rem", lg: "2.8rem" }}
           >
-            Clean drinking water is the basic necessity
+             शैक्षिक जागरूकता कार्यक्रम :-
           </Heading>
           <Text
             fontFamily={"EkMukta"}
@@ -36,11 +36,12 @@ const Water = () => {
             color={"#000000"}
             fontWeight={400}
           >
-            Clean drinking water is essential for health, preventing diseases
-            and supporting overall well-being. Access to safe water enhances
-            community productivity and reduces healthcare costs, making it a
-            fundamental necessity for sustainable development and future
-            generations.
+                   ट्रस्ट शिक्षा के महत्व और कम आय वाले परिवारों के लिए उपलब्ध
+                  अवसरों के बारे में जागरूकता फैलाने हेतु शैक्षिक जागरूकता
+                  कार्यक्रम आयोजित करता है। यह ट्रस्ट का साक्षरता, कौशल विकास और
+                  सीखने को बढ़ावा देने के लिए कार्यक्रम है। यहाँ जरूरतमन्द
+                  विद्यार्थियों (कक्षा 10th व 12th) को पंजीकरण हेतु सहायता राशि
+                  एवं लेखन सामाग्री वितरित किया जाता है ।
           </Text>
           <Button
             width={{ base: "60%", lg: "40%" }}
@@ -52,8 +53,12 @@ const Water = () => {
             fontSize={{ base: "1rem", lg: "1.6rem" }}
             py={{ base: 4, lg: 8 }}
             px={{ base: 4, lg: 4 }}
+            _hover={{
+            bg:"black"
+
+            }}
           >
-            Donation Now
+            Donate Now
           </Button>
         </Flex>
       </Flex >

@@ -15,6 +15,7 @@ const YourSupport = () => {
       alignItems="center"
       justifyContent="end"
       px={4}
+      mb={2}
     >
       <Flex
         width={"60%"}
@@ -54,6 +55,7 @@ const YourSupport = () => {
           fontSize="1.2rem"
           cursor="pointer"
           p={6}
+          _hover={{background:"black"}}
         >
           Contact Now
         </Button>

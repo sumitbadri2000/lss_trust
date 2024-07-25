@@ -59,8 +59,12 @@ export default function SmallNavbar() {
             fontFamily={"EkMukta"}
             fontWeight={600}
             fontSize={"1rem"}
+            _hover={{
+              bg:"black"
+  
+              }}
           >
-            Donation
+            Donate Now
           </Button>
         </Flex>
       </Flex>

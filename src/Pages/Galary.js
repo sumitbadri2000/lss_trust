@@ -124,7 +124,7 @@ const Galary = () => {
           color={"black"}>
           वर्ष 2022 - 2023
         </Text>
-        <Flex width={"100%"} background={"#F0F0F0"}>
+        <Flex width={"100%"} >
           <Grid
             margin={"auto"}
             width={{ base: "90%", lg: "80%" }}
@@ -171,7 +171,7 @@ const Galary = () => {
           color={"black"}>
           वर्ष 2023 - 2024
         </Text>
-        <Flex width={"100%"} background={"#F0F0F0"}>
+        <Flex width={"100%"} >
           <Grid
             margin={"auto"}
             width={{ base: "90%", lg: "80%" }}

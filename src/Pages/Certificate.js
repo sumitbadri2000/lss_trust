@@ -1,5 +1,5 @@
 import CommonBanner from "../Components/Common";
-import gallery_banner from "../Assests/gallery.png";
+import gallery_banner from "../Assests/certificate_banner.png";
 import "../Components/header.css";
 import "../Components/epilo.css";
 import line from "../Assests/line.png";
@@ -76,7 +76,7 @@ const Certification  = () => {
       </Flex>
 
       <Flex flexDirection={"column"} py={6}>
-        <Flex width={"100%"} background={"#F0F0F0"}>
+        <Flex width={"100%"} >
           <Grid
             margin={"auto"}
             width={{ base: "90%", lg: "80%" }}
