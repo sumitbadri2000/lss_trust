@@ -30,8 +30,10 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "./swiper.css";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import { useNavigate } from "react-router-dom";
 
 const About = () => {
+  const navigation =useNavigate()
   return (
     <>
       <CommonBanner image={about} />
@@ -91,6 +93,7 @@ const About = () => {
             background={"#F56A02"}
             width={{ base: "50%", lg: "26%" }}
             margin={{ base: "auto", lg: 0 }}
+            onClick={()=>navigation("/whydonation")}
             fontSize={"1rem"}>
             Donate Now
           </Button>

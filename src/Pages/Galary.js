@@ -1,5 +1,5 @@
 import CommonBanner from "../Components/Common";
-import gallery_banner from "../Assests/gallery.png";
+import gallery_banner from "../Assests/gallery_banner.png";
 import "../Components/header.css";
 import "../Components/epilo.css";
 import line from "../Assests/line.png";

@@ -13,7 +13,7 @@ function CommonBanner({ image }) {
         height={{ base: "300px", lg: "580px" }}
         bgImage={image}
         bgSize="cover"
-        bgPosition="top"
+        bgPosition="bottom"
         backgroundRepeat={"no-repeat"}
         alignItems="center"
         flexDirection={"column"}

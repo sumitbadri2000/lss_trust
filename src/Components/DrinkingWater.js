@@ -3,8 +3,11 @@ import water_line from "../Assests/water_line.png";
 import water from "../Assests/water.png";
 import "./epilo.css";
 import "./header.css";
+import { useNavigate } from "react-router-dom";
 
 const Water = () => {
+  const navigation =useNavigate()
+
   return (
     <Flex  flexDirection={{ base: "column", lg: "row" }}>
       <Box width={"100%"} display={{ base: "block", lg: "none" }} mb={4}>
@@ -57,6 +60,8 @@ const Water = () => {
             bg:"black"
 
             }}
+            onClick={()=>navigation("/whydonation")}
+
           >
             Donate Now
           </Button>

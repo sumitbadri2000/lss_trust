@@ -3,11 +3,13 @@ import { Box, Flex, HStack, Text, Button, Image, Img } from "@chakra-ui/react";
 import logo from "../Assests/lss_logo.png";
 import "./header.css";
 import donate from "../Assests/donation.png";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { DragHandleIcon } from "@chakra-ui/icons";
 import { useState } from "react";
 import "./Navbar.css";
 export default function Navbar() {
+  const navigation =useNavigate()
+
   const location = useLocation();
 
   const isActive = (path) => {
@@ -135,6 +137,8 @@ export default function Navbar() {
               bg:"black"
   
               }}
+              onClick={()=>navigation("/whydonation")}
+
           >
             Donation
           </Button>

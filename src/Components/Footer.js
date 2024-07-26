@@ -18,7 +18,45 @@ import { FaInstagram } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 const Footer = () => {
   return (
-    <Box background={"#EAEAEA"} paddingTop={7} paddingBottom={1} width={"100%"}>
+    <Box
+      background={"#EAEAEA"}
+      paddingTop={7}
+      paddingBottom={2}
+      width={"100%"}
+      mt={6}
+    >
+      <Box
+        py={6}
+        width={"80%"}
+        marginX={"auto"}
+        borderBottom={"1px solid grey"}
+        borderTop={"1px solid grey"}
+      >
+        <Text className="epilogue-bold" fontWeight={700} textAlign={"center"}>
+          Save lives: Donate to LSSF Trust for education, farmer aid, women's
+          empowerment, village support, sports incentives, and marriage
+          assistance.
+          {/* <span className="responsive-span">
+            <Input
+              width={"7%"}
+              fontSize={14}
+              placeholder="₹ 5000"
+              border={"1px solid grey"}
+              ml={1}
+            />
+            <Button
+              ml={2}
+              background={"#F56A02"}
+              color={"white"}
+              borderRadius={"full"}
+              _hover={{ bg: "black" }}
+              fontSize={14}
+            >
+              Donate
+            </Button>
+          </span> */}
+        </Text>
+      </Box>
       <Flex
         width={"80%"}
         marginX={"auto"}
@@ -81,7 +119,6 @@ const Footer = () => {
             justifyContent={"start"}
             pt={8}
           >
-
             <Link to={"/gallery"}>
               <Text fontFamily={"EkMukta"} fontWeight={600} fontSize={"0.9rem"}>
                 Gallery
@@ -208,6 +245,7 @@ const Footer = () => {
               color={"white"}
               borderRadius={"full"}
               p={4}
+              _hover={{ bg: "black" }}
             >
               Subscribe
             </Button>
@@ -225,14 +263,14 @@ const Footer = () => {
             </Text>
             <Flex gap={4}>
               <a
-                href="https://www.youtube.com/"
+                href="https://youtube.com/@lssftrust?si=-PjIzvdWyBxeFU6_"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <FaYoutube size={18} color="#F56A02" />{" "}
               </a>
               <a
-                href="https://www.facebook.com/"
+                href="https://www.facebook.com/lssftrust"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -240,7 +278,7 @@ const Footer = () => {
                 <FaFacebookF size={18} color="#F56A02" />{" "}
               </a>
               <a
-                href="https://www.instagram.com/"
+                href="https://www.instagram.com/lssftrust"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -256,6 +294,7 @@ const Footer = () => {
         textAlign={"center"}
         fontWeight={600}
         fontSize={"0.9rem"}
+        mt={2}
       >
         @2024 All rights reserved.
       </Text>

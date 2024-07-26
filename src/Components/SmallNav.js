@@ -21,11 +21,12 @@ import { HamburgerIcon, CloseIcon, AddIcon } from "@chakra-ui/icons";
 import logo from "../Assests/lss_logo.png";
 import "./header.css";
 import donate from "../Assests/donation.png";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import "./Navbar.css";
 export default function SmallNavbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const location = useLocation();
+  const navigation =useNavigate()
 
   const isActive = (path) => {
     return location.pathname === path ? "active" : "";
@@ -63,6 +64,8 @@ export default function SmallNavbar() {
               bg:"black"
   
               }}
+              onClick={()=>navigation("/whydonation")}
+
           >
             Donate Now
           </Button>

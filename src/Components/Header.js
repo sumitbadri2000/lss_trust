@@ -73,7 +73,7 @@ const HeaderNav = () => {
             px={{ base: 2, lg: 3 }}
             background="#F78834">
             <a
-              href="https://www.youtube.com/"
+              href="https://youtube.com/@lssftrust?si=-PjIzvdWyBxeFU6_"
               target="_blank"
               rel="noopener noreferrer">
               <FaYoutube color="#FFFFFF" size={16} />
@@ -84,7 +84,7 @@ const HeaderNav = () => {
             px={{ base: 2, lg: 3 }}
             background="#F78834">
             <a
-              href="https://www.facebook.com/"
+              href="https://www.facebook.com/lssftrust"
               target="_blank"
               rel="noopener noreferrer">
               <FaFacebookF color="#FFFFFF" size={16} />
@@ -95,7 +95,7 @@ const HeaderNav = () => {
             px={{ base: 2, lg: 3 }}
             background="#F78834">
             <a
-              href="https://www.instagram.com/"
+              href="https://www.instagram.com/lssftrust"
               target="_blank"
               rel="noopener noreferrer">
               <FaInstagram color="#FFFFFF" size={16} />

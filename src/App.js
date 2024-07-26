@@ -10,6 +10,7 @@ import Certification from "./Pages/Certificate";
 import Media from "./Pages/Media";
 import AnnualReport from "./Pages/Annual";
 import AppAnnual from "./Pages/AppAnnual";
+import WhyDonation from "./Components/Donate";
 
 function App() {
   const location = useLocation();
@@ -35,6 +36,8 @@ function App() {
         <Route path="/media" element={<Media />} />
         <Route path="/annual" element={<AnnualReport />} />
         <Route path="/annualreport" element={<AppAnnual />} />
+        <Route path="/whydonation" element={<WhyDonation />} />
+        
       </Routes>
       {!shouldHideHeaderFooter() && <Footer />}
     </>
