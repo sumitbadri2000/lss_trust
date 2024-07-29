@@ -57,7 +57,7 @@ function Banner() {
         >
           <Text
             fontWeight={900}
-            fontSize={{ base: "1.5rem", lg: "2rem" }}
+            fontSize={{ base: "1.5rem", lg: "2.4rem" }}
             fontFamily="EkMukta"
             p="4"
             color="#F56A02"

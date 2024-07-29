@@ -41,7 +41,7 @@ const About = () => {
         flexDirection={{ base: "column", lg: "row" }}
         width={{ base: "90%", lg: "80%" }}
         margin={"auto"}
-        py={20}
+        pb={10}
         justifyContent={"space-between"}
         alignItems={"center"}>
         <Flex

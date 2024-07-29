@@ -32,7 +32,7 @@ const images = [
 ];
 export default function Certification () {
   return (
-    <Flex background={"#FFFAE1"} flexDirection={"column"} py={6} mb={20}>
+    <Flex background={"#FFFAE1"} flexDirection={"column"} py={6} mb={10}>
       <Box width={"80%"} margin={"auto"} mb={10}>
         <Flex justifyContent={"space-between"} padding={4}>
           <Flex

@@ -1,52 +1,52 @@
 import React from "react";
-import { Button, VStack, Icon, Box } from "@chakra-ui/react";
+import { Button, VStack, Icon, Box, Heading } from "@chakra-ui/react";
 import { FaFilePdf } from "react-icons/fa";
-import gallery_banner from "../Assests/gallery.png";
+import annual from "../Assests/annual_banner.png";
 
 import examplePDF from "./New_Annual _Report-23-24.pdf";
 import examplePDF2 from "./New_Annual_Report-22-23.pdf";
 import CommonBanner from "../Components/Common";
 
 const AnnualReport = () => {
-    const handleViewPDF = (pdf) => {
-      window.open(pdf, "_blank");
-    };
-  
-    return (
-      <>
-        <CommonBanner image={gallery_banner} />
-  
-        <Box
-          py={24}
-          display={"flex"}
-          justifyContent={"center"}
-          alignItems={"center"}
-        >
-          <VStack spacing={4} align="center">
-            <Icon as={FaFilePdf} boxSize={16} color="red.500" />
-            <h1>Annual Report PDF</h1>
-  
-            {examplePDF && (
-              <Button
-                colorScheme="blue"
-                onClick={() => handleViewPDF(examplePDF)}
-              >
-                Annual Report 2022-2023
-              </Button>
-            )}
-  
-            {examplePDF2 && (
-              <Button
-                colorScheme="blue"
-                onClick={() => handleViewPDF(examplePDF2)}
-              >
-                Annual Report 2023-2024
-              </Button>
-            )}
-          </VStack>
-        </Box>
-      </>
-    );
+  const handleViewPDF = (pdf) => {
+    window.open(pdf, "_blank");
   };
-  
-  export default AnnualReport;
+
+  return (
+    <>
+      <CommonBanner image={annual} />
+
+      <Box
+        py={24}
+        display={"flex"}
+        justifyContent={"center"}
+        alignItems={"center"}
+      >
+        <VStack spacing={6} align="center">
+          <Icon as={FaFilePdf} boxSize={16} color="red.500" />
+          <Heading fontSize={"1.8rem"}>Annual Report PDF</Heading>
+
+          {examplePDF && (
+            <Button
+              colorScheme="blue"
+              onClick={() => handleViewPDF(examplePDF)}
+            >
+              Annual Report 2022-2023
+            </Button>
+          )}
+
+          {examplePDF2 && (
+            <Button
+              colorScheme="blue"
+              onClick={() => handleViewPDF(examplePDF2)}
+            >
+              Annual Report 2023-2024
+            </Button>
+          )}
+        </VStack>
+      </Box>
+    </>
+  );
+};
+
+export default AnnualReport;

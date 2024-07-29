@@ -104,18 +104,15 @@ const Events = () => {
   return (
     <>
       <CommonBanner image={gallery_banner} />
-      <Flex
-        width={{ base: "90%", lg: "80%" }}
-        margin={"auto"}
-        flexDirection={"column"}
-        py={{ base: 6, lg: 10 }}
-      >
+ 
         <Flex
           width={{ base: "100%", lg: "80%" }}
           margin={"auto"}
           flexDirection={"row"}
           alignItems={"center"}
           justifyContent={"center"}
+          py={4}
+          mt={4}
         >
           <Text
             textAlign={"center"}
@@ -129,8 +126,8 @@ const Events = () => {
             <Image width={"100%"} height={"100%"} src={line} alt="line" />
           </Box>
         </Flex>
-      </Flex>
-      <Flex flexDirection={"column"} gap={5}>
+
+      <Flex flexDirection={"column"} gap={2}>
         <Text
           margin={"auto"}
           textAlign={"center"}
@@ -141,11 +138,11 @@ const Events = () => {
         >
           वर्ष 2022 - 2023
         </Text>
-        <Flex width={"100%"} >
+        <Flex width={"100%"}>
           <Grid
             margin={"auto"}
             width={{ base: "90%", lg: "80%" }}
-            templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(4, 1fr)" }}
+            templateColumns={{ base: "repeat(2, 1fr)", md: "repeat(4, 1fr)" }}
             py={12}
             gap={{ base: 6, lg: 6 }}
           >
@@ -171,7 +168,7 @@ const Events = () => {
                       src={image}
                       alt={`media ${index + 1}`}
                       width={"100%"}
-                      height={"250px"}
+                      height={{ base: "140px", lg: "250px" }}
                     />
                   </LazyLoad>
                 </Box>
@@ -181,7 +178,7 @@ const Events = () => {
         </Flex>
       </Flex>
 
-      <Flex flexDirection={"column"} gap={5} py={10}>
+      <Flex flexDirection={"column"} gap={5} pt={10}>
         <Text
           textAlign={"center"}
           fontFamily={"EkMukta"}
@@ -191,11 +188,11 @@ const Events = () => {
         >
           वर्ष 2023 - 2024
         </Text>
-        <Flex width={"100%"} >
+        <Flex width={"100%"}>
           <Grid
             margin={"auto"}
             width={{ base: "90%", lg: "80%" }}
-            templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(4, 1fr)" }}
+            templateColumns={{ base: "repeat(2, 1fr)", md: "repeat(4, 1fr)" }}
             py={12}
             gap={{ base: 6, lg: 6 }}
           >
@@ -221,7 +218,7 @@ const Events = () => {
                       src={image}
                       alt={`media ${index + 1}`}
                       width={"100%"}
-                      height={"250px"}
+                      height={{ base: "140px", lg: "250px" }}
                     />
                   </LazyLoad>
                 </Box>

@@ -75,12 +75,12 @@ const Certification  = () => {
         </Box>
       </Flex>
 
-      <Flex flexDirection={"column"} py={6}>
+      <Flex flexDirection={"column"} pb={6}>
         <Flex width={"100%"} >
           <Grid
             margin={"auto"}
             width={{ base: "90%", lg: "80%" }}
-            templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(4, 1fr)" }}
+            templateColumns={{ base: "repeat(2, 1fr)", md: "repeat(4, 1fr)" }}
             py={12}
             gap={{ base: 6, lg: 6 }}>
             {images.map((image, index) => (
@@ -104,7 +104,7 @@ const Certification  = () => {
                       src={image}
                       alt={`media ${index + 1}`}
                       width={"100%"}
-                      height={"250px"}
+                      height={{base:"140px",lg:"250px"}}
                     />
                   </LazyLoad>
                 </Box>

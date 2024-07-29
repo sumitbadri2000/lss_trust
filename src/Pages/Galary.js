@@ -92,16 +92,14 @@ const Galary = () => {
   return (
     <>
       <CommonBanner image={gallery_banner} />
-      <Flex
-        width={{ base: "90%", lg: "80%" }}
-        margin={"auto"}
-        flexDirection={"column"}
-        py={{ base: 6, lg: 10 }}>
+
         <Flex
           width={{ base: "100%", lg: "80%" }}
           margin={"auto"}
           flexDirection={"row"}
           alignItems={"center"}
+          py={4}
+          mt={4}
           justifyContent={"center"}>
           <Text
             textAlign={"center"}
@@ -114,7 +112,7 @@ const Galary = () => {
             <Image width={"100%"} height={"100%"} src={line} alt="line" />
           </Box>
         </Flex>
-      </Flex>
+
       <Flex flexDirection={"column"} gap={5}>
         <Text
           textAlign={"center"}
@@ -128,7 +126,7 @@ const Galary = () => {
           <Grid
             margin={"auto"}
             width={{ base: "90%", lg: "80%" }}
-            templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(4, 1fr)" }}
+            templateColumns={{ base: "repeat(2, 1fr)", md: "repeat(4, 1fr)" }}
             py={12}
             gap={{ base: 6, lg: 6 }}>
             {gallery.map((image, index) => (
@@ -152,7 +150,8 @@ const Galary = () => {
                       src={image}
                       alt={`media ${index + 1}`}
                       width={"100%"}
-                      height={"250px"}
+                      height={{base:"140px",lg:"250px"}}
+
                     />
                   </LazyLoad>
                 </Box>
@@ -162,7 +161,7 @@ const Galary = () => {
         </Flex>
       </Flex>
 
-      <Flex flexDirection={"column"} gap={5} py={10}>
+      <Flex flexDirection={"column"} gap={5} pt={10}>
         <Text
           textAlign={"center"}
           fontFamily={"EkMukta"}
@@ -175,7 +174,7 @@ const Galary = () => {
           <Grid
             margin={"auto"}
             width={{ base: "90%", lg: "80%" }}
-            templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(4, 1fr)" }}
+            templateColumns={{ base: "repeat(2, 1fr)", md: "repeat(4, 1fr)" }}
             py={12}
             gap={{ base: 6, lg: 6 }}>
             {gallery1.map((image, index) => (
@@ -199,7 +198,8 @@ const Galary = () => {
                       src={image}
                       alt={`media ${index + 1}`}
                       width={"100%"}
-                      height={"250px"}
+                      height={{base:"140px",lg:"250px"}}
+
                     />
                   </LazyLoad>
                 </Box>
