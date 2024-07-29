@@ -1,4 +1,8 @@
 import {
+  Accordion,
+  AccordionButton,
+  AccordionItem,
+  AccordionPanel,
   Box,
   Button,
   Divider,
@@ -28,8 +32,8 @@ import { FaYoutube } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import { MinusIcon, AddIcon } from "@chakra-ui/icons";
 const Footer = () => {
-
   const {
     isOpen: isOpenpnp,
     onOpen: onOpenpnp,
@@ -40,6 +44,11 @@ const Footer = () => {
     isOpen: isOpenTnC,
     onOpen: onOpenTnC,
     onClose: onCloseTnC,
+  } = useDisclosure();
+  const {
+    isOpen: isOpenFnQ,
+    onOpen: onOpenFnQ,
+    onClose: onCloseFnQ,
   } = useDisclosure();
   return (
     <Box
@@ -153,7 +162,8 @@ const Footer = () => {
                 isOpen={isOpenTnC}
                 isCentered
               >
-                <ModalOverlay />
+                <ModalOverlay bg='blackAlpha.300'
+      backdropFilter='blur(10px) hue-rotate(90deg)' />
                 <ModalContent>
                   <ModalHeader
                     textAlign={"center"}
@@ -359,6 +369,338 @@ const Footer = () => {
                 </ModalContent>
               </Modal>
             </Box>
+
+            <Box>
+              <Text
+                textDecorationLine={"underline"}
+                fontFamily={"EkMukta"}
+                fontWeight={600}
+                fontSize={"0.9rem"}
+                onClick={onOpenFnQ}
+                cursor={"pointer"}
+              >
+                FAQ
+              </Text>
+
+              <Modal
+                size={"4xl"}
+                onClose={onCloseFnQ}
+                height={'60%'}
+                isOpen={isOpenFnQ}
+                isCentered
+              >
+                <ModalOverlay bg='blackAlpha.300'
+      backdropFilter='blur(10px) hue-rotate(90deg)' />
+                <ModalContent>
+                  <ModalHeader
+                    textAlign={"center"}
+                    fontSize={"1.6rem"}
+                    color={"#F56A01"}
+                  >
+                    LSSF TRUST : Online Donations and Fundraising FAQs
+                  </ModalHeader>
+                  <ModalCloseButton />
+                  <ModalBody>
+                    <Accordion allowMultiple>
+                      <AccordionItem>
+                        {({ isExpanded }) => (
+                          <>
+                            <h2>
+                              <AccordionButton>
+                                <Box as="span" flex="1" textAlign="left">
+                                  How can I donate money online to LSSF TRUST?
+                                </Box>
+                                {isExpanded ? (
+                                  <MinusIcon fontSize="12px" />
+                                ) : (
+                                  <AddIcon fontSize="12px" />
+                                )}
+                              </AccordionButton>
+                            </h2>
+                            <AccordionPanel pb={4}>
+                              You can donate to LSSF TRUST by visiting our
+                              official website www.lssftrust.org. Simply click
+                              on the "Donate Now" button, choose your preferred
+                              donation amount, and follow the instructions to
+                              complete your donation. We accept various payment
+                              methods, including credit/debit cards and online
+                              banking.
+                            </AccordionPanel>
+                          </>
+                        )}
+                      </AccordionItem>
+                    </Accordion>
+
+                    <Accordion allowMultiple>
+                      <AccordionItem>
+                        {({ isExpanded }) => (
+                          <>
+                            <h2>
+                              <AccordionButton>
+                                <Box as="span" flex="1" textAlign="left">
+                                  What is the best online fundraising platform
+                                  for LSSF TRUST?
+                                </Box>
+                                {isExpanded ? (
+                                  <MinusIcon fontSize="12px" />
+                                ) : (
+                                  <AddIcon fontSize="12px" />
+                                )}
+                              </AccordionButton>
+                            </h2>
+                            <AccordionPanel pb={4}>
+                              LSSF TRUST uses trusted and secure online
+                              fundraising platforms to facilitate donations.
+                              While we accept direct donations through our
+                              website, we also collaborate with platforms like
+                              GiveIndia and GlobalGiving, which are known for
+                              their reliability and wide reach. These platforms
+                              offer a seamless donation experience and ensure
+                              that your contributions reach us safely.
+                            </AccordionPanel>
+                          </>
+                        )}
+                      </AccordionItem>
+                    </Accordion>
+
+                    <Accordion allowMultiple>
+                      <AccordionItem>
+                        {({ isExpanded }) => (
+                          <>
+                            <h2>
+                              <AccordionButton>
+                                <Box as="span" flex="1" textAlign="left">
+                                  Which are the best Online Donation Tools for
+                                  Non-profits?
+                                </Box>
+                                {isExpanded ? (
+                                  <MinusIcon fontSize="12px" />
+                                ) : (
+                                  <AddIcon fontSize="12px" />
+                                )}
+                              </AccordionButton>
+                            </h2>
+                            <AccordionPanel pb={4}>
+                              For non-profits like LSSF TRUST, the best online
+                              donation tools include:
+                              <UnorderedList>
+                                <ListItem>
+                                  Donorbox: Known for its user-friendly
+                                  interface and flexibility.
+                                </ListItem>
+                                <ListItem>
+                                  PayPal Giving Fund: Provides a trusted way to
+                                  accept donations.
+                                </ListItem>
+                                <ListItem>
+                                  Razorpay: Popular in India, offering secure
+                                  payment gateways.
+                                </ListItem>
+                                <ListItem>
+                                  Stripe: Offers robust tools for handling
+                                  online payments.
+                                </ListItem>
+                              </UnorderedList>
+                              These tools help streamline the donation process,
+                              making it easy for donors to contribute.
+                            </AccordionPanel>
+                          </>
+                        )}
+                      </AccordionItem>
+                    </Accordion>
+
+                    <Accordion allowMultiple>
+                      <AccordionItem>
+                        {({ isExpanded }) => (
+                          <>
+                            <h2>
+                              <AccordionButton>
+                                <Box as="span" flex="1" textAlign="left">
+                                  What is the best way to accept donations
+                                  online for LSSF TRUST?
+                                </Box>
+                                {isExpanded ? (
+                                  <MinusIcon fontSize="12px" />
+                                ) : (
+                                  <AddIcon fontSize="12px" />
+                                )}
+                              </AccordionButton>
+                            </h2>
+                            <AccordionPanel pb={4}>
+                              The best way to accept donations online is through
+                              a secure, user-friendly platform that supports
+                              various payment methods. LSSF TRUST uses a
+                              combination of direct website donations, secure
+                              payment gateways like Razorpay, and trusted
+                              fundraising platforms like GiveIndia. This
+                              approach ensures flexibility and security for our
+                              donors.
+                            </AccordionPanel>
+                          </>
+                        )}
+                      </AccordionItem>
+                    </Accordion>
+
+                    <Accordion allowMultiple>
+                      <AccordionItem>
+                        {({ isExpanded }) => (
+                          <>
+                            <h2>
+                              <AccordionButton>
+                                <Box as="span" flex="1" textAlign="left">
+                                  Tips to Help Non-profits Get Donations Online
+                                </Box>
+                                {isExpanded ? (
+                                  <MinusIcon fontSize="12px" />
+                                ) : (
+                                  <AddIcon fontSize="12px" />
+                                )}
+                              </AccordionButton>
+                            </h2>
+                            <AccordionPanel pb={4}>
+                              <Text>
+                                To effectively secure online donations, LSSF
+                                TRUST employs the following strategies:
+                              </Text>
+                              <Text>
+                                Clear and Compelling Message: Clearly articulate
+                                our mission and the impact of donations.
+                                User-Friendly Website: Ensure our website is
+                                easy to navigate, with visible "Donate Now"
+                                buttons. Multiple Payment Options: Offer various
+                                payment methods to cater to different donors.
+                                Regular Updates: Keep donors informed about how
+                                their contributions are making a difference.
+                                Engage on Social Media: Use social media
+                                platforms to reach a broader audience and
+                                encourage donations.
+                              </Text>
+                            </AccordionPanel>
+                          </>
+                        )}
+                      </AccordionItem>
+                    </Accordion>
+
+                    <Accordion allowMultiple>
+                      <AccordionItem>
+                        {({ isExpanded }) => (
+                          <>
+                            <h2>
+                              <AccordionButton>
+                                <Box as="span" flex="1" textAlign="left">
+                                  How can I get donations for an NGO like LSSF
+                                  TRUST?
+                                </Box>
+                                {isExpanded ? (
+                                  <MinusIcon fontSize="12px" />
+                                ) : (
+                                  <AddIcon fontSize="12px" />
+                                )}
+                              </AccordionButton>
+                            </h2>
+                            <AccordionPanel pb={4}>
+                              To get donations for LSSF TRUST, we:
+                              <UnorderedList>
+                                <ListItem>
+                                  Build a Strong Online Presence: Ensure our
+                                  website and social media are regularly updated
+                                  with our activities and impact stories.
+                                </ListItem>
+                                <ListItem>
+                                  Engage with Donors: Communicate regularly with
+                                  our donors, sharing success stories and
+                                  updates. Use Online Fundraising Platforms:
+                                  Utilize platforms like GiveIndia,
+                                  GlobalGiving, and others to reach a wider
+                                  audience.
+                                </ListItem>
+                                <ListItem>
+                                  Host Virtual Events: Organize webinars, online
+                                  auctions, and virtual meet-and-greets to
+                                  engage potential donors.
+                                </ListItem>
+                              </UnorderedList>
+                            </AccordionPanel>
+                          </>
+                        )}
+                      </AccordionItem>
+                    </Accordion>
+                    <Accordion allowMultiple>
+                      <AccordionItem>
+                        {({ isExpanded }) => (
+                          <>
+                            <h2>
+                              <AccordionButton>
+                                <Box as="span" flex="1" textAlign="left">
+                                  Is it safe to donate online to LSSF TRUST?
+                                </Box>
+                                {isExpanded ? (
+                                  <MinusIcon fontSize="12px" />
+                                ) : (
+                                  <AddIcon fontSize="12px" />
+                                )}
+                              </AccordionButton>
+                            </h2>
+                            <AccordionPanel pb={4}>
+                              Yes, it is safe to donate online to LSSF TRUST. We
+                              use secure payment gateways and adhere to the
+                              latest security standards to protect your personal
+                              and financial information. Our website and
+                              partnered platforms employ SSL encryption and
+                              other security measures to ensure your data is
+                              safe.
+                            </AccordionPanel>
+                          </>
+                        )}
+                      </AccordionItem>
+                    </Accordion>
+                    <Accordion allowMultiple>
+                      <AccordionItem>
+                        {({ isExpanded }) => (
+                          <>
+                            <h2>
+                              <AccordionButton>
+                                <Box as="span" flex="1" textAlign="left">
+                                  What is the best online fundraising platform?
+                                </Box>
+                                {isExpanded ? (
+                                  <MinusIcon fontSize="12px" />
+                                ) : (
+                                  <AddIcon fontSize="12px" />
+                                )}
+                              </AccordionButton>
+                            </h2>
+                            <AccordionPanel pb={4}>
+                              For LSSF TRUST, the best online fundraising
+                              platforms include:
+                              <UnorderedList>
+                                <ListItem>
+                                  GiveIndia: A reputable platform that supports
+                                  various non-profits in India.
+                                </ListItem>
+                                <ListItem>
+                                  GlobalGiving: An international platform that
+                                  helps NGOs raise funds for specific projects.
+                                </ListItem>
+                                <ListItem>
+                                  Donorbox: A versatile platform that integrates
+                                  easily with websites and supports recurring
+                                  donations.{" "}
+                                </ListItem>
+                                <ListItem>
+                                  PayPal Giving Fund: Offers a trusted and
+                                  global platform for receiving donations.
+                                </ListItem>
+                              </UnorderedList>
+                            </AccordionPanel>
+                          </>
+                        )}
+                      </AccordionItem>
+                    </Accordion>
+                  </ModalBody>
+                </ModalContent>
+              </Modal>
+            </Box>
           </Flex>
 
           <Flex
@@ -409,7 +751,8 @@ const Footer = () => {
                 isOpen={isOpenpnp}
                 isCentered
               >
-                <ModalOverlay />
+                <ModalOverlay bg='blackAlpha.300'
+      backdropFilter='blur(10px) hue-rotate(90deg)' />
                 <ModalContent>
                   <ModalHeader
                     textAlign={"center"}
@@ -417,266 +760,6 @@ const Footer = () => {
                     color={"#F56A01"}
                   >
                     Privacy Policy for LSSF TRUST
-                  </ModalHeader>
-                  <ModalCloseButton />
-                  <ModalBody>
-                    <Box
-                      padding="4"
-                      margin="6"
-                      backgroundColor="gray.50"
-                      borderRadius="md"
-                      boxShadow="sm"
-                    >
-                      <Box
-                        marginTop="4"
-                        marginBottom="4"
-                        borderColor="gray.200"
-                      />
-                      <Text
-                        fontSize="md"
-                        lineHeight="1.5"
-                        color="gray.600"
-                        marginBottom="4"
-                      >
-                        LSSF TRUST is committed to the ethical collection,
-                        retention, and use of information provided by you on our
-                        website{" "}
-                        <span style={{ color: "blue", cursor: "pointer" }}>
-                          www.lssftrust.org
-                        </span>{" "}
-                        ('Site'). This Privacy Policy outlines how we collect,
-                        use, and protect your personal information.
-                      </Text>
-
-                      {/* Services Section */}
-                      <Box>
-                        <Heading
-                          as="h3"
-                          size="md"
-                          marginTop="10"
-                          marginBottom="2"
-                          color="gray.700"
-                          fontWeight="bold"
-                        >
-                          1. Collection of Personal Information
-                        </Heading>
-                        <Text
-                          fontSize="md"
-                          lineHeight="1.5"
-                          color="gray.600"
-                          marginBottom="4"
-                        >
-                          We may collect the following personal information:
-                        </Text>
-
-                        <UnorderedList>
-                          <ListItem>Name</ListItem>
-                          <ListItem>Age</ListItem>
-                          <ListItem>Occupation</ListItem>
-                          <ListItem>Email and postal address</ListItem>
-                          <ListItem>Telephone number</ListItem>
-                          <ListItem>Payment processing details</ListItem>
-                          <ListItem>Limited personal details</ListItem>
-                          <ListItem>
-                            Any other data the website may require
-                          </ListItem>
-                        </UnorderedList>
-                      </Box>
-                      <Box>
-                        <Heading
-                          as="h3"
-                          size="md"
-                          marginTop="10"
-                          marginBottom="2"
-                          color="gray.700"
-                          fontWeight="bold"
-                        >
-                          2. Use of Personal Information
-                        </Heading>
-                        <Text
-                          fontSize="md"
-                          lineHeight="1.5"
-                          color="gray.600"
-                          marginBottom="4"
-                        >
-                          LSSF TRUST uses personal information for the following
-                          purposes:
-                        </Text>
-
-                        <UnorderedList>
-                          <ListItem>
-                            Sending newsletters, updates, and promotional
-                            materials related to our activities.
-                          </ListItem>
-                          <ListItem>
-                            Processing donations and providing receipts.
-                          </ListItem>
-                          <ListItem>
-                            Maintaining an internal confidential database of all
-                            personal information collected from visitors to the
-                            Site.
-                          </ListItem>
-                          <ListItem>
-                            Evaluating and administering the Site's activities,
-                            responding to concerns, and assessing visitor
-                            trends.
-                          </ListItem>
-                        </UnorderedList>
-                      </Box>
-
-                      <Box>
-                        <Heading
-                          as="h3"
-                          size="md"
-                          marginTop="10"
-                          marginBottom="2"
-                          color="gray.700"
-                          fontWeight="bold"
-                        >
-                          3. Disclosure of Personal Information
-                        </Heading>
-                        <Text
-                          fontSize="md"
-                          lineHeight="1.5"
-                          color="gray.600"
-                          marginBottom="4"
-                        >
-                          Access to personal information is limited to
-                          authorized personnel within LSSF TRUST. We may share
-                          personal information with third parties involved in
-                          the operation of our Site, such as payment processors
-                          or email service providers. LSSF TRUST may also
-                          disclose personal information if required by law or to
-                          protect the rights and property of LSSF TRUST and its
-                          stakeholders.
-                        </Text>
-                      </Box>
-
-                      <Box>
-                        <Heading
-                          as="h3"
-                          size="md"
-                          marginTop="4"
-                          marginBottom="2"
-                          color="gray.700"
-                          fontWeight="bold"
-                        >
-                          4. Security
-                        </Heading>
-                        <Text
-                          fontSize="md"
-                          lineHeight="1.5"
-                          color="gray.600"
-                          marginBottom="4"
-                        >
-                          LSSF TRUST uses appropriate security measures to
-                          protect your personal information. However, we cannot
-                          guarantee the absolute security of your data.
-                        </Text>
-                      </Box>
-
-                      <Box>
-                        <Heading
-                          as="h3"
-                          size="md"
-                          marginTop="4"
-                          marginBottom="2"
-                          color="gray.700"
-                          fontWeight="bold"
-                        >
-                          5. Copyright Protection
-                        </Heading>
-                        <Text
-                          fontSize="md"
-                          lineHeight="1.5"
-                          color="gray.600"
-                          marginBottom="4"
-                        >
-                          All content on this Site, including graphics, text,
-                          logos, and software, is the property of LSSF TRUST and
-                          protected by copyright laws. Unauthorized reproduction
-                          or use of the content is prohibited.
-                        </Text>
-                      </Box>
-
-                      <Box>
-                        <Heading
-                          as="h3"
-                          size="md"
-                          marginTop="4"
-                          marginBottom="2"
-                          color="gray.700"
-                          fontWeight="bold"
-                        >
-                          6. Disclaimer
-                        </Heading>
-                        <Text
-                          fontSize="md"
-                          lineHeight="1.5"
-                          color="gray.600"
-                          marginBottom="4"
-                        >
-                          LSSF TRUST does not guarantee the accuracy or
-                          completeness of the information on the Site. Use of
-                          the Site and its content is at your own risk.
-                        </Text>
-                      </Box>
-                      <Box>
-                        <Heading
-                          as="h3"
-                          size="md"
-                          marginTop="4"
-                          marginBottom="2"
-                          color="gray.700"
-                          fontWeight="bold"
-                        >
-                          7. Changes to this Privacy Policy
-                        </Heading>
-                        <Text
-                          fontSize="md"
-                          lineHeight="1.5"
-                          color="gray.600"
-                          marginBottom="4"
-                        >
-                          LSSF TRUST reserves the right to update this Privacy
-                          Policy at any time. Changes will be posted on this
-                          page with an updated effective date.
-                        </Text>
-                      </Box>
-
-                      {/* ... Add other sections with similar styling ... */}
-                    </Box>
-                  </ModalBody>
-                </ModalContent>
-              </Modal>
-            </Box>
-            <Box>
-              <Text
-                textDecorationLine={"underline"}
-                fontFamily={"EkMukta"}
-                fontWeight={600}
-                fontSize={"0.9rem"}
-                onClick={onOpenpnp}
-                cursor={"pointer"}
-              >
-              FAQ
-              </Text>
-
-              <Modal
-                size={"4xl"}
-                onClose={onClosepnp}
-                // style={{ width: "50vw" }}
-                isOpen={isOpenpnp}
-                isCentered
-              >
-                <ModalOverlay />
-                <ModalContent>
-                  <ModalHeader
-                    textAlign={"center"}
-                    fontSize={"1.6rem"}
-                    color={"#F56A01"}
-                  >
-                    LSSF TRUST: Online Donations and Fundraising FAQs
                   </ModalHeader>
                   <ModalCloseButton />
                   <ModalBody>
