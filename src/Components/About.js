@@ -59,7 +59,7 @@ const About = () => {
           gap={4}
         >
           <Text
-            width={{ base: "100%", lg: "80%" }}
+            width={{ base: "100%", lg: "81%" }}
             className="epilogue-bold"
             fontWeight={"bold"}
             color={"#F56A02"}

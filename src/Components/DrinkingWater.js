@@ -6,18 +6,18 @@ import "./header.css";
 import { useNavigate } from "react-router-dom";
 
 const Water = () => {
-  const navigation =useNavigate()
+  const navigation = useNavigate();
 
   return (
-    <Flex  flexDirection={{ base: "column", lg: "row" }}>
+    <Flex flexDirection={{ base: "column", lg: "row" }}>
       <Box width={"100%"} display={{ base: "block", lg: "none" }} mb={4}>
         <Image width={"100%"} height={"100%"} src={water} alt="water" />
       </Box>
-      <Flex width={{ base: "100%", lg: "60%" }} gap={{base:4,lg:0}}>
-        <Box display={{ base: "none", lg: "block" }} >
+      <Flex width={{ base: "100%", lg: "60%" }} gap={{ base: 4, lg: 0 }}>
+        <Box display={{ base: "none", lg: "block" }}>
           <Image src={water_line} alt="dringk" />
         </Box>
-        <Flex 
+        <Flex
           px={{ base: 4, lg: 0 }}
           marginTop={{ base: 0, lg: 28 }}
           width={{ base: "100%", lg: "60%" }}
@@ -28,9 +28,9 @@ const Water = () => {
             color={"#F56A02"}
             className="epilogue-bold"
             fontWeight={700}
-            fontSize={{ base: "1.6rem", lg: "2.8rem" }}
+            fontSize={{ base: "1.6rem", lg: "2.6rem" }}
           >
-             शैक्षिक जागरूकता कार्यक्रम :-
+            शैक्षिक जागरूकता कार्यक्रम :-
           </Heading>
           <Text
             fontFamily={"EkMukta"}
@@ -39,12 +39,12 @@ const Water = () => {
             color={"#000000"}
             fontWeight={400}
           >
-                   ट्रस्ट शिक्षा के महत्व और कम आय वाले परिवारों के लिए उपलब्ध
-                  अवसरों के बारे में जागरूकता फैलाने हेतु शैक्षिक जागरूकता
-                  कार्यक्रम आयोजित करता है। यह ट्रस्ट का साक्षरता, कौशल विकास और
-                  सीखने को बढ़ावा देने के लिए कार्यक्रम है। यहाँ जरूरतमन्द
-                  विद्यार्थियों (कक्षा 10th व 12th) को पंजीकरण हेतु सहायता राशि
-                  एवं लेखन सामाग्री वितरित किया जाता है ।
+            ट्रस्ट शिक्षा के महत्व और कम आय वाले परिवारों के लिए उपलब्ध अवसरों
+            के बारे में जागरूकता फैलाने हेतु शैक्षिक जागरूकता कार्यक्रम आयोजित
+            करता है। यह ट्रस्ट का साक्षरता, कौशल विकास और सीखने को बढ़ावा देने
+            के लिए कार्यक्रम है। यहाँ जरूरतमन्द विद्यार्थियों (कक्षा 10th व
+            12th) को पंजीकरण हेतु सहायता राशि एवं लेखन सामाग्री वितरित किया जाता
+            है ।
           </Text>
           <Button
             width={{ base: "60%", lg: "40%" }}
@@ -57,17 +57,15 @@ const Water = () => {
             py={{ base: 4, lg: 8 }}
             px={{ base: 4, lg: 4 }}
             _hover={{
-            bg:"black"
-
+              bg: "black",
             }}
-            onClick={()=>navigation("/whydonation")}
-
+            onClick={() => navigation("/whydonation")}
           >
             Donate Now
           </Button>
         </Flex>
-      </Flex >
-      <Flex width={"40%"} display={{ base: "none", lg: "block" }} >
+      </Flex>
+      <Flex width={"40%"} display={{ base: "none", lg: "block" }}>
         <Image width={"100%"} height={"100%"} src={water} alt="water" />
       </Flex>
     </Flex>

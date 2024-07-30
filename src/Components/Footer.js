@@ -162,8 +162,10 @@ const Footer = () => {
                 isOpen={isOpenTnC}
                 isCentered
               >
-                <ModalOverlay bg='blackAlpha.300'
-      backdropFilter='blur(10px) hue-rotate(90deg)' />
+                <ModalOverlay
+                  bg="blackAlpha.300"
+                  backdropFilter="blur(10px) hue-rotate(90deg)"
+                />
                 <ModalContent>
                   <ModalHeader
                     textAlign={"center"}
@@ -385,12 +387,14 @@ const Footer = () => {
               <Modal
                 size={"4xl"}
                 onClose={onCloseFnQ}
-                height={'60%'}
+                height={"60%"}
                 isOpen={isOpenFnQ}
                 isCentered
               >
-                <ModalOverlay bg='blackAlpha.300'
-      backdropFilter='blur(10px) hue-rotate(90deg)' />
+                <ModalOverlay
+                  bg="blackAlpha.300"
+                  backdropFilter="blur(10px) hue-rotate(90deg)"
+                />
                 <ModalContent>
                   <ModalHeader
                     textAlign={"center"}
@@ -751,8 +755,10 @@ const Footer = () => {
                 isOpen={isOpenpnp}
                 isCentered
               >
-                <ModalOverlay bg='blackAlpha.300'
-      backdropFilter='blur(10px) hue-rotate(90deg)' />
+                <ModalOverlay
+                  bg="blackAlpha.300"
+                  backdropFilter="blur(10px) hue-rotate(90deg)"
+                />
                 <ModalContent>
                   <ModalHeader
                     textAlign={"center"}
