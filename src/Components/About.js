@@ -26,6 +26,8 @@ import {
   Box,
   Button,
   Flex,
+  Grid,
+  GridItem,
   Image,
   ListItem,
   Text,
@@ -39,8 +41,21 @@ import "swiper/css/navigation";
 import "./swiper.css";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import { useNavigate } from "react-router-dom";
-
+import b1 from "../Assests/Members/b1.jpeg";
+import t1 from "../Assests/Members/t1.jpeg";
+import t2 from "../Assests/Members/t2.jpeg";
 const About = () => {
+  const traniee = [
+    { id: "1", name: "Harish Kumar", title: "(Trustee)", img: t1 },
+    { id: "2", name: "Gautam Kumar", title: "(Trustee)", img: t2 },
+  ];
+
+  const activem = [
+    { id: "1", name: " Subodh Kumar Singh" },
+    { id: "2", name: "Sandeep Kumar" },
+    { id: "3", name: "Mukesh Kumar" },
+    { id: "4", name: "Ashutosh Kumar Gupta" },
+  ];
   const navigation = useNavigate();
   return (
     <>
@@ -1037,7 +1052,13 @@ const About = () => {
         </Flex>
       </Flex>
 
-      <Flex flexDirection={"column"} py={10} width={"80%"} margin={"auto"}>
+      <Flex
+        flexDirection={"column"}
+        py={{ base: 8, lg: 10 }}
+        width={{ base: "90%", lg: "80%" }}
+        margin={"auto"}
+        mt={4}
+      >
         <Text
           className="epilogue-bold"
           fontSize={{ base: "1rem", lg: "2.6rem" }}
@@ -1045,29 +1066,164 @@ const About = () => {
           fontWeight={"bold"}
           color={"#F56A02"}
         >
-          Our Member
+          Board Member
         </Text>
 
-        <Flex flexDirection={"column"} gap={3}>
-          <Text className="epilogue-bold" fontWeight={"bold"} fontSize={"1.5rem"} color={"#F56A02"}>
-            Active Members
-          </Text>
-          <Flex flexDirection={"column"}>
-            <UnorderedList>
-              <ListItem style={{ textDecorationLine: "underline",fontWeight:600,marginBottom:3 }}>
-                Subodh Kumar Singh
+        <Grid
+          // width={{ base: "90%", lg: "80%" }}
+          templateColumns={{ base: "repeat(1, 1fr)", lg: "repeat(3, 1fr)" }}
+          py={12}
+          gap={{ base: 6, lg: 10 }}
+        >
+          <GridItem bg={"white"} borderRadius="md">
+            <Box
+              width={{ base: "100%", lg: "90%" }}
+              border="1px solid grey"
+              borderRadius="md"
+              overflow="hidden"
+              boxShadow="sm"
+              py={4}
+              px={4}
+              height={"100%"}
+              bg="white"
+              cursor="pointer"
+            >
+              <Image
+                src={b1}
+                alt={"board"}
+                width={{ base: "90%", lg: "100%" }}
+                margin={"auto"}
+                height={{ base: "280px", lg: "420px" }}
+              />
+
+              <Flex
+                flexDirection={"column"}
+                alignItems={"center"}
+                gap={1}
+                marginTop={2}
+              >
+                <Text
+                  className="epilogue-bold"
+                  fontWeight={"bold"}
+                  fontSize={{ base: "1rem", lg: "1.4rem" }}
+                  color={"#F56A02"}
+                >
+                  Kshitij Ranjan{" "}
+                </Text>
+                <Text
+                  className="epilogue-bold"
+                  fontWeight={"bold"}
+                  fontSize={{ base: "0.7rem", lg: "1.1rem" }}
+                >
+                  (Founder Chairman)
+                </Text>
+              </Flex>
+            </Box>
+          </GridItem>
+        </Grid>
+      </Flex>
+
+      <Flex
+        flexDirection={"column"}
+        py={10}
+        width={{ base: "90%", lg: "80%" }}
+        margin={"auto"}
+      >
+        <Text
+          className="epilogue-bold"
+          fontSize={{ base: "1rem", lg: "2.6rem" }}
+          textAlign={"center"}
+          fontWeight={"bold"}
+          color={"#F56A02"}
+        >
+          Trustee Member
+        </Text>
+
+        <Grid
+          // width={{ base: "90%", lg: "80%" }}
+          templateColumns={{ base: "repeat(1, 1fr)", lg: "repeat(3, 1fr)" }}
+          py={{ base: 8, lg: 12 }}
+          gap={{ base: 6, lg: 10 }}
+        >
+          {traniee.map((ele) => (
+            <GridItem bg={"white"} borderRadius="md">
+              <Box
+                width={{ base: "100%", lg: "90%" }}
+                border="1px solid grey"
+                borderRadius="md"
+                overflow="hidden"
+                boxShadow="sm"
+                py={4}
+                px={4}
+                height={"100%"}
+                bg="white"
+                cursor="pointer"
+              >
+                <Image
+                  src={ele.img}
+                  alt={ele.id}
+                  width={{ base: "90%", lg: "100%" }}
+                  margin={"auto"}
+                  height={{ base: "280px", lg: "420px" }}
+                />
+
+                <Flex
+                  flexDirection={"column"}
+                  alignItems={"center"}
+                  gap={1}
+                  marginTop={2}
+                >
+                  <Text
+                    className="epilogue-bold"
+                    fontWeight={"bold"}
+                    fontSize={{ base: "1rem", lg: "1.4rem" }}
+                    color={"#F56A02"}
+                  >
+                    {ele.name}
+                  </Text>
+                  <Text
+                    className="epilogue-bold"
+                    fontWeight={"bold"}
+                    fontSize={{ base: "0.7rem", lg: "1.1rem" }}
+                  >
+                    {ele.title}
+                  </Text>
+                </Flex>
+              </Box>
+            </GridItem>
+          ))}
+        </Grid>
+      </Flex>
+
+      <Flex
+        flexDirection={"column"}
+        gap={3}
+        mt={10}
+        width={"80%"}
+        margin={"auto"}
+      >
+        <Text
+          className="epilogue-bold"
+          fontWeight={"bold"}
+          fontSize={{base:"1.1rem",lg:"1.5rem"}}
+          color={"#F56A02"}
+        >
+          Active Members
+        </Text>
+        <Flex flexDirection={"column"}>
+          <UnorderedList>
+            {activem.map((ele) => (
+              <ListItem
+                style={{
+                  textDecorationLine: "underline",
+                  fontWeight: 600,
+                  marginBottom: 3,
+                }}
+              >
+                {ele.name}
               </ListItem>
-              <ListItem style={{ textDecorationLine: "underline",fontWeight:600,marginBottom:3 }}>
-                Sandeep Kumar
-              </ListItem>
-              <ListItem style={{ textDecorationLine: "underline",fontWeight:600,marginBottom:3 }}>
-                Mukesh Kumar
-              </ListItem>
-              <ListItem style={{ textDecorationLine: "underline",fontWeight:600,marginBottom:3 }}>
-                Ashutosh Kumar Gupta
-              </ListItem>
-            </UnorderedList>
-          </Flex>
+            ))}
+          </UnorderedList>
         </Flex>
       </Flex>
     </>
