@@ -28,7 +28,8 @@ const AnnualReport = () => {
 
           {examplePDF && (
             <Button
-              colorScheme="blue"
+              background={"#F56A01"}
+              color={"white"}
               onClick={() => handleViewPDF(examplePDF)}
             >
               Annual Report 2022-2023
@@ -37,7 +38,8 @@ const AnnualReport = () => {
 
           {examplePDF2 && (
             <Button
-              colorScheme="blue"
+              background={"#F56A01"}
+              color={"white"}
               onClick={() => handleViewPDF(examplePDF2)}
             >
               Annual Report 2023-2024

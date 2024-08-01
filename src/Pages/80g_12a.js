@@ -1,43 +1,48 @@
 import React from "react";
-import { Button, VStack, Icon, Box } from "@chakra-ui/react";
+import { Button, VStack, Icon, Box, Heading } from "@chakra-ui/react";
 import { FaFilePdf } from "react-icons/fa";
-import examplePDF from "./New_Annual _Report-23-24.pdf";
-import examplePDF2 from "./New_Annual_Report-22-23.pdf";
+import banner from "../Assests/80g_banner.png";
 
-const AppAnnual = () => {
+import examplePDF from "./80g.pdf";
+import examplePDF2 from "./12a.pdf";
+import CommonBanner from "../Components/Common";
+
+const Provision = () => {
   const handleViewPDF = (pdf) => {
     window.open(pdf, "_blank");
   };
 
   return (
     <>
+      <CommonBanner image={banner} />
+
       <Box
         py={24}
         display={"flex"}
         justifyContent={"center"}
         alignItems={"center"}
       >
-        <VStack spacing={4} align="center">
+        <VStack spacing={6} align="center">
           <Icon as={FaFilePdf} boxSize={16} color="red.500" />
-          <h1>Annual Report PDF</h1>
+          <Heading fontSize={"1.8rem"}>80G / 12A Certification</Heading>
 
           {examplePDF && (
             <Button
-              background={"#F56A01"}
-              color={"white"}
+             background={"#F56A01"}
+             color={"white"}
               onClick={() => handleViewPDF(examplePDF)}
             >
-              Annual Report 2022-2023
+              80G Certification
             </Button>
           )}
 
           {examplePDF2 && (
             <Button
-              background={"#F56A01"}
-              color={"white"}
+             background={"#F56A01"}
+             color={"white"}
               onClick={() => handleViewPDF(examplePDF2)}
             >
-              Annual Report 2023-2024
+              12A Certification
             </Button>
           )}
         </VStack>
@@ -46,4 +51,4 @@ const AppAnnual = () => {
   );
 };
 
-export default AppAnnual;
+export default Provision;

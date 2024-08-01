@@ -4,8 +4,6 @@ import logo from "../Assests/lss_logo.png";
 import "./header.css";
 import donate from "../Assests/donation.png";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { DragHandleIcon } from "@chakra-ui/icons";
-import { useState } from "react";
 import "./Navbar.css";
 export default function Navbar() {
   const navigation =useNavigate()
@@ -21,7 +19,7 @@ export default function Navbar() {
       display={{ base: "none", lg: "block" }}
       bg="#FFFFFF"
       px={2}
-      width={{ base: "100%", lg: "80%" }}
+      width={{ base: "100%", lg: "86%" }}
       margin={"auto"}
       boxShadow={"md"}
       mt={-6}
@@ -34,7 +32,7 @@ export default function Navbar() {
           </Box>{" "}
           <HStack
             as={"nav"}
-            spacing={10}
+            spacing={8}
             display={{ base: "none", lg: "flex" }}
           >
             <Link to={"/"}>
@@ -68,6 +66,19 @@ export default function Navbar() {
                 Annual Report
               </Text>
             </Link>
+            <Link to={"/provision"}>
+              <Text
+                fontFamily={"EkMukta"}
+                fontWeight={700}
+                fontSize={{ lg: "1rem" }}
+                className={isActive("/provision")}
+              >
+                80G / 12A
+              </Text>
+            </Link>
+
+
+
             <Link to={"/certificate"}>
               <Text
                 fontFamily={"EkMukta"}
@@ -128,7 +139,7 @@ export default function Navbar() {
             color={"#FFFFFF"}
             borderRadius={"full"}
             p={6}
-            mr={4}
+            mr={2}
             leftIcon={<Img src={donate} alt="donate" />}
             fontFamily={"EkMukta"}
             fontWeight={700}

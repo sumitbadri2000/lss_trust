@@ -56,6 +56,13 @@ const Certification  = () => {
     <>
       <CommonBanner image={gallery_banner} />
 
+
+
+
+      
+
+
+
       <Flex
         width={{ base: "100%", lg: "80%" }}
         margin={"auto"}
