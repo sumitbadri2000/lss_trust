@@ -13,11 +13,8 @@ import img5 from "../Assests/Media/img5.jpeg";
 import img6 from "../Assests/Media/img6.jpeg";
 import img7 from "../Assests/Media/img7.jpeg";
 import img8 from "../Assests/Media/img8.jpeg";
-const Media  = () => {
-
-  const images = [
-    img1,img2,img3,img4,img5,img6,img7,img8
-  ]
+const Media = () => {
+  const images = [img1, img2, img3, img4, img5, img6, img7, img8];
   return (
     <>
       <CommonBanner image={gallery_banner} />
@@ -28,13 +25,15 @@ const Media  = () => {
         flexDirection={"row"}
         alignItems={"center"}
         justifyContent={"center"}
-        mt={{ base: 5, lg: 6 }}>
+        mt={{ base: 5, lg: 6 }}
+      >
         <Text
           textAlign={"center"}
           className="epilogue-bold"
           color={"#F56A02"}
-          fontSize={{ base: "1.6rem", lg: "2.8rem" }}>
-          Media 
+          fontSize={{ base: "1.6rem", lg: "2.8rem" }}
+        >
+          Media
         </Text>
         <Box display={{ base: "none", lg: "flex" }} width={"6%"}>
           <Image width={"100%"} height={"100%"} src={line} alt="line" />
@@ -48,7 +47,8 @@ const Media  = () => {
             width={{ base: "90%", lg: "80%" }}
             templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(4, 1fr)" }}
             py={12}
-            gap={{ base: 6, lg: 6 }}>
+            gap={{ base: 6, lg: 10 }}
+          >
             {images.map((image, index) => (
               <GridItem key={index} bg={"white"} borderRadius="md">
                 <Box
@@ -64,7 +64,8 @@ const Media  = () => {
                   p={2}
                   height={"100%"}
                   bg="white"
-                  cursor="pointer">
+                  cursor="pointer"
+                >
                   <LazyLoad height={200} once>
                     <Image
                       src={image}
@@ -79,8 +80,30 @@ const Media  = () => {
           </Grid>
         </Flex>
       </Flex>
+
+      <Flex alignItems={"center"} justifyContent={"center"} py={6}>
+        <Box
+          width="100%"
+          maxW="800px"
+          mx="auto"
+          p={2}
+          border="2px solid #ccc"
+          borderRadius="md"
+        >
+          <iframe
+            width="100%"
+            height="500"
+            src="https://www.youtube.com/embed/kCO25UMFgOU?si=MIBf8SiyYLx5OLQg"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          ></iframe>
+        </Box>
+      </Flex>
     </>
   );
 };
 
-export default Media ;
+export default Media;
