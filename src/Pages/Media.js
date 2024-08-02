@@ -70,7 +70,7 @@ const Media  = () => {
                       src={image}
                       alt={`media ${index + 1}`}
                       width={"100%"}
-                      height={"250px"}
+                      height={"400px"}
                     />
                   </LazyLoad>
                 </Box>
