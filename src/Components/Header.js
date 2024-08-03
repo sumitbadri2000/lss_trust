@@ -12,7 +12,7 @@ const HeaderNav = () => {
     <Box background={"#F56A01"} height={{ base: 20, lg: 20 }}>
       <Flex
         flexDirection={"row"}
-        width={{ base: "100%", lg: "80%" }}
+        width={{ base: "100%", lg: "90%" }}
         px={{ base: 2, lg: 0 }}
         py={{ base: 2, lg: 1 }}
         margin={"auto"}
@@ -33,7 +33,7 @@ const HeaderNav = () => {
             <Text
               fontFamily={"EkMukta"}
               fontWeight={600}
-              fontSize={{ base: "0.5rem", lg: "0.9rem" }}>
+              fontSize={{ base: "0.5rem", lg: "1.1rem" }}>
               7903672260 , 8936007120
             </Text>
           </Flex>
@@ -47,7 +47,7 @@ const HeaderNav = () => {
             <Text
               fontFamily={"EkMukta"}
               fontWeight={600}
-              fontSize={{ base: "0.5rem", lg: "0.9rem" }}>
+              fontSize={{ base: "0.5rem", lg: "1.1rem" }}>
               www.lsstrust.org.in
             </Text>
           </Flex>
@@ -61,7 +61,7 @@ const HeaderNav = () => {
             <Text
               fontFamily={"EkMukta"}
               fontWeight={600}
-              fontSize={{ base: "0.5rem", lg: "0.9rem" }}>
+              fontSize={{ base: "0.5rem", lg: "1.1rem" }}>
               support@lsstrust.org.in
             </Text>
           </Flex>

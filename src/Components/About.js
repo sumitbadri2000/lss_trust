@@ -41,7 +41,7 @@ import "swiper/css/navigation";
 import "./swiper.css";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import { useNavigate } from "react-router-dom";
-import b1 from "../Assests/Members/b1.jpeg";
+import b1 from "../Assests/Members/b1.jpg";
 import t1 from "../Assests/Members/t1.jpeg";
 import t2 from "../Assests/Members/t2.jpeg";
 const About = () => {
@@ -1123,7 +1123,7 @@ const About = () => {
         </Grid>
       </Flex>
 
-      <Flex
+      {/* <Flex
         flexDirection={"column"}
         py={10}
         width={{ base: "90%", lg: "80%" }}
@@ -1193,7 +1193,7 @@ const About = () => {
             </GridItem>
           ))}
         </Grid>
-      </Flex>
+      </Flex> */}
 
       <Flex
         flexDirection={"column"}

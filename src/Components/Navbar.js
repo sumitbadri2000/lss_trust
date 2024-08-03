@@ -19,17 +19,17 @@ export default function Navbar() {
       display={{ base: "none", lg: "block" }}
       bg="#FFFFFF"
       px={2}
-      width={{ base: "100%", lg: "86%" }}
+      width={{ base: "100%", lg: "90%" }}
       margin={"auto"}
       boxShadow={"md"}
       mt={-6}
       py={4}
     >
       <Flex h={14} alignItems={"center"} justifyContent={"space-between"}>
-        <HStack spacing={8} alignItems={"center"} px={{ lg: 10 }}>
+        <HStack spacing={8} alignItems={"center"} px={{ lg: 6 }}>
           <Box>
             <Image height={"70%"} width={"70%"} src={logo} alt="logo" />
-          </Box>{" "}
+          </Box>
           <HStack
             as={"nav"}
             spacing={8}
@@ -38,8 +38,8 @@ export default function Navbar() {
             <Link to={"/"}>
               <Text
                 fontFamily={"EkMukta"}
-                fontWeight={700}
-                fontSize={{ lg: "1rem" }}
+                fontWeight={900}
+                fontSize={{ lg: "1.1rem" }}
                 className={isActive("/")}
               >
                 Home
@@ -49,8 +49,8 @@ export default function Navbar() {
             <Link to={"/about"}>
               <Text
                 fontFamily={"EkMukta"}
-                fontWeight={700}
-                fontSize={{ lg: "1rem" }}
+                fontWeight={900}
+                fontSize={{ lg: "1.1rem" }}
                 className={isActive("/about")}
               >
                 About us
@@ -59,8 +59,8 @@ export default function Navbar() {
             <Link to={"/annual"}>
               <Text
                 fontFamily={"EkMukta"}
-                fontWeight={700}
-                fontSize={{ lg: "1rem" }}
+                fontWeight={900}
+                fontSize={{ lg: "1.1rem" }}
                 className={isActive("/annual")}
               >
                 Annual Report
@@ -69,8 +69,8 @@ export default function Navbar() {
             <Link to={"/provision"}>
               <Text
                 fontFamily={"EkMukta"}
-                fontWeight={700}
-                fontSize={{ lg: "1rem" }}
+                fontWeight={900}
+                fontSize={{ lg: "1.1rem" }}
                 className={isActive("/provision")}
               >
                 80G / 12A
@@ -82,8 +82,8 @@ export default function Navbar() {
             <Link to={"/certificate"}>
               <Text
                 fontFamily={"EkMukta"}
-                fontWeight={700}
-                fontSize={{ lg: "1rem" }}
+                fontWeight={900}
+                fontSize={{ lg: "1.1rem" }}
                 className={isActive("/certificate")}
               >
                 Certification
@@ -93,8 +93,8 @@ export default function Navbar() {
             <Link to={"/gallery"}>
               <Text
                 fontFamily={"EkMukta"}
-                fontWeight={700}
-                fontSize={{ lg: "1rem" }}
+                fontWeight={900}
+                fontSize={{ lg: "1.1rem" }}
                 className={isActive("/gallery")}
               >
                 Gallary
@@ -103,8 +103,8 @@ export default function Navbar() {
             <Link to={"/event"}>
               <Text
                 fontFamily={"EkMukta"}
-                fontWeight={700}
-                fontSize={{ lg: "1rem" }}
+                fontWeight={900}
+                fontSize={{ lg: "1.1rem" }}
                 className={isActive("/event")}
               >
                 Events
@@ -114,8 +114,8 @@ export default function Navbar() {
             <Link to={"/media"}>
               <Text
                 fontFamily={"EkMukta"}
-                fontWeight={700}
-                fontSize={{ lg: "1rem" }}
+                fontWeight={900}
+                fontSize={{ lg: "1.1rem" }}
                 className={isActive("/media")}
               >
                 Media
@@ -124,8 +124,8 @@ export default function Navbar() {
             <Link to={"/contact"}>
               <Text
                 fontFamily={"EkMukta"}
-                fontWeight={700}
-                fontSize={{ lg: "1rem" }}
+                fontWeight={900}
+                fontSize={{ lg: "1.1rem" }}
                 className={isActive("/contact")}
               >
                 Contact Us
