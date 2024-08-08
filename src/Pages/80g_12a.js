@@ -31,6 +31,7 @@ const Provision = () => {
              background={"#F56A01"}
              color={"white"}
               onClick={() => handleViewPDF(examplePDF)}
+                        _hover={{background:"black"}}
             >
               80G Certification
             </Button>
@@ -41,6 +42,7 @@ const Provision = () => {
              background={"#F56A01"}
              color={"white"}
               onClick={() => handleViewPDF(examplePDF2)}
+                        _hover={{background:"black"}}
             >
               12A Certification
             </Button>

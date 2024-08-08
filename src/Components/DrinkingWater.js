@@ -14,7 +14,7 @@ const Water = () => {
         <Image width={"100%"} height={"100%"} src={water} alt="water" />
       </Box>
       <Flex width={{ base: "100%", lg: "60%" }} gap={{ base: 4, lg: 0 }}>
-        <Box display={{ base: "none", lg: "block" }}>
+        <Box display={{ base: "none", lg: "block" }} width={"30%"}>
           <Image src={water_line} alt="dringk" />
         </Box>
         <Flex
@@ -34,7 +34,7 @@ const Water = () => {
           </Heading>
           <Text
             fontFamily={"EkMukta"}
-            fontSize={{ base: "0.9rem", lg: "1.2rem" }}
+            fontSize={{ base: "0.9rem", lg: "1.1rem" }}
             textAlign={"left"}
             color={"#000000"}
             fontWeight={400}
@@ -53,7 +53,7 @@ const Water = () => {
             borderRadius={"full"}
             color={"white"}
             fontWeight={700}
-            fontSize={{ base: "1rem", lg: "1.6rem" }}
+            fontSize={{ base: "1rem", lg: "1.4rem" }}
             py={{ base: 4, lg: 8 }}
             px={{ base: 4, lg: 4 }}
             _hover={{

@@ -7,6 +7,7 @@ import {
   Button,
   Divider,
   Flex,
+  Grid,
   Heading,
   Image,
   Input,
@@ -20,6 +21,7 @@ import {
   ModalHeader,
   ModalOverlay,
   Text,
+  textDecoration,
   UnorderedList,
   useDisclosure,
 } from "@chakra-ui/react";
@@ -33,7 +35,33 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import { MinusIcon, AddIcon } from "@chakra-ui/icons";
+import { useEffect, useState } from "react";
+import axios from "axios";
 const Footer = () => {
+  const [userData, setUserData] = useState(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        // const response = await axios.get(
+        //   "https://api.mbbsdunia.com/api/count"
+        // );
+        const response = await axios.get(
+          "https://api.lsstrust.org.in/api/count"
+        );
+        // console.log("check", response.data);
+        setUserData(response.data);
+      } catch (error) {
+        console.error("Error:", error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  const digits = userData?.totalVisits?.toString().split("")?.map(Number);
+
+  console.log("check", digits);
   const {
     isOpen: isOpenpnp,
     onOpen: onOpenpnp,
@@ -69,25 +97,6 @@ const Footer = () => {
           Save lives: Donate to LSSF Trust for education, farmer aid, women's
           empowerment, village support, sports incentives, and marriage
           assistance.
-          {/* <span className="responsive-span">
-            <Input
-              width={"7%"}
-              fontSize={14}
-              placeholder="₹ 5000"
-              border={"1px solid grey"}
-              ml={1}
-            />
-            <Button
-              ml={2}
-              background={"#F56A02"}
-              color={"white"}
-              borderRadius={"full"}
-              _hover={{ bg: "black" }}
-              fontSize={14}
-            >
-              Donate
-            </Button>
-          </span> */}
         </Text>
       </Box>
       <Flex
@@ -1025,7 +1034,7 @@ const Footer = () => {
                 <LuPhoneCall color="white" size={12} />
               </Box>
               <Text fontFamily={"EkMukta"} fontWeight={600} fontSize={"0.9rem"}>
-                +91-9910174777
+                +91-9319965799
               </Text>
             </Flex>
 
@@ -1034,7 +1043,7 @@ const Footer = () => {
                 <FiMail color="white" size={12} />
               </Box>
               <Text fontFamily={"EkMukta"} fontWeight={600} fontSize={"0.9rem"}>
-                support@lsstrust.org.in
+                trustlssf2022@gmail.com
               </Text>
             </Flex>
 
@@ -1115,26 +1124,80 @@ const Footer = () => {
                 <FaFacebookF size={18} color="#F56A02" />{" "}
               </a>
               <a
-                href="https://www.instagram.com/lssftrust"
+                href="https://www.instagram.com/lssf_trust/?hl=en"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <FaInstagram size={18} color="#F56A02" />
               </a>
             </Flex>
+
+            <Flex mt={4} flexDirection="column" gap={2}>
+              <Text fontSize="16px" fontWeight="bold" color="#333">
+                Total Visitors
+              </Text>
+              <Grid
+                templateColumns={`repeat(${digits?.length}, 1fr)`}
+                gap={2}
+                justifyContent="center"
+              >
+                {digits?.map((digit, index) => (
+                  <Box
+                    key={index}
+                    borderRadius="md"
+                    borderWidth="1px"
+                    borderColor="#F56A02"
+                    color={"#F56A02"}
+                    textAlign="center"
+                    px={2}
+                    fontWeight={"bold"}
+                  >
+                    {digit}
+                  </Box>
+                ))}
+              </Grid>
+            </Flex>
           </Box>
         </Flex>
       </Flex>
-
-      <Text
-        fontFamily={"EkMukta"}
-        textAlign={"center"}
-        fontWeight={600}
-        fontSize={"0.9rem"}
-        mt={2}
+      <Flex
+        flexDirection={{ base: "column", lg: "row" }}
+        width={{ base: "80%", lg: "70%" }}
+        justifyContent={"space-between"}
+        margin={"auto"}
       >
-        @2024 All rights reserved.
-      </Text>
+        <Text
+          fontFamily={"EkMukta"}
+          textAlign={"center"}
+          fontWeight={600}
+          fontSize={"0.9rem"}
+          mt={2}
+        >
+          @2024 All rights reserved.
+        </Text>
+
+        <Text
+          fontFamily={"EkMukta"}
+          textAlign={"center"}
+          fontWeight={900}
+          fontSize={"1rem"}
+          mt={2}
+        >
+          Developed And Managed By{" "}
+          <Text
+            as="a"
+            href="https://arvmultimedia.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            color="#F56A02"
+            fontWeight={900}
+            _hover={{ textDecoration: "underline" }}
+            cursor="pointer"
+          >
+            ARV Multimedia
+          </Text>
+        </Text>
+      </Flex>
     </Box>
   );
 };

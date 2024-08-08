@@ -19,14 +19,14 @@ export default function Navbar() {
       display={{ base: "none", lg: "block" }}
       bg="#FFFFFF"
       px={2}
-      width={{ base: "100%", lg: "90%" }}
+      width={{ base: "100%", lg: "92%" }}
       margin={"auto"}
       boxShadow={"md"}
       mt={-6}
       py={4}
     >
       <Flex h={14} alignItems={"center"} justifyContent={"space-between"}>
-        <HStack spacing={8} alignItems={"center"} px={{ lg: 6 }}>
+        <HStack spacing={6} alignItems={"center"} px={{ lg: 5 }}>
           <Box>
             <Image height={"70%"} width={"70%"} src={logo} alt="logo" />
           </Box>
@@ -39,7 +39,7 @@ export default function Navbar() {
               <Text
                 fontFamily={"EkMukta"}
                 fontWeight={900}
-                fontSize={{ lg: "1.1rem" }}
+                fontSize={{ lg: "0.9rem" }}
                 className={isActive("/")}
               >
                 Home
@@ -50,30 +50,30 @@ export default function Navbar() {
               <Text
                 fontFamily={"EkMukta"}
                 fontWeight={900}
-                fontSize={{ lg: "1.1rem" }}
+                fontSize={{ lg: "0.9rem" }}
                 className={isActive("/about")}
               >
-                About us
+                About
               </Text>
             </Link>
             <Link to={"/annual"}>
               <Text
                 fontFamily={"EkMukta"}
                 fontWeight={900}
-                fontSize={{ lg: "1.1rem" }}
+                fontSize={{ lg: "0.9rem" }}
                 className={isActive("/annual")}
               >
-                Annual Report
+                Report
               </Text>
             </Link>
             <Link to={"/provision"}>
               <Text
                 fontFamily={"EkMukta"}
                 fontWeight={900}
-                fontSize={{ lg: "1.1rem" }}
+                fontSize={{ lg: "0.9rem" }}
                 className={isActive("/provision")}
               >
-                80G / 12A
+                80G/12A
               </Text>
             </Link>
 
@@ -83,7 +83,7 @@ export default function Navbar() {
               <Text
                 fontFamily={"EkMukta"}
                 fontWeight={900}
-                fontSize={{ lg: "1.1rem" }}
+                fontSize={{ lg: "0.9rem" }}
                 className={isActive("/certificate")}
               >
                 Certification
@@ -94,7 +94,7 @@ export default function Navbar() {
               <Text
                 fontFamily={"EkMukta"}
                 fontWeight={900}
-                fontSize={{ lg: "1.1rem" }}
+                fontSize={{ lg: "0.9rem" }}
                 className={isActive("/gallery")}
               >
                 Gallary
@@ -104,7 +104,7 @@ export default function Navbar() {
               <Text
                 fontFamily={"EkMukta"}
                 fontWeight={900}
-                fontSize={{ lg: "1.1rem" }}
+                fontSize={{ lg: "0.9rem" }}
                 className={isActive("/event")}
               >
                 Events
@@ -115,7 +115,7 @@ export default function Navbar() {
               <Text
                 fontFamily={"EkMukta"}
                 fontWeight={900}
-                fontSize={{ lg: "1.1rem" }}
+                fontSize={{ lg: "0.9rem" }}
                 className={isActive("/media")}
               >
                 Media
@@ -125,10 +125,10 @@ export default function Navbar() {
               <Text
                 fontFamily={"EkMukta"}
                 fontWeight={900}
-                fontSize={{ lg: "1.1rem" }}
+                fontSize={{ lg: "0.9rem" }}
                 className={isActive("/contact")}
               >
-                Contact Us
+                Contact
               </Text>
             </Link>
           </HStack>

@@ -17,37 +17,43 @@ const HeaderNav = () => {
         py={{ base: 2, lg: 1 }}
         margin={"auto"}
         justifyContent={"space-between"}
-        alignItems={"center"} >
+        alignItems={"center"}
+      >
         <Flex
           flexDirection={{ base: "column", lg: "row" }}
           justifyContent={"start"}
           alignItems={{ base: "start", lg: "center" }}
-          gap={{ base: 2, lg: 8 }}>
+          gap={{ base: 2, lg: 8 }}
+        >
           <Flex
             flexDirection={"row"}
             gap={3}
             color={"#FFFFFF"}
-            alignItems={"center"}>
+            alignItems={"center"}
+          >
             <LuPhoneCall color={"#FFFFFF"} size={15} />
 
             <Text
               fontFamily={"EkMukta"}
               fontWeight={600}
-              fontSize={{ base: "0.5rem", lg: "1.1rem" }}>
-              7903672260 , 8936007120
+              fontSize={{ base: "0.5rem", lg: "1.1rem" }}
+            >
+              +91-9319965799
             </Text>
           </Flex>
           <Flex
             flexDirection={"row"}
             gap={3}
             color={"#FFFFFF"}
-            alignItems={"center"}>
+            alignItems={"center"}
+          >
             <TfiWorld color={"#FFFFFF"} size={15} />
 
             <Text
               fontFamily={"EkMukta"}
               fontWeight={600}
-              fontSize={{ base: "0.5rem", lg: "1.1rem" }}>
+              fontSize={{ base: "0.5rem", lg: "1.1rem" }}
+            >
               www.lsstrust.org.in
             </Text>
           </Flex>
@@ -55,14 +61,16 @@ const HeaderNav = () => {
             flexDirection={"row"}
             gap={3}
             color={"#FFFFFF"}
-            alignItems={"center"}>
+            alignItems={"center"}
+          >
             <FiMail color={"#FFFFFF"} size={15} />
 
             <Text
               fontFamily={"EkMukta"}
               fontWeight={600}
-              fontSize={{ base: "0.5rem", lg: "1.1rem" }}>
-              support@lsstrust.org.in
+              fontSize={{ base: "0.5rem", lg: "1.1rem" }}
+            >
+              trustlssf2022@gmail.com
             </Text>
           </Flex>
         </Flex>
@@ -71,33 +79,39 @@ const HeaderNav = () => {
           <Box
             py={{ base: 2, lg: 3 }}
             px={{ base: 2, lg: 3 }}
-            background="#F78834">
+            background="#F78834"
+          >
             <a
               href="https://youtube.com/@lssftrust?si=-PjIzvdWyBxeFU6_"
               target="_blank"
-              rel="noopener noreferrer">
+              rel="noopener noreferrer"
+            >
               <FaYoutube color="#FFFFFF" size={16} />
             </a>
           </Box>
           <Box
             py={{ base: 2, lg: 3 }}
             px={{ base: 2, lg: 3 }}
-            background="#F78834">
+            background="#F78834"
+          >
             <a
               href="https://www.facebook.com/lssftrust"
               target="_blank"
-              rel="noopener noreferrer">
+              rel="noopener noreferrer"
+            >
               <FaFacebookF color="#FFFFFF" size={16} />
             </a>
           </Box>
           <Box
             py={{ base: 2, lg: 3 }}
             px={{ base: 2, lg: 3 }}
-            background="#F78834">
+            background="#F78834"
+          >
             <a
-              href="https://www.instagram.com/lssftrust"
+              href="https://www.instagram.com/lssf_trust/?hl=en"
               target="_blank"
-              rel="noopener noreferrer">
+              rel="noopener noreferrer"
+            >
               <FaInstagram color="#FFFFFF" size={16} />
             </a>
           </Box>

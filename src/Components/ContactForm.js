@@ -6,6 +6,7 @@ import {
   Text,
   Textarea,
   Toast,
+  useToast,
 } from "@chakra-ui/react";
 import { useState } from "react";
 import { BsFillTelephoneOutboundFill } from "react-icons/bs";
@@ -13,8 +14,9 @@ import { RiUserLocationFill } from "react-icons/ri";
 import { SiMinutemailer } from "react-icons/si";
 import "./epilo.css";
 import "./header.css";
-
+import axios from "axios";
 const ContactForm = () => {
+  const Toast = useToast();
   const [contact, setContact] = useState({
     first: "",
     last: "",
@@ -22,6 +24,51 @@ const ContactForm = () => {
     email: "",
     description: "",
   });
+
+  const handleSubmit = async () => {
+    try {
+      const res = await axios.post(
+        "https://api.lsstrust.org.in/api/contact",
+        contact
+      );
+  
+      if (res.status === 200) {
+        Toast({
+          title: "Success",
+          description: "Your contact form has been submitted successfully.",
+          status: "success",
+          duration: 2000,
+          isClosable: true,
+        });
+  
+        setContact({
+          first: "",
+          last: "",
+          phone: "",
+          email: "",
+          description: "",
+        });
+      } else {
+        Toast({
+          title: "Submission Error",
+          description: "There was an issue submitting your form. Please try again.",
+          status: "error",
+          duration: 2000,
+          isClosable: true,
+        });
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      
+      Toast({
+        title: "Submission Failed",
+        description: "An unexpected error occurred. Please try again later.",
+        status: "error",
+        duration: 2000,
+        isClosable: true,
+      });
+    }
+  };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -121,9 +168,10 @@ const ContactForm = () => {
           bg={"#F56A01"}
           fontSize={"1.2rem"}
           p={6}
-          width={{base:"100%",lg:"30%"}}
+          width={{ base: "100%", lg: "30%" }}
           margin={"auto"}
           borderRadius={"full"}
+          onClick={handleSubmit}
         >
           Submit
         </Button>
@@ -152,7 +200,7 @@ const ContactForm = () => {
             <SiMinutemailer color="white" size={12} />
           </Box>
           <Text fontSize={"1rem"} fontFamily={"EkMukta"} fontWeight={800}>
-            support@lsstrust.org.in
+            trustlssf2022@gmail.com
           </Text>
         </Flex>
 
@@ -166,7 +214,7 @@ const ContactForm = () => {
             <BsFillTelephoneOutboundFill color="white" size={12} />
           </Box>
           <Text fontSize={"1rem"} fontFamily={"EkMukta"} fontWeight={800}>
-            +91-9910174777
+            +91-9319965799
           </Text>
         </Flex>
 

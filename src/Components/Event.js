@@ -48,7 +48,7 @@ export default function Events() {
             <Text
               color={"#F56A02"}
               className="epilogue-bold"
-              fontSize={{ base: "1.8rem", lg: "3rem" }}
+              fontSize={{ base: "1.8rem", lg: "2.6rem" }}
               fontWeight={800}>
               Event Gallery
             </Text>

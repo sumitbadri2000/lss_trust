@@ -28,12 +28,12 @@ const FlexItem = ({ bg, image, text }) => (
     justifyContent={"center"}
     overflow={"hidden"}
   >
-    <Box>
+    <Box height={"40%"} mt={10}>
       <Image height={{ base: 24, lg: 24 }} src={image} alt={text} />
     </Box>
-    <Box>
+    <Box height={"60%"}>
       <Text
-        width={{ base: "100%", lg: "88%" }}
+        width={{ base: "100%", lg: "90%" }}
         px={{ base: 2, lg: 2 }}
         textAlign={"center"}
         margin={"auto"}
@@ -55,8 +55,8 @@ const HomeContent = () => {
         <Flex width={"100%"} bgGradient="linear(to-r, #ffda91, white)">
           <Grid
             templateColumns={{ base: "repeat(1, 1fr)", lg: "repeat(6, 1fr)" }}
-            gap={{ base: 10, lg: 4 }}
-            width={{ base: "60%", lg: "80%" }}
+            gap={{ base: 10, lg: 3 }}
+            width={{ base: "60%", lg: "90%" }}
             margin={"auto"}
             alignItems={"center"}
             justifyContent={"space-between"}
@@ -225,7 +225,7 @@ const HomeContent = () => {
                   fontFamily={"EkMukta"}
                   fontWeight={400}
                 >
-                  जरूरतमन्द विद्यार्थियों (कक्षा 10th व 14th) को पंजीकरण हेतु
+                  जरूरतमन्द विद्यार्थियों (कक्षा 10th व 12th) को पंजीकरण हेतु
                   सहायता राशि, लेखन सामग्री, ग्रामीण विद्यालय में प्यूरीफायर
                   संयंत्र / आर० ओ०, पटना एथलेटिक्स संघ की निगरानी में
                   छात्र-छात्राओं की दौड़-स्पर्धा एवं स्वo सुरेश सिंह ग्रामीण
@@ -316,11 +316,11 @@ const HomeContent = () => {
                 fontFamily={"EkMukta"}
                 fontWeight={400}
               >
-                प्रदूषण की समस्या को दूर करने हेतु वृक्षारोपण, फोफिंग मशीन
+                प्रदूषण की समस्या को दूर करने हेतु वृक्षारोपण, फोगिंग मशीन
                 वितरण, सुगम आवागमन हेतु चौक-चौराहों पर LED की व्यवस्था, किसान
                 भाइयों को उनके फसलों एवं पौधों को बिमारियों से सुरक्षा हेतु
                 स्वचालित कृषि यंत्रों का वितरण, धार्मिक कार्य हेतु ग्रामीणों को
-                मिले शुद्ध इसके लिए बोरवेल की व्यवस्था की गई, कोरोना महामारी के
+                मिले शुद्ध जल इसके लिए बोरवेल की व्यवस्था की गई, कोरोना महामारी के
                 समय सैनिटाइजर मशीन व स्टैण्ड वितरण ।
               </Text>
             </Box>

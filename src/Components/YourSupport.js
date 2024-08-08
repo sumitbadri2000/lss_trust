@@ -2,12 +2,14 @@ import { Box, Button, Flex, Image, Text } from "@chakra-ui/react";
 import s1 from "../Assests/s1.png";
 import "./epilo.css";
 import "./header.css";
+import { useNavigate } from "react-router-dom";
 const YourSupport = () => {
+  const navi = useNavigate();
   return (
     <Flex
       display={{ base: "none", lg: "flex" }}
       width="80%"
-      height={"500px"}
+      height={"400px"}
       margin="0 auto"
       backgroundImage={s1}
       backgroundSize="cover"
@@ -15,7 +17,7 @@ const YourSupport = () => {
       alignItems="center"
       justifyContent="end"
       px={4}
-      mb={2}
+      // mb={2}
     >
       <Flex
         width={"60%"}
@@ -30,7 +32,7 @@ const YourSupport = () => {
           color={"#FFA800"}
           className="epilogue-bold"
           fontWeight={900}
-          fontSize={{ base: "1rem", lg: "1.6rem" }}
+          fontSize={{ base: "1rem", lg: "1.4rem" }}
         >
           "Your Support Matters – Get Involved!"
         </Text>
@@ -38,7 +40,7 @@ const YourSupport = () => {
           textAlign={"center"}
           color={"white"}
           fontFamily={"EKMukta"}
-          fontSize={{ base: "1rem", lg: "1.3rem" }}
+          fontSize={{ base: "1rem", lg: "1.2rem" }}
           fontWeight={800}
         >
           Your support can change the course of a woman's life. Help us provide
@@ -46,16 +48,17 @@ const YourSupport = () => {
         </Text>
 
         <Button
-          width={"20%"}
+          width={"22%"}
           margin={"auto"}
           backgroundColor={"#F56A02"}
           borderRadius={"full"}
           color={"white"}
           fontFamily={"EKMukta"}
-          fontSize="1.2rem"
+          fontSize="1rem"
           cursor="pointer"
           p={6}
-          _hover={{background:"black"}}
+          _hover={{ background: "black" }}
+          onClick={() => navi("/contact")}
         >
           Contact Now
         </Button>

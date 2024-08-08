@@ -2,14 +2,31 @@ import {
   Box,
   Button,
   Divider,
+  Flex,
   Heading,
+  Image,
+  Modal,
+  ModalBody,
+  ModalCloseButton,
+  ModalContent,
+  ModalHeader,
+  ModalOverlay,
   Stack,
   Text,
   VStack,
 } from "@chakra-ui/react";
 import "./header.css";
 import CommonBanner from "./Common";
+import { useState } from "react";
+
+import pan from "../Assests/pan.png";
+import cheque from "../Assests/cheque.png";
+import qrcode from "../Assests/qrcode.png";
 const WhyDonation = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleOpen = () => setIsOpen(true);
+  const handleClose = () => setIsOpen(false);
   return (
     <>
       <CommonBanner />
@@ -18,7 +35,7 @@ const WhyDonation = () => {
         mx="auto"
         width={{ base: "90%", lg: "80%" }}
         margin={"auto"}
-        mt={{ base: "-70%", lg: "-26%" }}
+        mt={{ base: "-71%", lg: "-27%" }}
       >
         <Heading
           fontSize={{ base: "1.2rem", lg: "2rem" }}
@@ -134,12 +151,179 @@ const WhyDonation = () => {
               cursor="pointer"
               p={6}
               _hover={{ background: "black" }}
+              onClick={handleOpen}
             >
               Donate Now
             </Button>
           </Box>
         </Stack>
       </Box>
+      <Modal isOpen={isOpen} onClose={handleClose} size={"xl"}>
+        <ModalOverlay />
+        <ModalContent
+          display="flex"
+          flexDirection={{ base: "column", md: "row" }}
+          alignItems="center"
+          justifyContent="center"
+          maxWidth="60vw"
+          margin="auto"
+          padding={{ base: "4", md: "8" }}
+          borderRadius="md"
+          maxHeight="100vh"
+          overflow="hidden"
+        >
+          <Box
+            width={{ base: "100%", md: "50vw" }}
+            maxHeight="100vh" 
+            overflowY="auto" 
+          >
+            <ModalHeader textAlign="center" fontSize="2rem">
+              Thank You For Choosing LSSF Trust
+            </ModalHeader>
+            <ModalCloseButton />
+            <ModalBody p={0}>
+              <Flex
+                flexDirection={"column"}
+                gap={6}
+                py={4}
+                px={6}
+                boxShadow={"lg"}
+                borderRadius="md"
+                border="1px"
+                borderColor="gray.200"
+                maxWidth="1200px"
+                margin="auto"
+                overflowY="auto" // Enable vertical scrolling within the Flex container
+                maxHeight="calc(90vh - 80px)" // Subtract height of header and close button
+              >
+                {/* Cheque Image and Information */}
+                <Box position="relative">
+                  <Image
+                    width={"100%"}
+                    height={"40vh"}
+                    src={cheque}
+                    alt="cheque"
+                    borderRadius="md"
+                    
+                    boxShadow="md"
+                    _hover={{ transform: "scale(1.05)", boxShadow: "lg" }}
+                    transition="all 0.3s ease"
+                  />
+                  <Box
+                    position="absolute"
+                    bottom="0"
+                    left="0"
+                    right="0"
+                    background="rgba(0, 0, 0, 0.5)"
+                    color="white"
+                    textAlign="center"
+                    p={2}
+                    borderBottomRadius="md"
+                  >
+                    <Text fontSize="lg" fontWeight="bold">
+                      Cheque
+                    </Text>
+                  </Box>
+                </Box>
+
+                {/* Additional Information Section */}
+                <Box
+                  p={4}
+                  borderRadius="md"
+                  boxShadow="md"
+                  bg="gray.50"
+                  border="1px"
+                  borderColor="gray.200"
+                >
+                  <Text fontSize="xl" fontWeight="bold" mb={4}>
+                    Account Information
+                  </Text>
+                  <Divider mb={4} />
+                  <Box mb={2}>
+                    <Text fontWeight="bold">Account Holder Name:</Text>
+                    <Text>LATE SURESH SINGH FOUNDATION</Text>
+                  </Box>
+                  <Box mb={2}>
+                    <Text fontWeight="bold">Bank Name:</Text>
+                    <Text>BANDHAN BANK</Text>
+                  </Box>
+                  <Box mb={2}>
+                    <Text fontWeight="bold">Account Number:</Text>
+                    <Text>20100028375030</Text>
+                  </Box>
+                  <Box mb={2}>
+                    <Text fontWeight="bold">IFSC Code:</Text>
+                    <Text>BDBL0002525</Text>
+                  </Box>
+                  <Box mb={2}>
+                    <Text fontWeight="bold">Branch:</Text>
+                    <Text>Kamla Nagar Branch</Text>
+                  </Box>
+                </Box>
+
+                {/* PAN Image */}
+                <Box position="relative">
+                  <Image
+                    width={"100%"}
+                    height={"50vh"}
+                    src={pan}
+                    alt="pan"
+                    borderRadius="md"
+                    
+                    boxShadow="md"
+                    _hover={{ transform: "scale(1.05)", boxShadow: "lg" }}
+                    transition="all 0.3s ease"
+                  />
+                  <Box
+                    position="absolute"
+                    bottom="0"
+                    left="0"
+                    right="0"
+                    background="rgba(0, 0, 0, 0.5)"
+                    color="white"
+                    textAlign="center"
+                    p={2}
+                    borderBottomRadius="md"
+                  >
+                    <Text fontSize="lg" fontWeight="bold">
+                      PAN Card
+                    </Text>
+                  </Box>
+                </Box>
+
+                {/* QR Code Image */}
+                <Box position="relative">
+                  <Image
+                    width={"100%"}
+                    src={qrcode}
+                    alt="qrcode"
+                    borderRadius="md"
+                    
+                    boxShadow="md"
+                    _hover={{ transform: "scale(1.05)", boxShadow: "lg" }}
+                    transition="all 0.3s ease"
+                  />
+                  <Box
+                    position="absolute"
+                    bottom="0"
+                    left="0"
+                    right="0"
+                    background="rgba(0, 0, 0, 0.5)"
+                    color="white"
+                    textAlign="center"
+                    p={2}
+                    borderBottomRadius="md"
+                  >
+                    <Text fontSize="lg" fontWeight="bold">
+                      QR Code
+                    </Text>
+                  </Box>
+                </Box>
+              </Flex>
+            </ModalBody>
+          </Box>
+        </ModalContent>
+      </Modal>
     </>
   );
 };

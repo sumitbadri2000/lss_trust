@@ -31,6 +31,7 @@ const AnnualReport = () => {
               background={"#F56A01"}
               color={"white"}
               onClick={() => handleViewPDF(examplePDF)}
+              _hover={{background:"black"}}
             >
               Annual Report 2022-2023
             </Button>
@@ -41,6 +42,7 @@ const AnnualReport = () => {
               background={"#F56A01"}
               color={"white"}
               onClick={() => handleViewPDF(examplePDF2)}
+              _hover={{background:"black"}}
             >
               Annual Report 2023-2024
             </Button>
