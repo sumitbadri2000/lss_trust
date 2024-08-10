@@ -35,7 +35,7 @@ const WhyDonation = () => {
         mx="auto"
         width={{ base: "90%", lg: "80%" }}
         margin={"auto"}
-        mt={{ base: "-71%", lg: "-27%" }}
+        mt={{ base: "-30%", lg: "-27%" }}
       >
         <Heading
           fontSize={{ base: "1.2rem", lg: "2rem" }}
@@ -158,7 +158,11 @@ const WhyDonation = () => {
           </Box>
         </Stack>
       </Box>
-      <Modal isOpen={isOpen} onClose={handleClose} size={"xl"}>
+      <Modal
+        isOpen={isOpen}
+        onClose={handleClose}
+        size={{ base: "full", lg: "xl" }}
+      >
         <ModalOverlay />
         <ModalContent
           display="flex"
@@ -174,10 +178,13 @@ const WhyDonation = () => {
         >
           <Box
             width={{ base: "100%", md: "50vw" }}
-            maxHeight="100vh" 
-            overflowY="auto" 
+            maxHeight="100vh"
+            overflowY="auto"
           >
-            <ModalHeader textAlign="center" fontSize="2rem">
+            <ModalHeader
+              textAlign="center"
+              fontSize={{ base: "1rem", lg: "2rem" }}
+            >
               Thank You For Choosing LSSF Trust
             </ModalHeader>
             <ModalCloseButton />
@@ -200,11 +207,10 @@ const WhyDonation = () => {
                 <Box position="relative">
                   <Image
                     width={"100%"}
-                    height={"40vh"}
+                    height={{ base: "20vh", lg: "40vh" }}
                     src={cheque}
                     alt="cheque"
                     borderRadius="md"
-                    
                     boxShadow="md"
                     _hover={{ transform: "scale(1.05)", boxShadow: "lg" }}
                     transition="all 0.3s ease"
@@ -220,7 +226,10 @@ const WhyDonation = () => {
                     p={2}
                     borderBottomRadius="md"
                   >
-                    <Text fontSize="lg" fontWeight="bold">
+                    <Text
+                      fontSize={{ base: "0.8rem", lg: "lg" }}
+                      fontWeight="bold"
+                    >
                       Cheque
                     </Text>
                   </Box>
@@ -265,11 +274,10 @@ const WhyDonation = () => {
                 <Box position="relative">
                   <Image
                     width={"100%"}
-                    height={"50vh"}
+                    height={{ base: "20vh", lg: "50vh" }}
                     src={pan}
                     alt="pan"
                     borderRadius="md"
-                    
                     boxShadow="md"
                     _hover={{ transform: "scale(1.05)", boxShadow: "lg" }}
                     transition="all 0.3s ease"
@@ -285,7 +293,10 @@ const WhyDonation = () => {
                     p={2}
                     borderBottomRadius="md"
                   >
-                    <Text fontSize="lg" fontWeight="bold">
+                    <Text
+                      fontSize={{ base: "0.8rem", lg: "lg" }}
+                      fontWeight="bold"
+                    >
                       PAN Card
                     </Text>
                   </Box>
@@ -298,7 +309,6 @@ const WhyDonation = () => {
                     src={qrcode}
                     alt="qrcode"
                     borderRadius="md"
-                    
                     boxShadow="md"
                     _hover={{ transform: "scale(1.05)", boxShadow: "lg" }}
                     transition="all 0.3s ease"
@@ -314,7 +324,10 @@ const WhyDonation = () => {
                     p={2}
                     borderBottomRadius="md"
                   >
-                    <Text fontSize="lg" fontWeight="bold">
+                    <Text
+                      fontSize={{ base: "0.8rem", lg: "lg" }}
+                      fontWeight="bold"
+                    >
                       QR Code
                     </Text>
                   </Box>
