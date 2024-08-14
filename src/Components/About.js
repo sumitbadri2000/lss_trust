@@ -42,12 +42,10 @@ import "./swiper.css";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import { useNavigate } from "react-router-dom";
 import b1 from "../Assests/Members/b1.jpg";
-import t1 from "../Assests/Members/t1.jpeg";
-import t2 from "../Assests/Members/t2.jpeg";
+import a1 from "../Assests/Members/a1.jpeg";
 const About = () => {
-  const traniee = [
-    { id: "1", name: "Harish Kumar", title: "(Trustee)", img: t1 },
-    { id: "2", name: "Gautam Kumar", title: "(Trustee)", img: t2 },
+  const advocate = [
+    { id: "1", name: "Advocate Naveen Kumar Raheja", title: "(Legal Advisor)", img: a1 },
   ];
 
   const activem = [
@@ -1154,7 +1152,7 @@ const About = () => {
         </Grid>
       </Flex>
 
-      {/* <Flex
+      <Flex
         flexDirection={"column"}
         py={10}
         width={{ base: "90%", lg: "80%" }}
@@ -1167,7 +1165,7 @@ const About = () => {
           fontWeight={"bold"}
           color={"#F56A02"}
         >
-          Trustee Member
+          Legal Advisor
         </Text>
 
         <Grid
@@ -1176,55 +1174,53 @@ const About = () => {
           py={{ base: 8, lg: 12 }}
           gap={{ base: 6, lg: 10 }}
         >
-          {traniee.map((ele) => (
-            <GridItem bg={"white"} borderRadius="md">
-              <Box
-                width={{ base: "100%", lg: "90%" }}
-                border="1px solid grey"
-                borderRadius="md"
-                overflow="hidden"
-                boxShadow="sm"
-                py={4}
-                px={4}
-                height={"100%"}
-                bg="white"
-                cursor="pointer"
-              >
-                <Image
-                  src={ele.img}
-                  alt={ele.id}
-                  width={{ base: "90%", lg: "100%" }}
-                  margin={"auto"}
-                  height={{ base: "280px", lg: "420px" }}
-                />
+          {advocate.map((ele) => (
+          <GridItem bg={"white"} borderRadius="md">
+          <Box
+            width={{ base: "100%", lg: "100%" }}
+            border="1px solid grey"
+            borderRadius="md"
+            overflow="hidden"
+            boxShadow="sm"
+            height={"100%"}
+            bg="white"
+            cursor="pointer"
+          >
+            <Image
+              src={ele.img}
+              alt={"board"}
+              // width={{ base: "90%", lg: "100%" }}
+              margin={"auto"}
+              // height={{ base: "280px", lg: "400px" }}
+            />
 
-                <Flex
-                  flexDirection={"column"}
-                  alignItems={"center"}
-                  gap={1}
-                  marginTop={2}
-                >
-                  <Text
-                    className="epilogue-bold"
-                    fontWeight={"bold"}
-                    fontSize={{ base: "1rem", lg: "1.4rem" }}
-                    color={"#F56A02"}
-                  >
-                    {ele.name}
-                  </Text>
-                  <Text
-                    className="epilogue-bold"
-                    fontWeight={"bold"}
-                    fontSize={{ base: "0.7rem", lg: "1.1rem" }}
-                  >
-                    {ele.title}
-                  </Text>
-                </Flex>
-              </Box>
-            </GridItem>
+            <Flex
+              flexDirection={"column"}
+              alignItems={"center"}
+              gap={1}
+              marginTop={2}
+            >
+              <Text
+                className="epilogue-bold"
+                fontWeight={"bold"}
+                fontSize={{ base: "1rem", lg: "1.4rem" }}
+                color={"#F56A02"}
+              >
+                {ele.name}
+              </Text>
+              {/* <Text
+                className="epilogue-bold"
+                fontWeight={"bold"}
+                fontSize={{ base: "0.7rem", lg: "1.1rem" }}
+              >
+                {ele.title}
+              </Text> */}
+            </Flex>
+          </Box>
+        </GridItem>
           ))}
         </Grid>
-      </Flex> */}
+      </Flex>
 
       <Flex
         flexDirection={"column"}
